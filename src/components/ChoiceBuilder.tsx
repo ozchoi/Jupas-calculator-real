@@ -12,6 +12,7 @@ import { Clipboard, Download, Trash2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import programmesData from "../data/programmes.json";
 import subjects from "../data/subjects.json";
+import AdmissionLegend from "./AdmissionLegend";
 import Disclaimer from "./Disclaimer";
 import FilterBar, { type Filters } from "./FilterBar";
 import ChoiceItem from "./ChoiceItem";
@@ -25,6 +26,7 @@ import { choicesToCsv, choicesToText, getChoiceRankLabel } from "../utils/export
 import { chanceRank, classifyRecommendation } from "../utils/recommendationClassifier";
 import { checkRequirements } from "../utils/requirementChecker";
 import { calculateProgrammeScore } from "../utils/scoreCalculator";
+import { programmeMeetsThreshold } from "../utils/thresholds";
 
 const programmes = programmesData as unknown as Programme[];
 const resultStorageKey = "jupas-choice-builder-results-v2";
@@ -84,9 +86,9 @@ export default function ChoiceBuilder() {
       if (filters.category !== "All" && programme.category !== filters.category) return false;
       if (filters.formulaType !== "All" && programme.formulaType !== filters.formulaType) return false;
       if (filters.meetsRequirements && !requirement.meetsRequirements) return false;
-      if (filters.scoreAtLeastLq && calculation.totalScore < (programme.lowerQuartile ?? Infinity)) return false;
-      if (filters.scoreAtLeastMedian && calculation.totalScore < (programme.median ?? Infinity)) return false;
-      if (filters.scoreAtLeastUq && calculation.totalScore < (programme.upperQuartile ?? Infinity)) return false;
+      if (filters.scoreAtLeastLq && !programmeMeetsThreshold(programme, calculation.totalScore, "lowerQuartile")) return false;
+      if (filters.scoreAtLeastMedian && !programmeMeetsThreshold(programme, calculation.totalScore, "median")) return false;
+      if (filters.scoreAtLeastUq && !programmeMeetsThreshold(programme, calculation.totalScore, "upperQuartile")) return false;
       return true;
     });
 
@@ -195,6 +197,9 @@ export default function ChoiceBuilder() {
               categories={categories}
               formulaTypes={formulaTypes}
             />
+            <div className="p-4 pb-0">
+              <AdmissionLegend />
+            </div>
             <div className="p-4 pb-0">
               <Disclaimer />
             </div>

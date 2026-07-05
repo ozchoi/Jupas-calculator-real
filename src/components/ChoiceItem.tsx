@@ -3,26 +3,26 @@ import { CSS } from "@dnd-kit/utilities";
 import { GripVertical, Trash2 } from "lucide-react";
 import type { ProgrammeView } from "./ProgrammeCard";
 import { getChoiceRankLabel } from "../utils/exportChoices";
-import { scoreTier, scoreTierLabel } from "../utils/recommendationClassifier";
+import { admissionStatus, admissionStatusLabel, type AdmissionStatus } from "../utils/recommendationClassifier";
 
 type Props = ProgrammeView & {
   rank: number;
   onRemove: () => void;
 };
 
-export default function ChoiceItem({ programme, calculation, chance, rank, onRemove }: Props) {
+export default function ChoiceItem({ programme, calculation, requirement, rank, onRemove }: Props) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: programme.jupasCode,
     data: { type: "choice", jupasCode: programme.jupasCode },
   });
-  const tier = scoreTier(programme, calculation.totalScore);
-  const status = scoreTierLabel(tier, chance);
+  const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
+  const statusLabel = admissionStatusLabel(status);
 
   return (
     <div
       ref={setNodeRef}
       style={{ transform: CSS.Transform.toString(transform), transition }}
-      className={`rounded-md border p-3 shadow-sm ${tierBoxClass(tier)} ${isDragging ? "opacity-70 shadow-xl" : ""}`}
+      className={`rounded-md border p-3 shadow-sm ${statusBoxClass(status)} ${isDragging ? "opacity-70 shadow-xl" : ""}`}
     >
       <div className="flex gap-3">
         <button
@@ -44,7 +44,7 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
           <p className="mt-2 text-xs font-semibold text-ink/70">
             Score {calculation.totalScore} · LQ {programme.lowerQuartile ?? "-"} · M{" "}
             {programme.median ?? "-"} · UQ {programme.upperQuartile ?? "-"} ·{" "}
-            {status}
+            {statusLabel}
           </p>
         </div>
         <button type="button" className="self-start rounded-md p-2 text-coral hover:bg-coral/10" onClick={onRemove} aria-label="Remove choice">
@@ -55,14 +55,14 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
   );
 }
 
-function tierBoxClass(tier: ReturnType<typeof scoreTier>): string {
+function statusBoxClass(status: AdmissionStatus): string {
   return {
-    uq: "border-emerald-300 bg-emerald-50",
-    median: "border-yellow-300 bg-yellow-50",
-    lq: "border-orange-300 bg-orange-50",
-    below: "border-coral/40 bg-coral/10",
-    na: "border-ink/12 bg-white",
-  }[tier];
+    uq: "border-blue-300 bg-blue-50",
+    medianMean: "border-emerald-300 bg-emerald-50",
+    lq: "border-yellow-300 bg-yellow-50",
+    minimumOnly: "border-orange-300 bg-orange-50",
+    notQualified: "border-coral/40 bg-coral/10",
+  }[status];
 }
 
 function bandBadgeClass(rank: number): string {

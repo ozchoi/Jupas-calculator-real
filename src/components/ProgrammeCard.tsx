@@ -1,8 +1,9 @@
 import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
 import type { CalculationResult, Programme } from "../types/programme";
-import { scoreTier, scoreTierLabel, type ChanceCategory } from "../utils/recommendationClassifier";
+import { admissionStatus, admissionStatusLabel, type AdmissionStatus, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
+import { scoreDifference } from "../utils/thresholds";
 
 export type ProgrammeView = {
   programme: Programme;
@@ -41,8 +42,8 @@ export default function ProgrammeCard({
   });
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
-  const tier = scoreTier(programme, calculation.totalScore);
-  const status = scoreTierLabel(tier, chance);
+  const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
+  const statusLabel = admissionStatusLabel(status);
   const medianGap = numericGap(calculation.totalScore, programme.median);
   const lqGap = numericGap(calculation.totalScore, programme.lowerQuartile);
 
@@ -52,7 +53,7 @@ export default function ProgrammeCard({
       style={style}
       className={`rounded-md border p-4 shadow-sm transition ${
         isDragging ? "z-30 opacity-70 shadow-xl" : ""
-      } ${hidden ? "border-ink/10 bg-white opacity-50" : `${tierBoxClass(tier)} hover:border-teal/50`}`}
+      } ${hidden ? "border-ink/10 bg-white opacity-50" : statusBoxClass(status)}`}
     >
       <div className="flex items-start gap-3">
         <button
@@ -75,7 +76,7 @@ export default function ProgrammeCard({
           {programme.titleZh && <p className="mt-1 text-sm text-ink/60">{programme.titleZh}</p>}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
             <Metric label="Score" value={calculation.totalScore.toString()} />
-            <Metric label="Chance" value={status} />
+            <Metric label="Chance" value={statusLabel} />
             <Metric label="Formula" value={programme.formulaRaw} />
             <Metric
               label="Stats"
@@ -135,17 +136,17 @@ function Metric({ label, value }: { label: string; value: string }) {
 }
 
 function numericGap(score: number, target?: number): string {
-  if (typeof target !== "number") return "N/A";
-  const gap = Number((score - target).toFixed(2));
+  const gap = scoreDifference(score, target);
+  if (gap === undefined) return "N/A";
   return gap > 0 ? `+${gap}` : gap.toString();
 }
 
-function tierBoxClass(tier: ReturnType<typeof scoreTier>): string {
+function statusBoxClass(status: AdmissionStatus): string {
   return {
-    uq: "border-emerald-300 bg-emerald-50",
-    median: "border-yellow-300 bg-yellow-50",
-    lq: "border-orange-300 bg-orange-50",
-    below: "border-coral/40 bg-coral/10",
-    na: "border-ink/12 bg-white",
-  }[tier];
+    uq: "border-blue-300 bg-blue-50",
+    medianMean: "border-emerald-300 bg-emerald-50",
+    lq: "border-yellow-300 bg-yellow-50",
+    minimumOnly: "border-orange-300 bg-orange-50",
+    notQualified: "border-coral/40 bg-coral/10",
+  }[status];
 }

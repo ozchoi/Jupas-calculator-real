@@ -1,5 +1,7 @@
 import type { Programme } from "../types/programme";
 
+export type AdmissionStatus = "uq" | "medianMean" | "lq" | "minimumOnly" | "notQualified";
+
 export type ChanceCategory =
   | "Above median"
   | "Around LQ-Median"
@@ -45,4 +47,23 @@ export function scoreTierLabel(tier: ReturnType<typeof scoreTier>, fallback: Cha
     below: "Below LQ",
     na: fallback,
   }[tier];
+}
+
+export function admissionStatus(programme: Programme, score: number, meetsRequirements: boolean): AdmissionStatus {
+  if (!meetsRequirements) return "notQualified";
+  if (typeof programme.upperQuartile === "number" && score >= programme.upperQuartile) return "uq";
+  if (typeof programme.median === "number" && score >= programme.median) return "medianMean";
+  if (typeof programme.mean === "number" && score >= programme.mean) return "medianMean";
+  if (typeof programme.lowerQuartile === "number" && score >= programme.lowerQuartile) return "lq";
+  return "minimumOnly";
+}
+
+export function admissionStatusLabel(status: AdmissionStatus): string {
+  return {
+    uq: ">= UQ",
+    medianMean: ">= Median/Mean",
+    lq: ">= LQ",
+    minimumOnly: "Meets minimum only",
+    notQualified: "Does not meet requirement",
+  }[status];
 }
