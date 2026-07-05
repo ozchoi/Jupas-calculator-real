@@ -29,7 +29,7 @@ export default function ProgrammeDetailModal({
             <div className="mb-2 flex flex-wrap gap-2 text-xs font-semibold">
               <span className="rounded-md bg-ink px-2 py-1 text-white">{programme.jupasCode}</span>
               <span className="rounded-md bg-teal/10 px-2 py-1 text-teal">{programme.institution}</span>
-              <span className="rounded-md bg-moss/10 px-2 py-1 text-moss">{programme.category}</span>
+              <span className="rounded-md bg-moss/10 px-2 py-1 text-moss">{programme.scoreScale.replace("SCALE_", "")} scale</span>
             </div>
             <h2 className="text-xl font-semibold text-ink">{programme.titleEn}</h2>
             {programme.titleZh && <p className="mt-1 text-ink/60">{programme.titleZh}</p>}
@@ -42,14 +42,16 @@ export default function ProgrammeDetailModal({
         <div className="grid gap-5 p-5">
           <div className="grid gap-3 md:grid-cols-4">
             <Info label="Calculated score" value={calculation.totalScore.toString()} />
-            <Info label="Chance" value={chance} />
-            <Info label="Formula" value={programme.formulaType.replaceAll("_", " ")} />
+            <Info label="Risk" value={chance} />
+            <Info label="Formula" value={programme.formulaRaw} />
             <Info label="Faculty" value={programme.faculty ?? "Not specified"} />
           </div>
 
           <section>
             <h3 className="mb-2 font-semibold text-ink">Formula and Weighting</h3>
             <div className="rounded-md border border-ink/10 bg-paper p-4 text-sm text-ink/75">
+              <p className="mb-3 font-semibold text-ink">{programme.formulaRaw}</p>
+              {programme.weightingRaw && <p className="mb-3">{programme.weightingRaw}</p>}
               {programme.weightingRules?.length ? (
                 <ul className="grid gap-1">
                   {programme.weightingRules.map((rule) => (
@@ -117,18 +119,25 @@ export default function ProgrammeDetailModal({
           <section>
             <h3 className="mb-2 font-semibold text-ink">Admission Statistics</h3>
             <div className="grid gap-3 md:grid-cols-6">
-              <Info label="Year" value={programme.admissionStats?.year?.toString() ?? "No data"} />
-              <Info label="LQ" value={programme.admissionStats?.lowerQuartile?.toString() ?? "-"} />
-              <Info label="Median" value={programme.admissionStats?.median?.toString() ?? "-"} />
-              <Info label="UQ" value={programme.admissionStats?.upperQuartile?.toString() ?? "-"} />
-              <Info label="Mean" value={programme.admissionStats?.mean?.toString() ?? "-"} />
-              <Info label="Attainable" value={programme.admissionStats?.attainable?.toString() ?? "-"} />
+              <Info label="LQ" value={programme.lowerQuartile?.toString() ?? "-"} />
+              <Info label="Median" value={programme.median?.toString() ?? "-"} />
+              <Info label="UQ" value={programme.upperQuartile?.toString() ?? "-"} />
+              <Info label="Mean" value={programme.mean?.toString() ?? "-"} />
+              <Info label="Highest" value={programme.highestAttainable?.toString() ?? "-"} />
+              <Info label="Quality" value={programme.dataQuality} />
             </div>
-            {programme.admissionStats?.note && <p className="mt-2 text-sm text-ink/60">{programme.admissionStats.note}</p>}
+            {(programme.medianProfile || programme.lowerQuartileProfile) && (
+              <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
+                <Info label="Median profile" value={programme.medianProfile ?? "-"} />
+                <Info label="LQ profile" value={programme.lowerQuartileProfile ?? "-"} />
+              </div>
+            )}
+            {programme.notes && <p className="mt-2 text-sm text-ink/60">{programme.notes}</p>}
           </section>
 
           <section className="rounded-md bg-paper p-4 text-sm text-ink/65">
             Source: {programme.source?.name ?? "Not specified"}
+            {programme.sourcePage ? `, page ${programme.sourcePage}` : ""}
             {programme.source?.retrievedDate ? `, retrieved ${programme.source.retrievedDate}` : ""}
           </section>
         </div>

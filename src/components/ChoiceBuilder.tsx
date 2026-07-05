@@ -27,7 +27,7 @@ import { checkRequirements } from "../utils/requirementChecker";
 import { calculateProgrammeScore } from "../utils/scoreCalculator";
 
 const programmes = programmesData as unknown as Programme[];
-const resultStorageKey = "jupas-choice-builder-results";
+const resultStorageKey = "jupas-choice-builder-results-v2";
 const choiceStorageKey = "jupas-choice-builder-choices";
 
 const defaultFilters: Filters = {
@@ -36,11 +36,10 @@ const defaultFilters: Filters = {
   faculty: "All",
   category: "All",
   formulaType: "All",
-  hasChineseTitle: false,
-  hasAdmissionData: false,
   meetsRequirements: false,
   scoreAtLeastLq: false,
   scoreAtLeastMedian: false,
+  scoreAtLeastUq: false,
   sortBy: "Best match",
 };
 
@@ -84,11 +83,10 @@ export default function ChoiceBuilder() {
       if (filters.faculty !== "All" && programme.faculty !== filters.faculty) return false;
       if (filters.category !== "All" && programme.category !== filters.category) return false;
       if (filters.formulaType !== "All" && programme.formulaType !== filters.formulaType) return false;
-      if (filters.hasChineseTitle && !programme.titleZh) return false;
-      if (filters.hasAdmissionData && !programme.admissionStats) return false;
       if (filters.meetsRequirements && !requirement.meetsRequirements) return false;
-      if (filters.scoreAtLeastLq && calculation.totalScore < (programme.admissionStats?.lowerQuartile ?? Infinity)) return false;
-      if (filters.scoreAtLeastMedian && calculation.totalScore < (programme.admissionStats?.median ?? Infinity)) return false;
+      if (filters.scoreAtLeastLq && calculation.totalScore < (programme.lowerQuartile ?? Infinity)) return false;
+      if (filters.scoreAtLeastMedian && calculation.totalScore < (programme.median ?? Infinity)) return false;
+      if (filters.scoreAtLeastUq && calculation.totalScore < (programme.upperQuartile ?? Infinity)) return false;
       return true;
     });
 
@@ -296,7 +294,12 @@ function ChoicePanel({
 }
 
 function defaultResults(): StudentResult[] {
-  return subjects.map((subject) => ({ subject, grade: "Not taken" }));
+  return [
+    { subject: "Chinese Language", grade: "Not taken" },
+    { subject: "English Language", grade: "Not taken" },
+    { subject: "Mathematics Compulsory Part", grade: "Not taken" },
+    { subject: "Citizenship and Social Development", grade: "UnAttained" },
+  ];
 }
 
 function readStored<T>(key: string, fallback: T): T {
@@ -313,5 +316,5 @@ function unique<T extends string>(items: T[]): T[] {
 }
 
 function diffFrom(view: ProgrammeView, key: "lowerQuartile" | "median"): number {
-  return view.calculation.totalScore - (view.programme.admissionStats?.[key] ?? Number.POSITIVE_INFINITY);
+  return view.calculation.totalScore - (view.programme[key] ?? Number.POSITIVE_INFINITY);
 }

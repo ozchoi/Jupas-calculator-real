@@ -12,7 +12,10 @@ export function checkRequirements(programme: Programme, results: StudentResult[]
     programme.requiredSubjects
       ?.filter((requirement) => {
         const result = results.find((item) => item.subject === requirement.subject);
-        return !result || gradeToScore(result.grade) < gradeToScore(requirement.minGrade);
+        if (requirement.subject === "Citizenship and Social Development") {
+          return result?.grade !== "Attained";
+        }
+        return !result || gradeToScore(result.grade, programme.scoreScale) < gradeToScore(requirement.minGrade, programme.scoreScale);
       })
       .map((requirement) => `${requirement.subject} ${requirement.minGrade}+`) ?? [];
 

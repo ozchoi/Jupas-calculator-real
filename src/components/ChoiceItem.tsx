@@ -3,6 +3,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { GripVertical, Trash2 } from "lucide-react";
 import type { ProgrammeView } from "./ProgrammeCard";
 import { getBand } from "../utils/exportChoices";
+import { scoreTier } from "../utils/recommendationClassifier";
 
 type Props = ProgrammeView & {
   rank: number;
@@ -14,6 +15,7 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
     id: programme.jupasCode,
     data: { type: "choice", jupasCode: programme.jupasCode },
   });
+  const tier = scoreTier(programme, calculation.totalScore);
 
   return (
     <div
@@ -39,9 +41,9 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
           </div>
           <h3 className="mt-2 text-sm font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-xs text-ink/55">{programme.titleZh}</p>}
-          <p className="mt-2 text-xs text-ink/65">
-            Score {calculation.totalScore} · LQ {programme.admissionStats?.lowerQuartile ?? "-"} · M{" "}
-            {programme.admissionStats?.median ?? "-"} · UQ {programme.admissionStats?.upperQuartile ?? "-"} ·{" "}
+          <p className={`mt-2 text-xs font-semibold ${tierClass(tier)}`}>
+            Score {calculation.totalScore} · LQ {programme.lowerQuartile ?? "-"} · M{" "}
+            {programme.median ?? "-"} · UQ {programme.upperQuartile ?? "-"} ·{" "}
             {chance}
           </p>
         </div>
@@ -51,4 +53,14 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
       </div>
     </div>
   );
+}
+
+function tierClass(tier: ReturnType<typeof scoreTier>): string {
+  return {
+    uq: "text-emerald-700",
+    median: "text-amber-600",
+    lq: "text-orange-600",
+    below: "text-coral",
+    na: "text-ink/65",
+  }[tier];
 }

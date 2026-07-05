@@ -1,7 +1,7 @@
 import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
 import type { CalculationResult, Programme } from "../types/programme";
-import type { ChanceCategory } from "../utils/recommendationClassifier";
+import { scoreTier, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
 
 export type ProgrammeView = {
@@ -41,6 +41,9 @@ export default function ProgrammeCard({
   });
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
+  const tier = scoreTier(programme, calculation.totalScore);
+  const medianGap = numericGap(calculation.totalScore, programme.median);
+  const lqGap = numericGap(calculation.totalScore, programme.lowerQuartile);
 
   return (
     <article
@@ -64,30 +67,33 @@ export default function ProgrammeCard({
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="rounded-md bg-ink px-2 py-1 text-xs font-semibold text-white">{programme.jupasCode}</span>
             <span className="rounded-md bg-teal/10 px-2 py-1 text-xs font-semibold text-teal">{programme.institution}</span>
-            <span className="rounded-md bg-moss/10 px-2 py-1 text-xs font-medium text-moss">{programme.category}</span>
+            <span className="rounded-md bg-moss/10 px-2 py-1 text-xs font-medium text-moss">{programme.scoreScale.replace("SCALE_", "")} scale</span>
             {pinned && <span className="rounded-md bg-coral/10 px-2 py-1 text-xs font-semibold text-coral">Pinned</span>}
           </div>
           <h3 className="text-base font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-sm text-ink/60">{programme.titleZh}</p>}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
-            <Metric label="Score" value={calculation.totalScore.toString()} />
-            <Metric label="Chance" value={chance} />
-            <Metric label="Formula" value={programme.formulaType.replaceAll("_", " ")} />
+            <Metric label="Score" value={calculation.totalScore.toString()} strongClass={tierClass(tier)} />
+            <Metric label="Risk" value={chance} strongClass={tierClass(tier)} />
+            <Metric label="Formula" value={programme.formulaRaw} />
             <Metric
               label="Stats"
               value={[
-                programme.admissionStats?.lowerQuartile && `LQ ${programme.admissionStats.lowerQuartile}`,
-                programme.admissionStats?.median && `M ${programme.admissionStats.median}`,
-                programme.admissionStats?.upperQuartile && `UQ ${programme.admissionStats.upperQuartile}`,
-                programme.admissionStats?.mean && `Avg ${programme.admissionStats.mean}`,
+                typeof programme.lowerQuartile === "number" && `LQ ${programme.lowerQuartile}`,
+                typeof programme.median === "number" && `M ${programme.median}`,
+                typeof programme.upperQuartile === "number" && `UQ ${programme.upperQuartile}`,
+                typeof programme.mean === "number" && `Mean ${programme.mean}`,
               ]
                 .filter(Boolean)
                 .join(" / ") || "No data"}
             />
           </div>
-          {programme.weightingRules?.length ? (
-            <p className="mt-3 text-sm text-ink/65">{programme.weightingRules.map((rule) => rule.note).filter(Boolean).join("; ")}</p>
-          ) : null}
+          <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
+            <Metric label="Diff from Median" value={medianGap} />
+            <Metric label="Diff from LQ" value={lqGap} />
+          </div>
+          {programme.weightingRaw ? <p className="mt-3 text-sm text-ink/65">{programme.weightingRaw}</p> : null}
+          {programme.notes ? <p className="mt-2 text-sm text-ink/55">{programme.notes}</p> : null}
           {!requirement.meetsRequirements && (
             <p className="mt-3 rounded-md bg-coral/10 px-3 py-2 text-sm font-medium text-coral">
               Requirement warning: {requirement.missing.join(", ")}
@@ -118,11 +124,27 @@ export default function ProgrammeCard({
   );
 }
 
-function Metric({ label, value }: { label: string; value: string }) {
+function Metric({ label, value, strongClass = "text-ink" }: { label: string; value: string; strongClass?: string }) {
   return (
     <div className="rounded-md bg-paper px-3 py-2">
       <div className="text-xs font-semibold uppercase text-ink/45">{label}</div>
-      <div className="mt-0.5 break-words font-medium text-ink">{value}</div>
+      <div className={`mt-0.5 break-words font-semibold ${strongClass}`}>{value}</div>
     </div>
   );
+}
+
+function numericGap(score: number, target?: number): string {
+  if (typeof target !== "number") return "N/A";
+  const gap = Number((score - target).toFixed(2));
+  return gap > 0 ? `+${gap}` : gap.toString();
+}
+
+function tierClass(tier: ReturnType<typeof scoreTier>): string {
+  return {
+    uq: "text-emerald-700",
+    median: "text-amber-600",
+    lq: "text-orange-600",
+    below: "text-coral",
+    na: "text-ink",
+  }[tier];
 }

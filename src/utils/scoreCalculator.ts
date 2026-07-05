@@ -1,12 +1,11 @@
 import gradeConversion from "../data/gradeConversion.json";
-import type { CalculationResult, Programme, UsedSubject } from "../types/programme";
+import type { CalculationResult, Programme, ScoreScale, UsedSubject } from "../types/programme";
 import type { StudentResult } from "../types/student";
-
-const scoreMap = gradeConversion.default as Record<string, number>;
 
 const coreCsdSubject = "Citizenship and Social Development";
 
-export function gradeToScore(grade: string): number {
+export function gradeToScore(grade: string, scale: ScoreScale = "SCALE_8_5"): number {
+  const scoreMap = gradeConversion[scale] as Record<string, number>;
   return scoreMap[grade] ?? 0;
 }
 
@@ -37,7 +36,7 @@ export function calculateProgrammeScore(
   const scored: UsedSubject[] = results
     .filter((result) => result.grade !== "Not taken" && result.subject !== coreCsdSubject)
     .map((result) => {
-      const baseScore = gradeToScore(result.grade);
+      const baseScore = gradeToScore(result.grade, programme.scoreScale);
       const { multiplier, note } = multiplierFor(programme, result.subject);
       return {
         subject: result.subject,

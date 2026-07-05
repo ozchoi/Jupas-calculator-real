@@ -2,26 +2,37 @@ import type { Programme } from "../types/programme";
 
 export type ChanceCategory =
   | "Above median"
-  | "Around median"
-  | "Around lower quartile"
-  | "Below lower quartile"
+  | "Around LQ-Median"
+  | "Below LQ"
+  | "Profile reference only"
   | "Insufficient data";
 
 export function classifyRecommendation(programme: Programme, score: number): ChanceCategory {
-  const stats = programme.admissionStats;
-  if (!stats?.lowerQuartile && !stats?.median) return "Insufficient data";
-  if (stats.median && score >= stats.median + 1) return "Above median";
-  if (stats.median && score >= stats.median - 1) return "Around median";
-  if (stats.lowerQuartile && score >= stats.lowerQuartile - 1) return "Around lower quartile";
-  return "Below lower quartile";
+  if (programme.medianProfile || programme.lowerQuartileProfile || programme.dataQuality === "profile-only") {
+    return "Profile reference only";
+  }
+  if (typeof programme.median !== "number" || typeof programme.lowerQuartile !== "number") {
+    return "Insufficient data";
+  }
+  if (score >= programme.median) return "Above median";
+  if (score >= programme.lowerQuartile) return "Around LQ-Median";
+  return "Below LQ";
 }
 
 export function chanceRank(category: ChanceCategory): number {
   return {
     "Above median": 4,
-    "Around median": 3,
-    "Around lower quartile": 2,
-    "Below lower quartile": 1,
+    "Around LQ-Median": 3,
+    "Below LQ": 1,
+    "Profile reference only": 0,
     "Insufficient data": 0,
   }[category];
+}
+
+export function scoreTier(programme: Programme, score: number): "uq" | "median" | "lq" | "below" | "na" {
+  if (typeof programme.upperQuartile === "number" && score >= programme.upperQuartile) return "uq";
+  if (typeof programme.median === "number" && score >= programme.median) return "median";
+  if (typeof programme.lowerQuartile === "number" && score >= programme.lowerQuartile) return "lq";
+  if (typeof programme.lowerQuartile === "number") return "below";
+  return "na";
 }

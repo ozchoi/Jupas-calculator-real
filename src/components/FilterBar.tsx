@@ -6,11 +6,10 @@ export type Filters = {
   faculty: "All" | string;
   category: "All" | FundingCategory;
   formulaType: "All" | FormulaType;
-  hasChineseTitle: boolean;
-  hasAdmissionData: boolean;
   meetsRequirements: boolean;
   scoreAtLeastLq: boolean;
   scoreAtLeastMedian: boolean;
+  scoreAtLeastUq: boolean;
   sortBy:
     | "Best match"
     | "Highest chance"
@@ -63,11 +62,10 @@ export default function FilterBar({
       <Select label="Funding" value={filters.category} options={["All", ...categories]} onChange={(value) => patch("category", value as Filters["category"])} />
       <Select label="Formula" value={filters.formulaType} options={["All", ...formulaTypes]} onChange={(value) => patch("formulaType", value as Filters["formulaType"])} />
       <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
-      <Toggle label="Chinese title" checked={filters.hasChineseTitle} onChange={(value) => patch("hasChineseTitle", value)} />
-      <Toggle label="Admission data" checked={filters.hasAdmissionData} onChange={(value) => patch("hasAdmissionData", value)} />
       <Toggle label="Meet requirements" checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
       <Toggle label="Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
       <Toggle label="Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
+      <Toggle label="Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
     </section>
   );
 }
