@@ -5977,270 +5977,6 @@
     }
   },
   {
-    "jupasCode": "JS4760",
-    "institution": "CUHK",
-    "faculty": "Faculty of Engineering",
-    "category": "UGC-funded",
-    "titleEn": "Interdisciplinary Data Analytics & X Double Major Programme",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 35,
-    "lowerQuartile": 34.75,
-    "upperQuartile": 37,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.5) • M1 or M2 (x 2) • Economics or ICT (x 1.5)",
-    "medianProfile": "CHI:4 | ENG:4 | MATH:5* | CSD:A | M1/M2:5 | 1st Elective:5 | 2nd Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:3 | MATH:5 | CSD:A | M1/M2:5* | 1st Elective:4 | 2nd Elective:3",
-    "upperQuartileProfile": "CHI:4 | ENG:4 | MATH:5 | CSD:A | M1/M2:5 | 1st Elective:5 | 2nd Elective:5 | 3rd Elective:4",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 20,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4264",
-    "institution": "CUHK",
-    "faculty": "Faculty of Law",
-    "category": "UGC-funded",
-    "titleEn": "BBA(IBBA) – JD Double Degree Programme",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 37.5,
-    "lowerQuartile": 36,
-    "upperQuartile": 37.5,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• English (x 2) • Chinese, English and Mathematics must be included",
-    "medianProfile": "CHI:4 | ENG:5* | MATH:5 | CSD:A | M1/M2:4 | 1st Elective:5* | 2nd Elective:5*",
-    "lowerQuartileProfile": "CHI:5 | ENG:5 | MATH:5* | CSD:A | 1st Elective:5* | 2nd Elective:5 | 3rd Elective:5",
-    "upperQuartileProfile": "CHI:5** | ENG:5* | MATH:4 | CSD:A | 1st Elective:5 | 2nd Elective:5 | 3rd Elective:5",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4276",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Quantitative Finance and Risk Management Science",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 57.75,
-    "lowerQuartile": 54.75,
-    "upperQuartile": 63.75,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• English (x 2) • Mathematics (x 2) • The best one subject of M1/M2, Chemistry, Physics or Economics (x 1.5)",
-    "medianProfile": "CHI:5* | ENG:5* | MATH:5* | CSD:A | M1/M2:5* | 1st Elective:5** | 2nd Elective:5** | 3rd Elective:5**",
-    "lowerQuartileProfile": "CHI:4 | ENG:5 | MATH:5** | LS:4 | M1/M2:5** | 1st Elective:5* | 2nd Elective:5* | 3rd Elective:5*",
-    "upperQuartileProfile": "CHI:4 | ENG:5** | MATH:5** | CSD:A | M1/M2:5* | 1st Elective:5** | 2nd Elective:5** | 3rd Elective:5**",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4386",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "BSc in Learning Design and Technology",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 30.5,
-    "lowerQuartile": 30.25,
-    "upperQuartile": 31.75,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.5) • M1 or M2 (x 1.5) • Biology, Chemistry, Physics, DAT, ICT, BAFS, Economics, Geography, Tech and Living (FST) (x 1.5)",
-    "medianProfile": "CHI:4 | ENG:4 | MATH:5* | CSD:A | M1/M2:4 | 1st Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:4 | MATH:4 | CSD:A | 1st Elective:5 | 2nd Elective:4 | 3rd Elective:4",
-    "upperQuartileProfile": "CHI:4 | ENG:5 | MATH:4 | CSD:A | 1st Elective:5 | 2nd Elective:4 | 3rd Elective:4",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4416",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Computational Data Science",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 54.5,
-    "lowerQuartile": 53,
-    "upperQuartile": 59,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 2) • M1 or M2 (x 2) • Biology, Chemistry, Physics, Economics, ICT (x 1.5)",
-    "medianProfile": "CHI:5 | ENG:4 | MATH:5* | CSD:A | M1/M2:5* | 1st Elective:5* | 2nd Elective:5*",
-    "lowerQuartileProfile": "CHI:5* | ENG:4 | MATH:5* | CSD:A | M1/M2:5 | 1st Elective:5** | 2nd Elective:5",
-    "upperQuartileProfile": "CHI:4 | ENG:4 | MATH:5** | CSD:A | M1/M2:5** | 1st Elective:5* | 2nd Elective:5*",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4470",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Materials Science and Engineering",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 26.375,
-    "lowerQuartile": 24.625,
-    "upperQuartile": 26.875,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.25) • M1 or M2 (x 1.25) • Chemistry, Physics (x 1.25)",
-    "medianProfile": "CHI:5 | ENG:4 | MATH:4 | CSD:A | M1/M2:3 | 1st Elective:5 | 2nd Elective:4 | 3rd Elective:3",
-    "lowerQuartileProfile": "CHI:3 | ENG:4 | MATH:4 | CSD:A | M1/M2:3 | 1st Elective:5 | 2nd Elective:4",
-    "upperQuartileProfile": "CHI:4 | ENG:4 | MATH:4 | CSD:A | 1st Elective:5 | 2nd Elective:5 | 3rd Elective:5",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
     "jupasCode": "JS4501",
     "institution": "CUHK",
     "faculty": "Faculty of Medicine",
@@ -6769,182 +6505,6 @@
     }
   },
   {
-    "jupasCode": "JS4725",
-    "institution": "CUHK",
-    "faculty": "Faculty of Medicine",
-    "category": "UGC-funded",
-    "titleEn": "Biotechnology, Entrepreneurship and Healthcare Management",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 27.5,
-    "lowerQuartile": 27.5,
-    "upperQuartile": 29,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "--",
-    "medianProfile": "CHI:5** | ENG:4 | MATH:4 | CSD:A | 1st Elective:5 | 2nd Elective:5 | 3rd Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:5* | MATH:5* | CSD:A | M1/M2:5 | 1st Elective:4 | 2nd Elective:4",
-    "upperQuartileProfile": "CHI:3 | ENG:5 | MATH:5 | CSD:A | M1/M2:5* | 1st Elective:5 | 2nd Elective:5",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4733",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Mathematics and Information Engineering",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 63.5,
-    "lowerQuartile": 52,
-    "upperQuartile": 65,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 2) • M1 or M2 (x 2) • Biology, Chemistry, Physics, ICT (x 1.5)",
-    "medianProfile": "CHI:5* | ENG:5** | MATH:5** | CSD:A | M1/M2:5** | 1st Elective:5* | 2nd Elective:5* | 3rd Elective:5",
-    "lowerQuartileProfile": "CHI:4 | ENG:4 | MATH:5* | CSD:A | M1/M2:5 | 1st Elective:5* | 2nd Elective:5 | 3rd Elective:5",
-    "upperQuartileProfile": "CHI:5 | ENG:5 | MATH:5** | CSD:A | M1/M2:5** | 1st Elective:5** | 2nd Elective:5**",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4750",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Aerospace Science and Earth Informatics & X Double Major Programme",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 44.25,
-    "lowerQuartile": 38.25,
-    "upperQuartile": 48,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.5) • M1 or M2 (x 2) • Physics, Geography (x 2)",
-    "medianProfile": "CHI:3 | ENG:5* | MATH:5 | CSD:A | M1/M2:5 | 1st Elective:5* | 2nd Elective:5 | 3rd Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:4 | MATH:5 | CSD:A | M1/M2:4 | 1st Elective:5* | 2nd Elective:5",
-    "upperQuartileProfile": "CHI:5** | ENG:4 | MATH:5* | CSD:A | M1/M2:5* | 1st Elective:5 | 2nd Elective:4",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4760",
-    "institution": "CUHK",
-    "faculty": "Faculty of Science",
-    "category": "UGC-funded",
-    "titleEn": "Interdisciplinary Data Analytics & X Double Major Programme",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 35,
-    "lowerQuartile": 34.75,
-    "upperQuartile": 37,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.5) • M1 or M2 (x 2) • Economics or ICT (x 1.5)",
-    "medianProfile": "CHI:4 | ENG:4 | MATH:5* | CSD:A | M1/M2:5 | 1st Elective:5 | 2nd Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:3 | MATH:5 | CSD:A | M1/M2:5* | 1st Elective:4 | 2nd Elective:3",
-    "upperQuartileProfile": "CHI:4 | ENG:4 | MATH:5 | CSD:A | M1/M2:5 | 1st Elective:5 | 2nd Elective:5 | 3rd Elective:4",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
     "jupasCode": "JS4903",
     "institution": "CUHK",
     "faculty": "Faculty of Law",
@@ -6963,94 +6523,6 @@
     "upperQuartileProfile": "CHI:4 | ENG:5* | MATH:5 | CSD:A | M1/M2:3 | 1st Elective:5* | 2nd Elective:5 | 3rd Elective:4",
     "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
     "sourcePage": 21,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4254",
-    "institution": "CUHK",
-    "faculty": "Faculty of Social Science",
-    "category": "UGC-funded",
-    "titleEn": "Interdisciplinary Major Programme in Global Economics and Finance",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 35,
-    "lowerQuartile": 33.5,
-    "upperQuartile": 35,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• English must be included",
-    "medianProfile": "CHI:5 | ENG:5* | MATH:5* | CSD:A | 1st Elective:5** | 2nd Elective:5* | 3rd Elective:4",
-    "lowerQuartileProfile": "CHI:5 | ENG:5 | MATH:5 | CSD:A | M1/M2:5** | 1st Elective:5** | 2nd Elective:4 | 3rd Elective:4",
-    "upperQuartileProfile": "CHI:5** | ENG:5 | MATH:5* | CSD:A | 1st Elective:5** | 2nd Elective:5 | 3rd Elective:5",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 22,
-    "dataQuality": "profile-only",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_table_grouped_by_code",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS4750",
-    "institution": "CUHK",
-    "faculty": "Faculty of Social Science",
-    "category": "UGC-funded",
-    "titleEn": "Aerospace Science and Earth Informatics & X Double Major Programme",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5",
-    "scoreScale": "SCALE_8_5",
-    "median": 44.25,
-    "lowerQuartile": 38.25,
-    "upperQuartile": 48,
-    "scoreMetric": "Programme Weighted Total",
-    "weightingRaw": "• Mathematics (x 1.5) • M1 or M2 (x 2) • Physics, Geography (x 2)",
-    "medianProfile": "CHI:3 | ENG:5* | MATH:5 | CSD:A | M1/M2:5 | 1st Elective:5* | 2nd Elective:5 | 3rd Elective:4",
-    "lowerQuartileProfile": "CHI:4 | ENG:4 | MATH:5 | CSD:A | M1/M2:4 | 1st Elective:5* | 2nd Elective:5",
-    "upperQuartileProfile": "CHI:5** | ENG:4 | MATH:5* | CSD:A | M1/M2:5* | 1st Elective:5 | 2nd Elective:4",
-    "notes": "CUHK profile grades UQ/M/LQ retained as raw profile fields.",
-    "sourcePage": 22,
     "dataQuality": "profile-only",
     "requiredSubjects": [
       {
@@ -10480,22 +9952,21 @@
     "category": "UGC-funded",
     "titleEn": "International Research Enrichment",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x1; Math x1; One of: Biology / Chemistry / Physics / M1 / M2; Best 2 from Biology / Chemistry / Physics / M1 / M2 + Best 1 other subject",
     "scoreScale": "SCALE_8_5",
     "median": 38.25,
     "lowerQuartile": 37.88,
-    "highestAttainable": 44.63,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 42.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ M1/ M2 Level 5**",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
       {
-        "subject": "Chinese Language",
+        "subject": "English Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
+        "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
@@ -10505,6 +9976,14 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -10512,11 +9991,14 @@
       "M1",
       "M2 Level 5**"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x1; Math x1; Specified subject: One of: Biology / Chemistry / Physics / M1 / M2; Other subjects: Best 2 from Biology / Chemistry / Physics / M1 / M2 + Best 1 other subject; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 33 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program."
   },
   {
     "jupasCode": "JS5102",
@@ -10525,22 +10007,21 @@
     "category": "UGC-funded",
     "titleEn": "Science (Group A)",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x1.5; Math x1; One of: Biology / Chemistry / Physics / M1 / M2; Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Physics / M1 / M2 (x2), Biology / Chemistry (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 33.13,
     "lowerQuartile": 32.63,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ M1/ M2 Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
       {
-        "subject": "Chinese Language",
+        "subject": "English Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
+        "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
@@ -10550,6 +10031,14 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -10557,11 +10046,40 @@
       "M1",
       "M2 Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x1.5; Math x1; Specified subject: One of: Biology / Chemistry / Physics / M1 / M2; Other subjects: Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Physics / M1 / M2 (x2), Biology / Chemistry (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 29 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5,
+        "note": "English x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics / M1 / M2 x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.5,
+        "note": "Biology / Chemistry x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5103",
@@ -10570,22 +10088,21 @@
     "category": "UGC-funded",
     "titleEn": "Science (Group B)",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x1.5; Math x1; One of: Biology / Chemistry / Physics / M1 / M2; Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Biology / Chemistry (x2), Physics / M1 / M2 (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 33.38,
     "lowerQuartile": 32.75,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ M1/ M2 Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
       {
-        "subject": "Chinese Language",
+        "subject": "English Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
+        "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
@@ -10595,6 +10112,14 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -10602,35 +10127,63 @@
       "M1",
       "M2 Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x1.5; Math x1; Specified subject: One of: Biology / Chemistry / Physics / M1 / M2; Other subjects: Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Biology / Chemistry (x2), Physics / M1 / M2 (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 29 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5,
+        "note": "English x1.5"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5,
+        "note": "Physics / M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5118",
     "institution": "HKUST",
     "faculty": "School of Science",
     "category": "UGC-funded",
-    "titleEn": "BSc in Science (Group A) with Extended Major in Artificial",
+    "titleEn": "BSc in Biomedical and Health Sciences",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x1.5; Math x1; One of: Biology / Chemistry / Physics / M1 / M2; Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Biology / Chemistry (x2), Physics / M1 / M2 (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 43.13,
     "lowerQuartile": 40.5,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Bio/ Chem Level 5*",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
       {
-        "subject": "Chinese Language",
+        "subject": "English Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
+        "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
@@ -10640,50 +10193,94 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "Bio",
       "Chem Level 5*"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x1.5; Math x1; Specified subject: One of: Biology / Chemistry / Physics / M1 / M2; Other subjects: Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Biology / Chemistry (x2), Physics / M1 / M2 (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 41 Flexible admissions intake score: 49 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5,
+        "note": "English x1.5"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5,
+        "note": "Physics / M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5181",
     "institution": "HKUST",
     "faculty": "School of Science",
     "category": "UGC-funded",
-    "titleEn": "Science (Group A) with Extended Major in Artificial Intelligence",
+    "titleEn": "Science (Group A) with extended Major in Artificial Intelligence",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x1.5; Math x1; One of: Biology / Chemistry / Physics / M1 / M2; Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Physics / M1 / M2 (x2), Biology / Chemistry (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 37.5,
     "lowerQuartile": 36,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Phy/ M1/ M2 Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -10691,239 +10288,521 @@
       "M1",
       "M2 Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x1.5; Math x1; Specified subject: One of: Biology / Chemistry / Physics / M1 / M2; Other subjects: Best from Biology / Chemistry / Physics / M1 / M2# + Best 2 other subjects#; # Weighting: Physics / M1 / M2 (x2), Biology / Chemistry (x 1.5); ; Remarks: The highest score of at most TWO weighted electives will be taken in the Best 5 score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 33 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5,
+        "note": "English x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics / M1 / M2 x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.5,
+        "note": "Biology / Chemistry x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5212",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "BEng in Computer",
+    "titleEn": "BEng in Computer Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 43.49,
-    "lowerQuartile": 41.97,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 46,
+    "lowerQuartile": 44,
+    "highestAttainable": 76.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 41 Flexible admissions intake score: 43 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5220",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of",
+    "titleEn": "Department of Chemical and Biological Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2), ICT (x1.5); ~ Weighting: Biology / Chemistry / Physics / M1 / M2 (x2), ICT (x1.5), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 41.49,
-    "lowerQuartile": 39.59,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 47,
+    "lowerQuartile": 44,
+    "highestAttainable": 85,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2), ICT (x1.5); ~ Weighting: Biology / Chemistry / Physics / M1 / M2 (x2), ICT (x1.5), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 42 Flexible admissions intake score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics / M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5230",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of Civil & Environmental",
+    "titleEn": "Department of Civil and Environmental Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Chemistry / Physics (x2), ICT (x1.5), Biology (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 39.7,
-    "lowerQuartile": 38.2,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 41,
+    "lowerQuartile": 39,
+    "highestAttainable": 76.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Chemistry / Physics (x2), ICT (x1.5), Biology (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 39 Flexible admissions intake score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Chemistry / Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5240",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of Computer Science &",
+    "titleEn": "Department of Computer Science and Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 48.45,
-    "lowerQuartile": 46.45,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 50,
+    "lowerQuartile": 48,
+    "highestAttainable": 76.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 43 Flexible admissions intake score: 47 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5250",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of Electronic & Computer",
+    "titleEn": "Department of Electronic and Computer Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 41.74,
-    "lowerQuartile": 40.78,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 44,
+    "lowerQuartile": 42,
+    "highestAttainable": 76.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 40 Flexible admissions intake score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5260",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of Industrial Engineering & Decision Analytics",
+    "titleEn": "Department of Industrial Engineering and Decision Analytics",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 36.28,
-    "lowerQuartile": 35.1,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
+    "median": 37,
+    "lowerQuartile": 36,
+    "highestAttainable": 76.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ ICT Level 4 | Math/ M1/M2 Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -10932,83 +10811,174 @@
       "M1",
       "M2 Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Physics (x2), ICT (x1.5), Biology / Chemistry (x1); ~ Weighting: M1 / M2 (x2), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 36 Flexible admissions intake score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5270",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Department of Mechanical & Aerospace",
+    "titleEn": "Department of Mechanical and Aerospace Engineering",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2) , ICT (x1); ~ Weighting: M1 / M2 (x1.5), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 41.14,
-    "lowerQuartile": 39.72,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 34,
+    "median": 41,
+    "lowerQuartile": 40,
+    "highestAttainable": 72.25,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2) , ICT (x1); ~ Weighting: M1 / M2 (x1.5), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "This is a new program for 2025 Admissions.; Information will be available by the end of 2024. HKUST 2026 expected score: 39 Flexible admissions intake score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5282",
     "institution": "HKUST",
     "faculty": "School of Engineering",
     "category": "UGC-funded",
-    "titleEn": "Engineering with Extended Major in Artificial Intelligence",
+    "titleEn": "Engineering with extended Major in Artificial Intelligence",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2) , ICT (x1.5); ~ Weighting: M1 / M2 (x1.5), other subjects (x1)",
     "scoreScale": "SCALE_8_5",
-    "median": 48.7,
-    "lowerQuartile": 46.48,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
+    "median": 49,
+    "lowerQuartile": 46,
+    "highestAttainable": 72.25,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ ICT Level 5 | Math/ M1/M2 Level 5*",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -11017,35 +10987,77 @@
       "M1",
       "M2 Level 5*"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT* + Best 2 other subjects~; * Weighting: Biology / Chemistry / Physics (x2) , ICT (x1.5); ~ Weighting: M1 / M2 (x1.5), other subjects (x1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 40 Flexible admissions intake score: 43 *Due to the new admission framework, the flexible admission threshold for JS5282 Engineering with an extended Major in Artificial Intelligence was adjusted. The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics x2"
+      },
+      {
+        "subjects": [
+          "ICT"
+        ],
+        "multiplier": 1.5,
+        "note": "ICT x1.5"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5411",
     "institution": "HKUST",
     "faculty": "School of Humanities and Social Science",
     "category": "UGC-funded",
-    "titleEn": "BSc in Global",
+    "titleEn": "BSc in Global China Studies",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Chinese x1.5; Best 3 other subjects ▲; ▲ Category C subjects may be used once in the score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 29.23,
     "lowerQuartile": 28.8,
-    "highestAttainable": 58.01,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 55.25,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Eng/Chin Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
       {
-        "subject": "Chinese Language",
+        "subject": "English Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
+        "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
@@ -11055,17 +11067,44 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "Eng",
       "Chin Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Chinese x1.5; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects ▲; ▲ Category C subjects may be used once in the score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 27 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5,
+        "note": "Chinese x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5412",
@@ -11074,31 +11113,38 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Quantitative Social Analysis",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects^; ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1)",
     "scoreScale": "SCALE_8_5",
     "median": 33,
     "lowerQuartile": 32.5,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Eng/ Math/ Best Elective Level 5",
-    "sourcePage": 34,
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -11106,54 +11152,107 @@
       "Math",
       "Best Elective Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects^; ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1); Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 31 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5300",
     "institution": "HKUST",
     "faculty": "School of Business and Management",
     "category": "UGC-funded",
-    "titleEn": "Business & Management",
+    "titleEn": "Business and Management",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 35,
     "lowerQuartile": 33.9,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.64",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.64"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 33 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5311",
@@ -11162,41 +11261,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Economics",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 36.55,
     "lowerQuartile": 35.4,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.83",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.83"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 35 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5312",
@@ -11205,41 +11330,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Finance",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 43.31,
     "lowerQuartile": 41.81,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "5.35",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "5.35"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 39 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5313",
@@ -11248,41 +11399,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Global Business",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 52.43,
     "lowerQuartile": 50.4,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "6.86",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "6.86"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 50 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5314",
@@ -11291,41 +11468,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Information Systems",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 35.93,
     "lowerQuartile": 35.4,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.87",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.87"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5315",
@@ -11334,41 +11537,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Management",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 33.9,
     "lowerQuartile": 33.9,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.65",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.65"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5316",
@@ -11377,41 +11606,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Marketing",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 32.55,
     "lowerQuartile": 32.4,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.47",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.47"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5317",
@@ -11420,41 +11675,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Operations Management",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 32.4,
     "lowerQuartile": 32.05,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.39",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.39"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5318",
@@ -11463,41 +11744,67 @@
     "category": "UGC-funded",
     "titleEn": "BBA in Professional Accounting",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 34.05,
     "lowerQuartile": 33.55,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.60",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.60"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5331",
@@ -11506,41 +11813,67 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Economics and Finance",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 48.19,
     "lowerQuartile": 46.5,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "5.92",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "5.92"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 44 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5332",
@@ -11549,41 +11882,67 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Quantitative Finance",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 58.13,
     "lowerQuartile": 56.06,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "7.12",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "7.12"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Better of Best 3 other subjects; ; OR; ; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 54 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5711",
@@ -11592,114 +11951,191 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Innovation, Design and Technology",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Design and Applied Technology / Information and Communication Technology; Best from Biology / Chemistry / Physics / Design and Applied Technology / ICT# + Best 2 other subjects^; # Weighting: Biology / Chemistry / Physics / Design and Applied Technology (x 2), ICT (x 1); ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1)",
     "scoreScale": "SCALE_8_5",
     "median": 36.36,
     "lowerQuartile": 34.72,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
-    "sourcePage": 35,
+    "highestAttainable": 72.25,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "dataQuality": "parsed",
     "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
       {
         "subject": "English Language",
         "minGrade": "3"
       },
       {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Design and Applied Technology / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / Design and Applied Technology / ICT# + Best 2 other subjects^; # Weighting: Biology / Chemistry / Physics / Design and Applied Technology (x 2), ICT (x 1); ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1); Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 32-34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Design  Applied Technology",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics / Design  Applied Technology x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5811",
     "institution": "HKUST",
     "faculty": "Joint Programs",
     "category": "UGC-funded",
-    "titleEn": "BSc in",
+    "titleEn": "BSc in Biotechnology and Business",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry; Best of Biology / Chemistry x 1.5 + Best 2 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 38.63,
     "lowerQuartile": 36.56,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Bio/Chem Level 5",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "Bio",
       "Chem Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry; Other subjects: Best of Biology / Chemistry x 1.5 + Best 2 other subjects; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 34 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5812",
     "institution": "HKUST",
     "faculty": "Academy of Interdisciplinary Studies",
     "category": "UGC-funded",
-    "titleEn": "BSc in Environmental Management and Technology BEng/BSc & BBA Dual Degree Program in Technology and",
+    "titleEn": "BSc in Environmental Management and Technology",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects ▲; ▲ Category C subjects may be used once in the score calculation.",
     "scoreScale": "SCALE_8_5",
     "median": 32.5,
     "lowerQuartile": 31.05,
-    "highestAttainable": 62.48,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 59.5,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Eng/ Math/ Best Elective Level 5",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -11707,44 +12143,70 @@
       "Math",
       "Best Elective Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects ▲; ▲ Category C subjects may be used once in the score calculation.; Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 31 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5813",
     "institution": "HKUST",
     "faculty": "Joint Programs",
     "category": "UGC-funded",
-    "titleEn": "BSc in",
+    "titleEn": "BSc in Mathematics and Economics",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry/ Physics / Economics / M1 / M2; Best from Biology / Chemistry / Physics / Economics / M1 / M2# + Best 2 other subjects; # Weighting: M1 / M2 (x 2), Biology / Chemistry / Physics / Economics (x 1.5)",
     "scoreScale": "SCALE_8_5",
     "median": 44.1,
     "lowerQuartile": 39.2,
-    "highestAttainable": 71.4,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 68,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ M1/ M2/ Econ Level 5",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -11753,11 +12215,48 @@
       "M2",
       "Econ Level 5"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry/ Physics / Economics / M1 / M2; Other subjects: Best from Biology / Chemistry / Physics / Economics / M1 / M2# + Best 2 other subjects; # Weighting: M1 / M2 (x 2), Biology / Chemistry / Physics / Economics (x 1.5); Extra 6th subject bonus categories: Core, Category A, Category B, Category C",
+    "notes": "HKUST 2026 expected score: 38 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2,
+        "note": "M1 / M2 x2"
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Economics",
+          "Physics"
+        ],
+        "multiplier": 1.5,
+        "note": "Biology / Chemistry / Physics / Economics x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5814",
@@ -11766,41 +12265,75 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Risk Management and Business Intelligence",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Best 3 other subjects^; ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1)",
     "scoreScale": "SCALE_8_5",
     "median": 44.25,
     "lowerQuartile": 43.5,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "5.53",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "5.53"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Best 3 other subjects^; ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 40 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
+      }
+    ]
   },
   {
     "jupasCode": "JS5822",
@@ -11809,41 +12342,67 @@
     "category": "UGC-funded",
     "titleEn": "BSc in Sustainable and Green Finance",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; Better of Best 3 other subjects; ; OR; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects",
     "scoreScale": "SCALE_8_5",
     "median": 37.88,
     "lowerQuartile": 37.13,
-    "highestAttainable": 66.94,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 63.75,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "4.75",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
       "4.75"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: No specific subject requirements; Other subjects: Better of Best 3 other subjects; ; OR; Best of Chemistry / Economics / Physics / M1 / M2 x 1.5 + Best 2 other subjects; Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 37 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
+      }
+    ]
   },
   {
     "jupasCode": "JS5901",
@@ -11852,31 +12411,38 @@
     "category": "UGC-funded",
     "titleEn": "BEng/BSc & BBA Dual Degree Program in Technology and Management",
     "formulaType": "BEST_5_PLUS_BONUS",
-    "formulaRaw": "Best 5 subjects + 6th subject bonus",
+    "formulaRaw": "5 subjects calculated; English x2; Math x2; One of: Biology / Chemistry / Physics / Information and Communication Technology; Best from Biology / Chemistry / Physics / ICT# + Best 2 other subjects^; # Weighting: Biology / Chemistry / Physics (x 2), ICT (x 1); ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1)",
     "scoreScale": "SCALE_8_5",
     "median": 62.48,
     "lowerQuartile": 60.23,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Weighted Score",
+    "highestAttainable": 72.25,
+    "scoreMetric": "HKUST 2026 programme-specific weighted score",
     "preferredSubjectsRaw": "Science subjects/ ICT Level 5* | Math/ M1/M2 Level 5*",
-    "sourcePage": 35,
     "dataQuality": "parsed",
     "requiredSubjects": [
+      {
+        "subject": "English Language",
+        "minGrade": "4"
+      },
       {
         "subject": "Chinese Language",
         "minGrade": "3"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
         "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "minGrade": "3"
       },
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "3"
       }
     ],
     "preferredSubjects": [
@@ -11885,251 +12451,47 @@
       "M1",
       "M2 Level 5*"
     ],
-    "extractionMethod": "pdfplumber_text_line_regex_improved",
+    "extractionMethod": "HKUST official JUPAS calculator bundle",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
+      "name": "HKUST JUPAS admissions page",
+      "url": "https://join.hkust.edu.hk/admissions/jupas",
       "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5212",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "BEng in Computer Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 46,
-    "lowerQuartile": 44,
-    "highestAttainable": 80.33,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
+    },
+    "weightingRaw": "No. of subjects calculated: 5; English x2; Math x2; Specified subject: One of: Biology / Chemistry / Physics / Information and Communication Technology; Other subjects: Best from Biology / Chemistry / Physics / ICT# + Best 2 other subjects^; # Weighting: Biology / Chemistry / Physics (x 2), ICT (x 1); ^ Weighting: M1 / M2 (x 1.5), other subjects (x 1); Extra 6th subject bonus categories: Core, Category A, Category C",
+    "notes": "HKUST 2026 expected score: 60 The Highest Attainable, Median and Lower Quartile Scores are based on the new score calculation formula for this program.",
+    "weightingRules": [
       {
-        "subject": "Chinese Language",
-        "minGrade": "3"
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2,
+        "note": "English x2"
       },
       {
-        "subject": "English Language",
-        "minGrade": "3"
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2,
+        "note": "Math x2"
       },
       {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 2,
+        "note": "Biology / Chemistry / Physics x2"
       },
       {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5,
+        "note": "M1 / M2 x1.5"
       }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5220",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "Department of Chemical & Biological Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 47,
-    "lowerQuartile": 44,
-    "highestAttainable": 89.25,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5230",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "Department of Civil & Environmental Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 41,
-    "lowerQuartile": 39,
-    "highestAttainable": 80.33,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5240",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "Department of Computer Science & Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 50,
-    "lowerQuartile": 48,
-    "highestAttainable": 80.33,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5250",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "Department of Electronic & Computer Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 44,
-    "lowerQuartile": 42,
-    "highestAttainable": 80.33,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
-  },
-  {
-    "jupasCode": "JS5270",
-    "institution": "HKUST",
-    "faculty": "School of Engineering simulated 2026 scores",
-    "category": "UGC-funded",
-    "titleEn": "Department of Mechanical & Aerospace Engineering",
-    "formulaType": "RAW_TEXT",
-    "formulaRaw": "2026 simulated score: English x2 + Math x2 + 3 subjects in specific weighting + 6th subject bonus",
-    "scoreScale": "SCALE_8_5",
-    "median": 41,
-    "lowerQuartile": 40,
-    "highestAttainable": 75.86,
-    "scoreMetric": "Simulated Score for 2026 Engineering formula",
-    "notes": "Simulated scores calculated using 2025 admission data and 2026 score formulae.",
-    "sourcePage": 36,
-    "dataQuality": "parsed",
-    "requiredSubjects": [
-      {
-        "subject": "Chinese Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "English Language",
-        "minGrade": "3"
-      },
-      {
-        "subject": "Mathematics Compulsory Part",
-        "minGrade": "2"
-      },
-      {
-        "subject": "Citizenship and Social Development",
-        "minGrade": "Attained"
-      }
-    ],
-    "extractionMethod": "pdfplumber_text_line_regex_simulated_improved",
-    "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+    ]
   },
   {
     "jupasCode": "JS6004",
