@@ -1,0 +1,276 @@
+[
+  {
+    "jupasCode": "JS6901",
+    "institution": "HKU",
+    "titleEn": "Bachelor of Engineering in Data Science and Engineering",
+    "titleZh": "工學學士（數據科學及工程）",
+    "faculty": "Data Science",
+    "category": "UGC-funded",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "requiredSubjects": [
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["M1", "M2", "Physics", "ICT"],
+    "weightingRules": [
+      { "subjects": ["English Language"], "multiplier": 1.5, "note": "English x1.5" },
+      { "subjects": ["Mathematics Compulsory Part", "M1", "M2"], "multiplier": 1.5, "note": "Math subjects x1.5" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 31,
+      "median": 35,
+      "upperQuartile": 39,
+      "mean": 35.8,
+      "attainable": 60,
+      "scoreScale": "Demo weighted HKDSE points",
+      "note": "Sample data for MVP demonstration."
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS4501",
+    "institution": "CUHK",
+    "titleEn": "Bachelor of Business Administration",
+    "titleZh": "工商管理學士",
+    "faculty": "Business",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" }
+    ],
+    "preferredSubjects": ["Economics", "BAFS"],
+    "weightingRules": [
+      { "subjects": ["English Language"], "multiplier": 1.5, "note": "English x1.5" },
+      { "subjects": ["Mathematics Compulsory Part"], "multiplier": 1.2, "note": "Math x1.2" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 28,
+      "median": 31,
+      "upperQuartile": 35,
+      "mean": 31.4,
+      "attainable": 50,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS5200",
+    "institution": "HKUST",
+    "titleEn": "Engineering with an Extended Major in Artificial Intelligence",
+    "titleZh": "工程學（延伸主修人工智能）",
+    "faculty": "Engineering",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5_PLUS_BONUS",
+    "requiredSubjects": [
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "3" },
+      { "subject": "Physics", "minGrade": "3", "note": "One science subject preferred." }
+    ],
+    "preferredSubjects": ["Physics", "ICT", "M1", "M2"],
+    "weightingRules": [
+      { "subjects": ["Mathematics Compulsory Part", "M1", "M2"], "multiplier": 1.5, "note": "Math x1.5" },
+      { "subjects": ["Physics", "ICT"], "multiplier": 1.3, "note": "Technology/science x1.3" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 30,
+      "median": 34,
+      "upperQuartile": 38,
+      "mean": 34.2,
+      "attainable": 58,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS3636",
+    "institution": "PolyU",
+    "titleEn": "Bachelor of Science in Nursing",
+    "titleZh": "護理學理學士",
+    "faculty": "Nursing",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Biology", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["Biology", "Chemistry"],
+    "weightingRules": [
+      { "subjects": ["Biology", "Chemistry"], "multiplier": 1.5, "maxSubjectsApplied": 1, "note": "Best science subject x1.5" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 27,
+      "median": 30,
+      "upperQuartile": 33,
+      "mean": 30.3,
+      "attainable": 50,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS1010",
+    "institution": "HKU",
+    "titleEn": "Bachelor of Laws",
+    "titleZh": "法學士",
+    "faculty": "Law",
+    "category": "UGC-funded",
+    "formulaType": "BEST_6",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "4" }
+    ],
+    "preferredSubjects": ["History", "Chinese History", "English Literature"],
+    "weightingRules": [
+      { "subjects": ["English Language"], "multiplier": 2, "note": "English x2" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 38,
+      "median": 42,
+      "upperQuartile": 46,
+      "mean": 42.1,
+      "attainable": 68,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS1201",
+    "institution": "CityUHK",
+    "titleEn": "Bachelor of Social Sciences",
+    "titleZh": "社會科學學士",
+    "faculty": "Social Science",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Chinese Language", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["Economics", "Geography", "History"],
+    "weightingRules": [
+      { "subjects": ["English Language", "Chinese Language"], "multiplier": 1.2, "note": "Languages x1.2" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 24,
+      "median": 27,
+      "upperQuartile": 31,
+      "mean": 27.5,
+      "attainable": 48,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS2610",
+    "institution": "HKBU",
+    "titleEn": "Bachelor of Communication",
+    "titleZh": "傳理學學士",
+    "faculty": "Arts",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Chinese Language", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["Visual Arts", "English Literature"],
+    "weightingRules": [
+      { "subjects": ["English Language"], "multiplier": 1.5, "note": "English x1.5" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 25,
+      "median": 28,
+      "upperQuartile": 32,
+      "mean": 28.6,
+      "attainable": 50,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS8416",
+    "institution": "EdUHK",
+    "titleEn": "Bachelor of Education in Early Childhood Education",
+    "titleZh": "幼兒教育榮譽學士",
+    "faculty": "Education",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["Chinese Literature", "English Literature"],
+    "weightingRules": [
+      { "subjects": ["Chinese Language", "English Language"], "multiplier": 1.3, "note": "Languages x1.3" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 23,
+      "median": 26,
+      "upperQuartile": 29,
+      "mean": 26.1,
+      "attainable": 49,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JS7802",
+    "institution": "LingU",
+    "titleEn": "Bachelor of Arts",
+    "titleZh": "文學士",
+    "faculty": "Arts",
+    "category": "UGC-funded",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" }
+    ],
+    "preferredSubjects": ["History", "Chinese History", "Chinese Literature"],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 21,
+      "median": 24,
+      "upperQuartile": 28,
+      "mean": 24.2,
+      "attainable": 42,
+      "scoreScale": "Demo HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  },
+  {
+    "jupasCode": "JSSU40",
+    "institution": "SSSDP",
+    "titleEn": "Bachelor of Science in Digital Media Technology",
+    "titleZh": "數碼媒體科技理學士",
+    "faculty": "Design",
+    "category": "SSSDP",
+    "formulaType": "BEST_5",
+    "requiredSubjects": [
+      { "subject": "English Language", "minGrade": "2" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" }
+    ],
+    "preferredSubjects": ["Visual Arts", "ICT"],
+    "weightingRules": [
+      { "subjects": ["Visual Arts", "ICT"], "multiplier": 1.4, "note": "Creative/ICT subjects x1.4" }
+    ],
+    "admissionStats": {
+      "year": 2025,
+      "lowerQuartile": 18,
+      "median": 21,
+      "upperQuartile": 25,
+      "mean": 21.8,
+      "attainable": 48,
+      "scoreScale": "Demo weighted HKDSE points"
+    },
+    "source": { "name": "Demo local dataset", "retrievedDate": "2026-07-04" }
+  }
+]

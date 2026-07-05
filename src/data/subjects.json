@@ -1,0 +1,25 @@
+{
+  "core": [
+    "Chinese Language",
+    "English Language",
+    "Mathematics Compulsory Part",
+    "Citizenship and Social Development"
+  ],
+  "electives": [
+    "Biology",
+    "Chemistry",
+    "Physics",
+    "Economics",
+    "Geography",
+    "History",
+    "Chinese History",
+    "ICT",
+    "BAFS",
+    "Visual Arts",
+    "Chinese Literature",
+    "English Literature",
+    "M1",
+    "M2",
+    "Other elective subjects"
+  ]
+}
