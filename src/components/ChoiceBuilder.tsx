@@ -21,7 +21,7 @@ import ProgrammeList from "./ProgrammeList";
 import ResultInputPanel from "./ResultInputPanel";
 import type { Programme } from "../types/programme";
 import type { StudentResult } from "../types/student";
-import { choicesToCsv, choicesToText } from "../utils/exportChoices";
+import { choicesToCsv, choicesToText, getBand } from "../utils/exportChoices";
 import { chanceRank, classifyRecommendation } from "../utils/recommendationClassifier";
 import { checkRequirements } from "../utils/requirementChecker";
 import { calculateProgrammeScore } from "../utils/scoreCalculator";
@@ -114,11 +114,16 @@ export default function ChoiceBuilder() {
     .map((code) => programmeViews.find((view) => view.programme.jupasCode === code))
     .filter((view): view is NonNullable<typeof view> => Boolean(view));
 
+  useEffect(() => {
+    const validCodes = new Set(programmes.map((programme) => programme.jupasCode));
+    setChoiceCodes((current) => current.filter((code, index) => validCodes.has(code) && current.indexOf(code) === index).slice(0, 20));
+  }, []);
+
   const selectedView = selectedCode ? programmeViews.find((view) => view.programme.jupasCode === selectedCode) : undefined;
 
   function addChoice(code: string) {
     if (choiceCodes.includes(code)) return setNotice("That programme is already in your choices.");
-    if (choiceCodes.length >= 20) return setNotice("The JUPAS choice list is full.");
+    if (choices.length >= 20) return setNotice("The JUPAS choice list is full.");
     setChoiceCodes([...choiceCodes, code]);
     setNotice(`${code} added to choices.`);
   }
@@ -211,7 +216,7 @@ export default function ChoiceBuilder() {
 
           <ChoicePanel
             choices={choices}
-            choiceCodes={choiceCodes}
+            choiceCodes={choices.map((view) => view.programme.jupasCode)}
             onRemove={(code) => setChoiceCodes(choiceCodes.filter((item) => item !== code))}
             onClear={() => setChoiceCodes([])}
             onExport={exportCsv}
@@ -274,22 +279,35 @@ function ChoicePanel({
       </div>
       <SortableContext items={choiceCodes} strategy={verticalListSortingStrategy}>
         <div className="grid gap-3">
-          {choices.map((view, index) => (
-            <ChoiceItem
-              key={view.programme.jupasCode}
-              {...view}
-              rank={index + 1}
-              onRemove={() => onRemove(view.programme.jupasCode)}
-            />
-          ))}
+          {Array.from({ length: 20 }, (_, index) => {
+            const view = choices[index];
+            const rank = index + 1;
+            return view ? (
+              <ChoiceItem
+                key={view.programme.jupasCode}
+                {...view}
+                rank={rank}
+                onRemove={() => onRemove(view.programme.jupasCode)}
+              />
+            ) : (
+              <EmptyChoiceSlot key={`empty-${rank}`} rank={rank} />
+            );
+          })}
         </div>
       </SortableContext>
-      {!choices.length && (
-        <div className="rounded-md border border-dashed border-ink/20 bg-paper p-6 text-center text-sm text-ink/60">
-          Drag programme cards here or use Add to Choices.
-        </div>
-      )}
     </aside>
+  );
+}
+
+function EmptyChoiceSlot({ rank }: { rank: number }) {
+  return (
+    <div className="rounded-md border border-dashed border-ink/15 bg-paper/70 p-3 text-sm text-ink/45">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-ink/55">#{rank}</span>
+        <span className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-teal">{getBand(rank)}</span>
+        <span>Drag programme cards here or use Add to Choices.</span>
+      </div>
+    </div>
   );
 }
 
