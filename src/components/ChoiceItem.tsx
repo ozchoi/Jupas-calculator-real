@@ -2,8 +2,8 @@ import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { GripVertical, Trash2 } from "lucide-react";
 import type { ProgrammeView } from "./ProgrammeCard";
-import { getBand } from "../utils/exportChoices";
-import { scoreTier } from "../utils/recommendationClassifier";
+import { getChoiceRankLabel } from "../utils/exportChoices";
+import { scoreTier, scoreTierLabel } from "../utils/recommendationClassifier";
 
 type Props = ProgrammeView & {
   rank: number;
@@ -16,12 +16,13 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
     data: { type: "choice", jupasCode: programme.jupasCode },
   });
   const tier = scoreTier(programme, calculation.totalScore);
+  const status = scoreTierLabel(tier, chance);
 
   return (
     <div
       ref={setNodeRef}
       style={{ transform: CSS.Transform.toString(transform), transition }}
-      className={`rounded-md border border-ink/12 bg-white p-3 shadow-sm ${isDragging ? "opacity-70 shadow-xl" : ""}`}
+      className={`rounded-md border p-3 shadow-sm ${tierBoxClass(tier)} ${isDragging ? "opacity-70 shadow-xl" : ""}`}
     >
       <div className="flex gap-3">
         <button
@@ -35,16 +36,15 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
         </button>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-md bg-ink px-2 py-1 text-xs font-semibold text-white">#{rank}</span>
-            <span className="rounded-md bg-teal/10 px-2 py-1 text-xs font-semibold text-teal">{getBand(rank)}</span>
+            <span className={`rounded-md px-3 py-1.5 text-sm font-bold ${bandBadgeClass(rank)}`}>{getChoiceRankLabel(rank)}</span>
             <span className="text-xs font-semibold text-ink/60">{programme.jupasCode} · {programme.institution}</span>
           </div>
           <h3 className="mt-2 text-sm font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-xs text-ink/55">{programme.titleZh}</p>}
-          <p className={`mt-2 text-xs font-semibold ${tierClass(tier)}`}>
+          <p className="mt-2 text-xs font-semibold text-ink/70">
             Score {calculation.totalScore} · LQ {programme.lowerQuartile ?? "-"} · M{" "}
             {programme.median ?? "-"} · UQ {programme.upperQuartile ?? "-"} ·{" "}
-            {chance}
+            {status}
           </p>
         </div>
         <button type="button" className="self-start rounded-md p-2 text-coral hover:bg-coral/10" onClick={onRemove} aria-label="Remove choice">
@@ -55,12 +55,20 @@ export default function ChoiceItem({ programme, calculation, chance, rank, onRem
   );
 }
 
-function tierClass(tier: ReturnType<typeof scoreTier>): string {
+function tierBoxClass(tier: ReturnType<typeof scoreTier>): string {
   return {
-    uq: "text-emerald-700",
-    median: "text-amber-600",
-    lq: "text-orange-600",
-    below: "text-coral",
-    na: "text-ink/65",
+    uq: "border-emerald-300 bg-emerald-50",
+    median: "border-yellow-300 bg-yellow-50",
+    lq: "border-orange-300 bg-orange-50",
+    below: "border-coral/40 bg-coral/10",
+    na: "border-ink/12 bg-white",
   }[tier];
+}
+
+function bandBadgeClass(rank: number): string {
+  if (rank <= 3) return "bg-teal text-white";
+  if (rank <= 6) return "bg-coral text-white";
+  if (rank <= 10) return "bg-moss text-white";
+  if (rank <= 15) return "bg-ink text-white";
+  return "bg-yellow-500 text-ink";
 }

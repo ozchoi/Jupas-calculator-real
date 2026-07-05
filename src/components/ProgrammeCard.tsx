@@ -1,7 +1,7 @@
 import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
 import type { CalculationResult, Programme } from "../types/programme";
-import { scoreTier, type ChanceCategory } from "../utils/recommendationClassifier";
+import { scoreTier, scoreTierLabel, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
 
 export type ProgrammeView = {
@@ -42,6 +42,7 @@ export default function ProgrammeCard({
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
   const tier = scoreTier(programme, calculation.totalScore);
+  const status = scoreTierLabel(tier, chance);
   const medianGap = numericGap(calculation.totalScore, programme.median);
   const lqGap = numericGap(calculation.totalScore, programme.lowerQuartile);
 
@@ -49,9 +50,9 @@ export default function ProgrammeCard({
     <article
       ref={setNodeRef}
       style={style}
-      className={`rounded-md border bg-white p-4 shadow-sm transition ${
+      className={`rounded-md border p-4 shadow-sm transition ${
         isDragging ? "z-30 opacity-70 shadow-xl" : ""
-      } ${hidden ? "border-ink/10 opacity-50" : "border-ink/12 hover:border-teal/50"}`}
+      } ${hidden ? "border-ink/10 bg-white opacity-50" : `${tierBoxClass(tier)} hover:border-teal/50`}`}
     >
       <div className="flex items-start gap-3">
         <button
@@ -73,8 +74,8 @@ export default function ProgrammeCard({
           <h3 className="text-base font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-sm text-ink/60">{programme.titleZh}</p>}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
-            <Metric label="Score" value={calculation.totalScore.toString()} strongClass={tierClass(tier)} />
-            <Metric label="Risk" value={chance} strongClass={tierClass(tier)} />
+            <Metric label="Score" value={calculation.totalScore.toString()} />
+            <Metric label="Chance" value={status} />
             <Metric label="Formula" value={programme.formulaRaw} />
             <Metric
               label="Stats"
@@ -124,11 +125,11 @@ export default function ProgrammeCard({
   );
 }
 
-function Metric({ label, value, strongClass = "text-ink" }: { label: string; value: string; strongClass?: string }) {
+function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-md bg-paper px-3 py-2">
+    <div className="rounded-md bg-white/70 px-3 py-2">
       <div className="text-xs font-semibold uppercase text-ink/45">{label}</div>
-      <div className={`mt-0.5 break-words font-semibold ${strongClass}`}>{value}</div>
+      <div className="mt-0.5 break-words font-semibold text-ink">{value}</div>
     </div>
   );
 }
@@ -139,12 +140,12 @@ function numericGap(score: number, target?: number): string {
   return gap > 0 ? `+${gap}` : gap.toString();
 }
 
-function tierClass(tier: ReturnType<typeof scoreTier>): string {
+function tierBoxClass(tier: ReturnType<typeof scoreTier>): string {
   return {
-    uq: "text-emerald-700",
-    median: "text-amber-600",
-    lq: "text-orange-600",
-    below: "text-coral",
-    na: "text-ink",
+    uq: "border-emerald-300 bg-emerald-50",
+    median: "border-yellow-300 bg-yellow-50",
+    lq: "border-orange-300 bg-orange-50",
+    below: "border-coral/40 bg-coral/10",
+    na: "border-ink/12 bg-white",
   }[tier];
 }

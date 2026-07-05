@@ -10,7 +10,7 @@ export function gradeToScore(grade: string, scale: ScoreScale = "SCALE_8_5"): nu
 }
 
 function formulaCount(formulaType: Programme["formulaType"]): number {
-  if (formulaType === "BEST_6") return 6;
+  if (formulaType === "BEST_6" || formulaType === "SIX_GRADED_SUBJECTS") return 6;
   if (formulaType === "BEST_4") return 4;
   return 5;
 }

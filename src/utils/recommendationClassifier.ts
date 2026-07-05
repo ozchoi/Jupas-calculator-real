@@ -36,3 +36,13 @@ export function scoreTier(programme: Programme, score: number): "uq" | "median" 
   if (typeof programme.lowerQuartile === "number") return "below";
   return "na";
 }
+
+export function scoreTierLabel(tier: ReturnType<typeof scoreTier>, fallback: ChanceCategory): string {
+  return {
+    uq: ">= UQ",
+    median: ">= Median",
+    lq: ">= LQ",
+    below: "Below LQ",
+    na: fallback,
+  }[tier];
+}

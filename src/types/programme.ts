@@ -11,15 +11,20 @@ export type Institution =
   | "SSSDP";
 
 export type FundingCategory = "UGC-funded" | "Self-financing" | "SSSDP" | "Higher Diploma";
-export type ScoreScale = "SCALE_8_5" | "SCALE_7";
-export type DataQuality = "complete" | "partial" | "profile-only" | "insufficient";
+export type ScoreScale = "SCALE_8_5" | "SCALE_7" | "SCALE_HKBU";
+export type DataQuality = "complete" | "partial" | "profile-only" | "insufficient" | "parsed";
 
 export type FormulaType =
   | "BEST_5"
   | "BEST_6"
   | "BEST_4"
   | "BEST_5_PLUS_BONUS"
-  | "CUSTOM_WEIGHTED";
+  | "CUSTOM_WEIGHTED"
+  | "THREE_CORE_PLUS_TWO_ELECTIVE"
+  | "ENG_MATH_PLUS_BEST_3"
+  | "CHINESE_ENGLISH_PLUS_BEST_3"
+  | "SIX_GRADED_SUBJECTS"
+  | "RAW_TEXT";
 
 export type Requirement = {
   subject: string;
@@ -48,10 +53,15 @@ export type Programme = {
   lowerQuartile?: number;
   upperQuartile?: number;
   mean?: number;
+  averageScore?: number;
   highestAttainable?: number;
+  scoreMetric?: string;
   weightingRaw?: string;
+  preferredSubjectsRaw?: string;
   medianProfile?: string;
   lowerQuartileProfile?: string;
+  upperQuartileProfile?: string;
+  extractionMethod?: string;
   notes?: string;
   sourcePage?: number;
   dataQuality: DataQuality;

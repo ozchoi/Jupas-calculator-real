@@ -8,6 +8,14 @@ export function getBand(rank: number): string {
   return "Band E";
 }
 
+export function getChoiceRankLabel(rank: number): string {
+  if (rank <= 3) return `A${rank}`;
+  if (rank <= 6) return `B${rank - 3}`;
+  if (rank <= 10) return `C${rank - 6}`;
+  if (rank <= 15) return `D${rank - 10}`;
+  return `E${rank - 15}`;
+}
+
 export function choicesToCsv(programmes: Programme[]): string {
   const rows = [
     ["Rank", "Band", "JUPAS Code", "University", "Programme", "Chinese Title"].join(","),

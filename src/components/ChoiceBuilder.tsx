@@ -21,7 +21,7 @@ import ProgrammeList from "./ProgrammeList";
 import ResultInputPanel from "./ResultInputPanel";
 import type { Programme } from "../types/programme";
 import type { StudentResult } from "../types/student";
-import { choicesToCsv, choicesToText, getBand } from "../utils/exportChoices";
+import { choicesToCsv, choicesToText, getChoiceRankLabel } from "../utils/exportChoices";
 import { chanceRank, classifyRecommendation } from "../utils/recommendationClassifier";
 import { checkRequirements } from "../utils/requirementChecker";
 import { calculateProgrammeScore } from "../utils/scoreCalculator";
@@ -301,14 +301,29 @@ function ChoicePanel({
 
 function EmptyChoiceSlot({ rank }: { rank: number }) {
   return (
-    <div className="rounded-md border border-dashed border-ink/15 bg-paper/70 p-3 text-sm text-ink/45">
+    <div className={`rounded-md border border-dashed p-3 text-sm ${emptySlotClass(rank)}`}>
       <div className="flex flex-wrap items-center gap-2">
-        <span className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-ink/55">#{rank}</span>
-        <span className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-teal">{getBand(rank)}</span>
+        <span className={`rounded-md px-3 py-1.5 text-sm font-bold ${bandBadgeClass(rank)}`}>{getChoiceRankLabel(rank)}</span>
         <span>Drag programme cards here or use Add to Choices.</span>
       </div>
     </div>
   );
+}
+
+function bandBadgeClass(rank: number): string {
+  if (rank <= 3) return "bg-teal text-white";
+  if (rank <= 6) return "bg-coral text-white";
+  if (rank <= 10) return "bg-moss text-white";
+  if (rank <= 15) return "bg-ink text-white";
+  return "bg-yellow-500 text-ink";
+}
+
+function emptySlotClass(rank: number): string {
+  if (rank <= 3) return "border-teal/25 bg-teal/5 text-teal/75";
+  if (rank <= 6) return "border-coral/25 bg-coral/5 text-coral/75";
+  if (rank <= 10) return "border-moss/25 bg-moss/5 text-moss/75";
+  if (rank <= 15) return "border-ink/20 bg-ink/5 text-ink/55";
+  return "border-yellow-400/35 bg-yellow-50 text-yellow-700";
 }
 
 function defaultResults(): StudentResult[] {
