@@ -10,6 +10,7 @@
     "U": 0,
     "Not taken": 0,
     "Attained": 0,
+    "Unattained": 0,
     "UnAttained": 0
   },
   "SCALE_7": {
@@ -23,6 +24,7 @@
     "U": 0,
     "Not taken": 0,
     "Attained": 0,
+    "Unattained": 0,
     "UnAttained": 0
   },
   "SCALE_HKBU": {
@@ -36,6 +38,7 @@
     "U": 0,
     "Not taken": 0,
     "Attained": 0,
+    "Unattained": 0,
     "UnAttained": 0
   }
 }

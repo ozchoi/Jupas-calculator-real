@@ -69,7 +69,7 @@ export default function ProgrammeDetailModal({
           <section>
             <h3 className="mb-2 font-semibold text-ink">Minimum Requirements</h3>
             <div className={`rounded-md border p-4 text-sm ${requirement.meetsRequirements ? "border-teal/25 bg-teal/10 text-teal" : "border-coral/25 bg-coral/10 text-coral"}`}>
-              {programme.requiredSubjects?.map((item) => `${item.subject}: ${item.minGrade}+`).join("; ") || "Not specified"}
+              {programme.requiredSubjects?.map(formatRequirement).join("; ") || "Not specified"}
               {!requirement.meetsRequirements && <div className="mt-2 font-semibold">Missing: {requirement.missing.join(", ")}</div>}
             </div>
           </section>
@@ -153,4 +153,9 @@ function Info({ label, value }: { label: string; value: string }) {
       <div className="mt-1 break-words font-semibold text-ink">{value}</div>
     </div>
   );
+}
+
+function formatRequirement(item: { subject: string; minGrade: string }): string {
+  if (item.subject === "Citizenship and Social Development") return `${item.subject}: ${item.minGrade}`;
+  return `${item.subject}: ${item.minGrade}+`;
 }

@@ -331,7 +331,7 @@ function defaultResults(): StudentResult[] {
     { subject: "Chinese Language", grade: "Not taken" },
     { subject: "English Language", grade: "Not taken" },
     { subject: "Mathematics Compulsory Part", grade: "Not taken" },
-    { subject: "Citizenship and Social Development", grade: "UnAttained" },
+    { subject: "Citizenship and Social Development", grade: "Unattained" },
   ];
 }
 

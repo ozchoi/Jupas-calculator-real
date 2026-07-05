@@ -2,7 +2,7 @@ import subjectsData from "../data/subjects.json";
 import type { StudentResult } from "../types/student";
 
 const gradeOptions = ["5**", "5*", "5", "4", "3", "2", "1", "U", "Not taken"];
-const csdGradeOptions = ["Attained", "UnAttained", "Not taken"];
+const csdGradeOptions = ["Attained", "Unattained", "Not taken"];
 const maxElectives = 5;
 
 type SubjectsData = {
@@ -20,7 +20,7 @@ const subjects = subjectsData as SubjectsData;
 export default function ResultInputPanel({ results, onChange }: Props) {
   const coreResults = subjects.core.map((subject) => ({
     subject,
-    grade: results.find((result) => result.subject === subject)?.grade ?? (subject.includes("Citizenship") ? "UnAttained" : "Not taken"),
+    grade: coreGradeFor(subject, results),
   }));
   const electiveResults = results.filter((result) => !subjects.core.includes(result.subject)).slice(0, maxElectives);
   const electiveSlots = Array.from({ length: maxElectives }, (_, index) => electiveResults[index] ?? { subject: "", grade: "Not taken" });
@@ -38,7 +38,7 @@ export default function ResultInputPanel({ results, onChange }: Props) {
   }
 
   function commit(nextResults: StudentResult[]) {
-    onChange(nextResults);
+    onChange(nextResults.map((result) => ({ ...result, grade: normalizeCsdGrade(result.grade) })));
   }
 
   function reset() {
@@ -46,7 +46,7 @@ export default function ResultInputPanel({ results, onChange }: Props) {
       { subject: "Chinese Language", grade: "Not taken" },
       { subject: "English Language", grade: "Not taken" },
       { subject: "Mathematics Compulsory Part", grade: "Not taken" },
-      { subject: "Citizenship and Social Development", grade: "UnAttained" },
+      { subject: "Citizenship and Social Development", grade: "Unattained" },
     ]);
   }
 
@@ -133,4 +133,17 @@ export default function ResultInputPanel({ results, onChange }: Props) {
 
 function ordinal(value: number): string {
   return ["1st", "2nd", "3rd", "4th", "5th"][value - 1] ?? `${value}th`;
+}
+
+function normalizeCsdGrade(grade: string): string {
+  return grade === "UnAttained" ? "Unattained" : grade;
+}
+
+function coreGradeFor(subject: string, results: StudentResult[]): string {
+  const matches = results.filter((result) => result.subject === subject).map((result) => normalizeCsdGrade(result.grade));
+  if (subject === "Citizenship and Social Development") {
+    if (matches.includes("Attained")) return "Attained";
+    return matches[0] ?? "Unattained";
+  }
+  return matches[0] ?? "Not taken";
 }
