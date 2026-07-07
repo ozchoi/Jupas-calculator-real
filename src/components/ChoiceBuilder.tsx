@@ -14,6 +14,7 @@ import programmesData from "../data/programmes.json";
 import subjects from "../data/subjects.json";
 import AdmissionLegend from "./AdmissionLegend";
 import Disclaimer from "./Disclaimer";
+import FeedbackButton from "./FeedbackButton";
 import FilterBar, { type Filters } from "./FilterBar";
 import ChoiceItem from "./ChoiceItem";
 import type { ProgrammeView } from "./ProgrammeCard";
@@ -195,17 +196,19 @@ export default function ChoiceBuilder() {
     <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
       <div className="min-h-screen bg-paper text-ink">
         <header className="border-b border-ink/10 bg-white px-4 py-5">
-          <div className="mx-auto flex max-w-[1600px] flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mx-auto flex max-w-[1600px] flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div>
-              <h1 className="text-2xl font-bold tracking-normal text-ink md:text-3xl">JUPAS Choice Builder</h1>
+              <h1 className="max-w-5xl text-2xl font-bold tracking-normal text-ink md:text-3xl">
+                2026 JUPAS Admission Score Calculator and Choice Builder
+              </h1>
               <p className="mt-1 max-w-3xl text-sm text-ink/65">
                 Calculate programme-specific HKDSE scores, compare options, and build a ranked list of up to 20 choices.
               </p>
             </div>
-            <div className="text-sm font-semibold text-teal">{notice}</div>
-          </div>
-          <div className="mx-auto mt-4 max-w-[1600px]">
-            <Disclaimer />
+            <div className="flex flex-col items-start gap-2 lg:items-end">
+              <FeedbackButton />
+              <div className="min-h-5 text-sm font-semibold text-teal">{notice}</div>
+            </div>
           </div>
         </header>
 
@@ -251,6 +254,13 @@ export default function ChoiceBuilder() {
             onCopy={copyChoices}
           />
         </main>
+
+        <footer className="border-t border-ink/10 bg-white px-4 py-5">
+          <div className="mx-auto grid max-w-[1600px] gap-4">
+            <Disclaimer />
+            <p className="text-sm text-ink/60">© 2026 Chun Yin Oz Choi @Bliss Education Consultancy</p>
+          </div>
+        </footer>
 
         {selectedView && (
           <ProgrammeDetailModal

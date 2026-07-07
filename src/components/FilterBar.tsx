@@ -60,47 +60,49 @@ export default function FilterBar({
   };
 
   return (
-    <section className="grid gap-x-4 gap-y-3 border-b border-ink/10 bg-paper px-4 py-4 md:grid-cols-2 xl:grid-cols-3">
-      <FilterCell label="Search">
-        <input
-          className="h-10 w-full min-w-0 rounded-md border border-ink/15 bg-white px-3 outline-none focus:border-teal focus:ring-2 focus:ring-teal/20"
-          placeholder="Search code, title, university"
-          value={filters.query}
-          onChange={(event) => patch("query", event.target.value)}
+    <section className="border-b border-ink/10 bg-paper px-4 py-4">
+      <div className="grid gap-x-4 gap-y-3 md:grid-cols-2 xl:grid-cols-3">
+        <FilterCell label="Search">
+          <input
+            className="h-10 w-full min-w-0 rounded-md border border-ink/15 bg-white px-3 outline-none focus:border-teal focus:ring-2 focus:ring-teal/20"
+            placeholder="Search code, title, university"
+            value={filters.query}
+            onChange={(event) => patch("query", event.target.value)}
+          />
+        </FilterCell>
+        <MultiSelect
+          label="University"
+          placeholder="All universities"
+          values={filters.institutions}
+          options={institutions}
+          onToggle={(value) => patchArray("institutions", value)}
+          onClear={() => patch("institutions", [])}
         />
-      </FilterCell>
-      <MultiSelect
-        label="University"
-        placeholder="All universities"
-        values={filters.institutions}
-        options={institutions}
-        onToggle={(value) => patchArray("institutions", value)}
-        onClear={() => patch("institutions", [])}
-      />
-      <GroupedMultiSelect
-        label="Faculty"
-        placeholder="All faculties"
-        values={filters.faculties}
-        groups={facultyGroups}
-        onToggle={(value) => patchArray("faculties", value)}
-        onClear={() => patch("faculties", [])}
-      />
-      <MultiSelect
-        label="High weighting subject"
-        placeholder="Any subject"
-        values={filters.weightedSubjects}
-        options={weightedSubjectOptions}
-        onToggle={(value) => patchArray("weightedSubjects", value)}
-        onClear={() => patch("weightedSubjects", [])}
-      />
-      <Select label="Funding" value={filters.category} options={["All", ...categories]} onChange={(value) => patch("category", value as Filters["category"])} />
-      <Select label="Formula" value={filters.formulaType} options={["All", ...formulaTypes]} onChange={(value) => patch("formulaType", value as Filters["formulaType"])} />
-      <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
-      <Toggle label="Meet requirements" checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
-      <Toggle label="Your Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
-      <Toggle label="Your Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
-      <Toggle label="Your Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
-      <FilterCell label="Reset" hiddenLabel>
+        <GroupedMultiSelect
+          label="Faculty"
+          placeholder="All faculties"
+          values={filters.faculties}
+          groups={facultyGroups}
+          onToggle={(value) => patchArray("faculties", value)}
+          onClear={() => patch("faculties", [])}
+        />
+        <MultiSelect
+          label="High weighting subject"
+          placeholder="Any subject"
+          values={filters.weightedSubjects}
+          options={weightedSubjectOptions}
+          onToggle={(value) => patchArray("weightedSubjects", value)}
+          onClear={() => patch("weightedSubjects", [])}
+        />
+        <Select label="Funding" value={filters.category} options={["All", ...categories]} onChange={(value) => patch("category", value as Filters["category"])} />
+        <Select label="Formula" value={filters.formulaType} options={["All", ...formulaTypes]} onChange={(value) => patch("formulaType", value as Filters["formulaType"])} />
+        <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
+      </div>
+      <div className="mt-4 grid gap-3 lg:grid-cols-[repeat(4,minmax(0,1fr))_minmax(180px,0.85fr)]">
+        <Toggle label="Meet requirements" checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
+        <Toggle label="Your Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
+        <Toggle label="Your Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
+        <Toggle label="Your Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
         <button
           type="button"
           className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-semibold text-ink hover:bg-ink/5"
@@ -108,15 +110,15 @@ export default function FilterBar({
         >
           <RotateCcw size={16} /> Reset filters
         </button>
-      </FilterCell>
+      </div>
     </section>
   );
 }
 
-function FilterCell({ label, children, hiddenLabel = false }: { label: string; children: React.ReactNode; hiddenLabel?: boolean }) {
+function FilterCell({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <label className="grid min-w-0 gap-1 text-xs font-semibold uppercase tracking-wide text-ink/55">
-      <span className={hiddenLabel ? "invisible" : ""}>{label}</span>
+      <span>{label}</span>
       {children}
     </label>
   );
@@ -251,16 +253,14 @@ function Toggle({
   onChange: (value: boolean) => void;
 }) {
   return (
-    <FilterCell label="Option" hiddenLabel>
-      <label className="flex h-10 items-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-medium normal-case tracking-normal text-ink">
-        <input
-          type="checkbox"
-          className="h-4 w-4 accent-teal"
-          checked={checked}
-          onChange={(event) => onChange(event.target.checked)}
-        />
-        {label}
-      </label>
-    </FilterCell>
+    <label className="flex h-10 min-w-0 items-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-medium normal-case tracking-normal text-ink">
+      <input
+        type="checkbox"
+        className="h-4 w-4 shrink-0 accent-teal"
+        checked={checked}
+        onChange={(event) => onChange(event.target.checked)}
+      />
+      <span className="truncate">{label}</span>
+    </label>
   );
 }
