@@ -5,15 +5,15 @@
     "faculty": "College of Business",
     "category": "UGC-funded",
     "titleEn": "BSc Computational Finance and Financial Technology (Streams: Computational Finance Stream / Financial Technology)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 2,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -34,9 +34,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1211",
@@ -44,15 +46,15 @@
     "faculty": "College of Biomedicine",
     "category": "UGC-funded",
     "titleEn": "BEng Biomedical Engineering (Features: Medical Technology / Bioinstrumentation / Cell and Tissue Engineering / Biomedical Robotics)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (If both Mathematics and M1/M2 are taken, only one subject will be included)",
     "scoreScale": "SCALE_8_5",
-    "median": 39,
-    "lowerQuartile": 38,
+    "median": 39.0,
+    "lowerQuartile": 38.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Biology / Chemistry / M1/M2 / Physics 1: other elective subjects",
-    "sourcePage": 2,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -73,9 +75,24 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1300",
@@ -89,8 +106,8 @@
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
     "notes": "New Programme in 2026 JUPAS / no 2025 score shown",
-    "sourcePage": 2,
-    "dataQuality": "insufficient",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -111,9 +128,34 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "median": null,
+    "lowerQuartile": null
   },
   {
     "jupasCode": "JS1805",
@@ -128,8 +170,8 @@
     "lowerQuartile": 37.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
-    "sourcePage": 2,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -150,9 +192,32 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1806",
@@ -164,11 +229,11 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 35.5,
-    "lowerQuartile": 35,
+    "lowerQuartile": 35.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
-    "sourcePage": 2,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -189,9 +254,32 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1807",
@@ -203,11 +291,11 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 45.5,
-    "lowerQuartile": 43,
+    "lowerQuartile": 43.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
-    "sourcePage": 2,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -228,9 +316,32 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1001",
@@ -241,11 +352,11 @@
     "formulaRaw": "Best 5 subjects",
     "scoreScale": "SCALE_8_5",
     "median": 29.5,
-    "lowerQuartile": 28,
+    "lowerQuartile": 28.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -266,24 +377,33 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1002",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Accountancy (Streams: Professional Accounting / ESG and Tech)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22,
+    "median": 22.0,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -304,24 +424,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1005",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Management (Streams: Human Resources Management / Strategy and International Management)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22,
+    "median": 22.0,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -342,24 +464,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1007",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Marketing (Streams: Global Marketing / Marketing Analytics)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -380,24 +504,33 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1012",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "Economics and Finance (Majors: BBA Business Economics / BBA Finance)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
+    "median": 23.0,
     "lowerQuartile": 22.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -418,24 +551,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1013",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Business Economics (Features: Economic Theory / International Economics / Economic and Business Forecasting / Quantitative Analysis)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22,
+    "median": 22.0,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -456,24 +591,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1014",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Finance (Features: Investment Analysis / Financial Markets / Corporate Finance / Risk Management / Trading Room Workshop)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 21.5,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -494,24 +631,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1017",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "Intelligent Information Systems (Majors: BBA Global Business Systems Management / BBA Artificial Intelligence in Business)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 21,
+    "median": 21.0,
     "lowerQuartile": 20.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -532,24 +671,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1018",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Global Business Systems Management (Features: Intelligent Technologies / Global Business / Study Exchange)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 24,
+    "median": 24.0,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -570,24 +711,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1019",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Artificial Intelligence in Business (Streams: Business Intelligence / Information Systems Auditing / Internet Services and Social Networks / Data Informatics)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 21,
-    "lowerQuartile": 21,
+    "median": 21.0,
+    "lowerQuartile": 21.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -608,24 +751,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1026",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Business Decision Analytics (Streams: Decision Analytics / Data Informatics)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 21.5,
-    "lowerQuartile": 21,
+    "lowerQuartile": 21.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -646,24 +791,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1027",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BBA Global Operations Management (Features: Supply Chain Management / Operations Efficiency / Process Improvement / Operations Analytics / Resource Planning)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 21.5,
-    "lowerQuartile": 21,
+    "lowerQuartile": 21.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 3,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -684,9 +831,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1070",
@@ -694,15 +843,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "AI, Computing and Transformation (ACT) (Features: Free Choice of Major / One-to- One Advisor / Elite Work Placement / Executive Mentor Scheme / Premium Overseas Exchange / Internship Exchange)",
-    "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
-    "formulaRaw": "3 core + 2 elective subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 31,
-    "lowerQuartile": 30,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "2: English / Mathematics 1: other elective subjects 2: Mathematics",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "1",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -723,9 +872,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1071",
@@ -733,15 +884,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "Data Science (Majors: BSc Data Science / BSc Data and Systems Engineering)",
-    "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
-    "formulaRaw": "3 core + 2 elective subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 27.5,
-    "lowerQuartile": 27.5,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "1.5: English 1: other elective subjects 2: Mathematics",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "1",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -762,9 +913,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1072",
@@ -772,15 +925,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "BSc Data Science (Features: Data Science / Machine Learning / Data Mining / Big Data Analysis)",
-    "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
-    "formulaRaw": "3 core + 2 elective subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 29,
-    "lowerQuartile": 28.5,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "1",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -801,9 +954,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1074",
@@ -811,15 +966,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "BSc Data and Systems Engineering (Features: Data Science / FinTech & Decision Analytics / Industrial AI / Smart City)",
-    "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
-    "formulaRaw": "3 core + 2 elective subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 28,
-    "lowerQuartile": 27.5,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "2: Mathematics 1.5: English 1: other elective subjects",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "2: Mathematics",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -840,9 +995,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1201",
@@ -857,8 +1021,8 @@
     "lowerQuartile": 42.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: English / Mathematics / M1/M2 / Physics 1.5: Chinese 1: other elective subjects",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -879,9 +1043,28 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1204",
@@ -889,15 +1072,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "BSc Computer Science (Streams: Artificial Intelligence / Cybersecurity / Data Science / Multimedia Computing / Software Engineering and Project Management)",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
-    "lowerQuartile": 22,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "1",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "2: Mathematics",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -918,9 +1101,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1205",
@@ -928,15 +1120,15 @@
     "faculty": "College of Engineering",
     "category": "UGC-funded",
     "titleEn": "Electrical Engineering (Majors: BEng Computer and Data Engineering / BEng Electronic and Electrical Engineering / BEng Information Engineering / BEng Microelectronics Engineering)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 39,
-    "lowerQuartile": 37,
+    "median": 39.0,
+    "lowerQuartile": 37.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Information and Communication Technology / M1/M2 / Physics 1.5: Biology / Chemistry 1: other elective subjects",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -957,9 +1149,30 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1207",
@@ -967,15 +1180,15 @@
     "faculty": "College of Engineering",
     "category": "UGC-funded",
     "titleEn": "Mechanical Engineering (Majors: BEng Aerospace Engineering / BEng Mechanical Engineering / BEng Nuclear and Risk Engineering)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 34.5,
-    "lowerQuartile": 34,
+    "lowerQuartile": 34.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Physics 1.5: Chemistry / Design and Applied Technology / M1/M2 1: other elective subjects",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -996,9 +1209,29 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chemistry",
+          "Design and Applied Technology",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1218",
@@ -1006,15 +1239,15 @@
     "faculty": "College of Computing",
     "category": "UGC-funded",
     "titleEn": "BSc Cybersecurity (Features: System Security / Software Security / Cryptography / Privacy-Enhancing Technologies / Cyber Risk Management)",
-    "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 20.5,
-    "lowerQuartile": 20.5,
+    "median": null,
+    "lowerQuartile": null,
     "scoreMetric": "Admissions Scores (with weightings)",
-    "weightingRaw": "1",
-    "sourcePage": 4,
-    "dataQuality": "parsed",
+    "weightingRaw": "2: Mathematics",
+    "sourcePage": 3,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1035,9 +1268,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1102",
@@ -1048,12 +1290,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 24,
+    "median": 24.0,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1074,9 +1316,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1103",
@@ -1087,12 +1338,12 @@
     "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 36,
+    "median": 36.0,
     "lowerQuartile": 35.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Chinese 1.5: Chinese History / Chinese Literature / History / Visual Arts 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1113,9 +1364,28 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese History",
+          "Chinese Literature",
+          "History",
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1104",
@@ -1126,12 +1396,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 32,
+    "median": 32.0,
     "lowerQuartile": 29.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: English 1.5: Literature in English 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1152,9 +1422,24 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Literature Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1106",
@@ -1166,11 +1451,11 @@
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 20.5,
-    "lowerQuartile": 20,
+    "lowerQuartile": 20.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.25: English / Chinese 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1191,9 +1476,19 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.25
+      }
+    ]
   },
   {
     "jupasCode": "JS1108",
@@ -1205,11 +1500,11 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 23.5,
-    "lowerQuartile": 23,
+    "lowerQuartile": 23.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1230,24 +1525,33 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1210",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BEng Materials Science and Engineering (Features: HKIE Accredited / Industrial and Research Internships / Overseas Double-degrees / Knowledge Transfer / World-leading Research)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 34,
+    "median": 34.0,
     "lowerQuartile": 32.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: Mathematics / Physics 1.5: English / Biology / Chemistry / M1/M2 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1268,24 +1572,44 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "English Language",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1216",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BEng Intelligent Manufacturing Engineering (Features: Industrial Internet-of-Things / Industrial Big Data / Robotics and Automation / Logistics and Supply Chain / Smart City Engineering)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 20,
-    "lowerQuartile": 18,
+    "median": 20.0,
+    "lowerQuartile": 18.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1306,9 +1630,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1217",
@@ -1319,11 +1645,11 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 38.5,
-    "lowerQuartile": 38,
+    "lowerQuartile": 38.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Biology / Chemistry / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1344,24 +1670,41 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Design and Applied Technology",
+          "English Language",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1219",
     "institution": "CityUHK",
     "category": "UGC-funded",
     "titleEn": "BEng Innovation and Enterprise Engineering (Features: Engineering / Technology / Innovation / Enterprise / Entrepreneurship)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 19.5,
     "lowerQuartile": 18.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 5,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1382,9 +1725,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1109",
@@ -1394,12 +1739,12 @@
     "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 30,
+    "median": 30.0,
     "lowerQuartile": 29.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1.5: Chinese / Mathematics 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 4,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1420,9 +1765,25 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1111",
@@ -1432,12 +1793,12 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
-    "lowerQuartile": 23,
+    "median": 23.0,
+    "lowerQuartile": 23.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1458,9 +1819,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1112",
@@ -1471,11 +1841,11 @@
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
-    "lowerQuartile": 24,
+    "lowerQuartile": 24.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1496,9 +1866,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1113",
@@ -1508,12 +1887,12 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
-    "lowerQuartile": 23,
+    "median": 23.0,
+    "lowerQuartile": 23.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1534,9 +1913,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1200",
@@ -1547,12 +1935,12 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 37,
+    "median": 37.0,
     "lowerQuartile": 36.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Chemistry / M2 / Physics 2: English / Mathematics / M1 1.5: Biology / Economics 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1573,9 +1961,35 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chemistry",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language",
+          "M1",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Economics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1202",
@@ -1587,11 +2001,11 @@
     "formulaRaw": "Best 4 subjects",
     "scoreScale": "SCALE_8_5",
     "median": 27.5,
-    "lowerQuartile": 27,
+    "lowerQuartile": 27.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Chemistry 1.5: Mathematics 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1612,9 +2026,25 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chemistry",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1206",
@@ -1622,15 +2052,15 @@
     "faculty": "College of Science",
     "category": "UGC-funded",
     "titleEn": "BSc Computing Mathematics [Streams: Enriched Mathematics / Financial Mathematics / Global Research Enrichment and Technopreneurship (GREAT)]",
-    "formulaType": "BEST_4",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 4 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 37,
-    "lowerQuartile": 36,
+    "median": 37.0,
+    "lowerQuartile": 36.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2: English / M1/M2 1.5: Biology / Chemistry / Physics 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1651,9 +2081,34 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1208",
@@ -1661,15 +2116,15 @@
     "faculty": "College of Science",
     "category": "UGC-funded",
     "titleEn": "BSc Physics [Features: Classical Physics / Modern Physics / Experimental and Computational Physics / Medical Physics / Condensed Matter Physics / Global Research Enrichment and Technopreneurship (GREAT)]",
-    "formulaType": "BEST_4",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 4 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 28,
-    "lowerQuartile": 27,
+    "median": 28.0,
+    "lowerQuartile": 27.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Physics 1.5: M1/M2 1.25: Mathematics 1: other elective subjects",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1690,9 +2145,32 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Physics"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.25
+      }
+    ]
   },
   {
     "jupasCode": "JS1801",
@@ -1700,15 +2178,15 @@
     "faculty": "Jockey Club College of Veterinary Medicine and Life Sciences",
     "category": "UGC-funded",
     "titleEn": "Bachelor of Veterinary Medicine (Features: One Health / Animal Health & Welfare / Public Health / Dual Accreditation)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics, Biology and Chemistry)",
     "scoreScale": "SCALE_8_5",
     "median": 33.5,
-    "lowerQuartile": 32,
+    "lowerQuartile": 32.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 6,
-    "dataQuality": "parsed",
+    "sourcePage": 5,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1729,9 +2207,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1040",
@@ -1742,12 +2222,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 28,
+    "median": 28.0,
     "lowerQuartile": 24.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1768,9 +2248,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1041",
@@ -1782,11 +2271,11 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 25.5,
-    "lowerQuartile": 25,
+    "lowerQuartile": 25.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1807,9 +2296,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1042",
@@ -1821,11 +2319,11 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 27.5,
-    "lowerQuartile": 27,
+    "lowerQuartile": 27.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1846,9 +2344,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1043",
@@ -1856,15 +2363,15 @@
     "faculty": "School of Creative Media",
     "category": "UGC-funded",
     "titleEn": "BSc Creative Media (Features: Combination of Creative Media and Computer Science Courses / Animation/ Games / Installation / Interactivity)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 26.5,
     "lowerQuartile": 25.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1.5: Mathematics 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1885,9 +2392,24 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1044",
@@ -1898,12 +2420,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 24,
-    "lowerQuartile": 24,
+    "median": 24.0,
+    "lowerQuartile": 24.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1924,9 +2446,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      }
+    ]
   },
   {
     "jupasCode": "JS1050",
@@ -1934,15 +2465,15 @@
     "faculty": "School of Energy and Environment",
     "category": "UGC-funded",
     "titleEn": "International Sustainability Programme for Innovation, Research & Entrepreneurship (INSPIRE) (Majors: BEng Energy Science & Engineering / BEng Environmental Science & Engineering + Features: Global Focus)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 38,
+    "median": 38.0,
     "lowerQuartile": 36.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -1963,9 +2494,43 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics in 1st Elective"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Geography",
+          "M1",
+          "M2",
+          "Physics in 2nd Elective"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1051",
@@ -1973,15 +2538,15 @@
     "faculty": "School of Energy and Environment",
     "category": "UGC-funded",
     "titleEn": "Energy and Environment (Majors: BEng Energy Science and Engineering / BEng Environmental Science and Engineering)",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
     "median": 40.5,
-    "lowerQuartile": 40,
+    "lowerQuartile": 40.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2002,9 +2567,43 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics in 1st Elective"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Geography",
+          "M1",
+          "M2",
+          "Physics in 2nd Elective"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1053",
@@ -2012,15 +2611,15 @@
     "faculty": "School of Energy and Environment",
     "category": "UGC-funded",
     "titleEn": "BSc Environment and Sustainable Business [Features: Environmental Science / Business Sustainability / Environmental, Social & Governance (ESG)]",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 40,
+    "median": 40.0,
     "lowerQuartile": 39.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2.5: Economics / Business, Accounting and Financial Studies in 2nd Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
-    "sourcePage": 7,
-    "dataQuality": "parsed",
+    "sourcePage": 6,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2041,9 +2640,50 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics in 1st Elective"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "BAFS in 2nd Elective",
+          "Economics"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Geography",
+          "M1",
+          "M2",
+          "Physics in 2nd Elective"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1052",
@@ -2051,15 +2691,15 @@
     "faculty": "Double Degree Programmes",
     "category": "UGC-funded",
     "titleEn": "BEng Environmental Science and Engineering and BBA Finance [Double Degree; Features: Environmental, Social & Governance (ESG) / Green Finance / Environmental Technology / Interdisciplinary Education]",
-    "formulaType": "BEST_5",
+    "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 40,
+    "median": 40.0,
     "lowerQuartile": 39.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
-    "sourcePage": 8,
-    "dataQuality": "parsed",
+    "sourcePage": 7,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2080,9 +2720,43 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics in 1st Elective"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Geography",
+          "M1",
+          "M2",
+          "Physics in 2nd Elective"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1061",
@@ -2093,12 +2767,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
+    "median": 23.0,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 8,
-    "dataQuality": "parsed",
+    "sourcePage": 7,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2119,9 +2793,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1062",
@@ -2132,12 +2808,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 29,
-    "lowerQuartile": 25,
+    "median": 29.0,
+    "lowerQuartile": 25.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
-    "sourcePage": 8,
-    "dataQuality": "parsed",
+    "sourcePage": 7,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2158,9 +2834,18 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS1123",
@@ -2172,11 +2857,11 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
-    "lowerQuartile": 23,
+    "lowerQuartile": 23.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 8,
-    "dataQuality": "parsed",
+    "sourcePage": 7,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2197,9 +2882,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS1221",
@@ -2210,12 +2897,12 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 23,
-    "lowerQuartile": 22,
+    "median": 23.0,
+    "lowerQuartile": 22.0,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
-    "sourcePage": 8,
-    "dataQuality": "parsed",
+    "sourcePage": 7,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -2236,9 +2923,11 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "CityUHK Admission Score Formula and Admissions Scores for 2026 JUPAS",
+      "localPath": "/Users/chunyinchoi/Desktop/2026_JUPAS_AdmissionScoreFormulaAndScores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS2020",
@@ -3114,7 +3803,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3135,9 +3824,22 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "Chinese History, Chinese Language, Chinese Literature, English Language (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese History",
+          "Chinese Language",
+          "Chinese Literature",
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7133",
@@ -3155,7 +3857,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3176,9 +3878,22 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "Chinese Language, English Language, ICT, Visual Arts (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language",
+          "ICT",
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7204",
@@ -3196,7 +3911,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3217,9 +3932,27 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Chinese Language, Chinese Literature, English Literature Language (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese Language",
+          "Chinese Literature",
+          "English Literature Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7503",
@@ -3237,7 +3970,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:4 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3258,9 +3991,26 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2.5); Chinese Language, English Literature Language (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.5
+      },
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Literature Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7606",
@@ -3278,7 +4028,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3299,9 +4049,25 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Chinese Language (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7709",
@@ -3319,7 +4085,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3340,9 +4106,32 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Chinese Language (x1.5); Chinese History, History (x1.2)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      },
+      {
+        "subjects": [
+          "Chinese History",
+          "History"
+        ],
+        "multiplier": 1.2
+      }
+    ]
   },
   {
     "jupasCode": "JS7802",
@@ -3360,7 +4149,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3381,9 +4170,26 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Chinese Language, Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7905",
@@ -3401,7 +4207,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:4 | Elective 1:3",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 16,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3422,9 +4228,27 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "Chinese Language, English Language (x2); ICT, Visual Arts (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "ICT",
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7211",
@@ -3442,7 +4266,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3463,9 +4287,28 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7212",
@@ -3483,7 +4326,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3504,9 +4347,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, Economics, ICT, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7213",
@@ -3524,7 +4388,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3545,9 +4409,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, Economics, ICT, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7214",
@@ -3565,7 +4450,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3586,9 +4471,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, Economics, ICT, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7215",
@@ -3606,7 +4512,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3627,9 +4533,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, Economics, ICT, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7216",
@@ -3647,7 +4574,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3668,9 +4595,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Mathematics Compulsory Part (x2); BAFS, Economics, ICT, M1, M2 (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7301",
@@ -3688,7 +4636,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3709,9 +4657,28 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Economics, M1, M2, Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Economics",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7302",
@@ -3729,7 +4696,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3750,9 +4717,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Chinese History, Geography, History, M1, M2, Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Chinese History",
+          "Geography",
+          "History",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7303",
@@ -3770,7 +4758,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3791,9 +4779,25 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7304",
@@ -3811,7 +4815,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3832,9 +4836,25 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7305",
@@ -3852,7 +4872,7 @@
     "lowerQuartileProfile": "Chinese:4 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3873,9 +4893,21 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language, Health Management, Social Care (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Health Management",
+          "Social Care"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7306",
@@ -3893,7 +4925,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 17,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3914,9 +4946,27 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); M1, M2, Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS7123",
@@ -3934,7 +4984,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:3 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 18,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3955,9 +5005,46 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); Geography, M1, M2, Mathematics Compulsory Part (x1.5); BAFS, Biology, Chemistry, Design and Applied Technology, Economics, Health Management, Hospitality Studies, ICT, Living, Physics, Social Care, Technology, Tourism (x1.25)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Geography",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      },
+      {
+        "subjects": [
+          "BAFS",
+          "Biology",
+          "Chemistry",
+          "Design and Applied Technology",
+          "Economics",
+          "Health Management",
+          "Hospitality Studies",
+          "ICT",
+          "Living",
+          "Physics",
+          "Social Care",
+          "Technology",
+          "Tourism"
+        ],
+        "multiplier": 1.25
+      }
+    ]
   },
   {
     "jupasCode": "JS7225",
@@ -3975,7 +5062,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 18,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -3996,9 +5083,30 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "Chemistry, English Language, ICT, M1, M2, Mathematics Compulsory Part (x2); Physics (x1.25)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chemistry",
+          "English Language",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 1.25
+      }
+    ]
   },
   {
     "jupasCode": "JS7307",
@@ -4015,7 +5123,7 @@
     "lowerQuartileProfile": "Chinese:3 | English:3 | Math:4 | Elective 1:4",
     "notes": "Subject profiles should not be summed; each subject profile statistic is calculated separately.",
     "sourcePage": 18,
-    "dataQuality": "profile-only",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -4036,9 +5144,28 @@
     ],
     "extractionMethod": "pdfplumber_text_and_tables",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "Lingnan University Admission Requirements JUPAS 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/Admission Requirements_JUPAS (UG Website).pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRaw": "English Language (x2); ICT, M1, M2, Mathematics Compulsory Part (x1.5)",
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS4006",
@@ -7133,8 +8260,8 @@
     "weightingRaw": "Music (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 21.5;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7158,9 +8285,18 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Music"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8002",
@@ -7175,8 +8311,8 @@
     "weightingRaw": "Visual Arts (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 22;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7200,9 +8336,18 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8003",
@@ -7217,8 +8362,8 @@
     "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Chinese Literature (x1.5) ICT (x1.5)",
     "preferredSubjectsRaw": "Chinese: 6",
     "notes": "Specific subject mean: 27.5;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7242,9 +8387,21 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "Chinese Literature",
+          "English Language",
+          "ICT"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8004",
@@ -7259,8 +8416,8 @@
     "weightingRaw": "English Language (x1.5) ICT (x1.5) Literature in English (x1.5)",
     "preferredSubjectsRaw": "English: 5",
     "notes": "Specific subject mean: 23.5;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7284,9 +8441,20 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "English Literature Language",
+          "ICT"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8005",
@@ -7301,8 +8469,8 @@
     "weightingRaw": "Chinese History (x1.5) History (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 26.3;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7326,9 +8494,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese History",
+          "History"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8006",
@@ -7340,11 +8518,11 @@
     "scoreScale": "SCALE_7",
     "median": 23.5,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 24;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7368,9 +8546,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8007",
@@ -7382,11 +8570,11 @@
     "scoreScale": "SCALE_7",
     "median": 24.5,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "BAFS, Economics (x1.5) Specified ApL subject(s) (x1.5)",
+    "weightingRaw": "The best one subject of BAFS (Accounting/ Business Management) or Economics (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25;",
-    "sourcePage": 23,
-    "dataQuality": "parsed",
+    "sourcePage": 1,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7410,9 +8598,20 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Business Management)",
+          "Economics",
+          "The best one subject of BAFS (Accounting"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8008",
@@ -7427,8 +8626,8 @@
     "weightingRaw": "Math, M1/M2 (x1.5) ICT (x1.5) Biology, Chemistry, Physics (x1.5) Combined Science (x1.5) Integrated Science (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 26;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7452,9 +8651,24 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8009",
@@ -7469,8 +8683,8 @@
     "weightingRaw": "Math, M1/M2 (x1.5) Physics (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25.5;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7494,9 +8708,21 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8010",
@@ -7511,8 +8737,8 @@
     "weightingRaw": "Physical Education (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 22;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7536,9 +8762,18 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Physical Education"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8011",
@@ -7550,11 +8785,11 @@
     "scoreScale": "SCALE_7",
     "median": 24,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Chemistry (x1.5) Biology (x1.3) Physics (x1.2) Math, M1/M2 (x1.1) Geography (x1.1)",
+    "weightingRaw": "Chemistry (x1.5) Biology (x1.5) Physics (x1.2) Math, M1/M2 (x1.1) Geography (x1.1)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 24.6;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7578,9 +8813,34 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.5
+      },
+      {
+        "subjects": [
+          "Physics"
+        ],
+        "multiplier": 1.2
+      },
+      {
+        "subjects": [
+          "Geography",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.1
+      }
+    ]
   },
   {
     "jupasCode": "JS8012",
@@ -7595,8 +8855,8 @@
     "weightingRaw": "English (x1.5) Geography (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25.3;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7620,9 +8880,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "Geography"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8013",
@@ -7634,11 +8904,11 @@
     "scoreScale": "SCALE_7",
     "median": 24.5,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Chinese History (x1.5) Economics (x1.5) Geography (x1.5) History (x1.5) Specified ApL subject(s) (x1.5)",
+    "weightingRaw": "The best one subject of Chinese History, Economics, Geography or History (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25.3;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7662,9 +8932,21 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Economics",
+          "Geography",
+          "History",
+          "The best one subject of Chinese History"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8651",
@@ -7676,11 +8958,11 @@
     "scoreScale": "SCALE_7",
     "median": 20,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "(No subject weighting)",
+    "weightingRaw": "N/A",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 20;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7704,9 +8986,11 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS8663",
@@ -7721,8 +9005,8 @@
     "weightingRaw": "Chinese Language (x1.5) English Language (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 23.5;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7746,9 +9030,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8674",
@@ -7763,8 +9057,8 @@
     "weightingRaw": "Chinese Language (x1.5) Chinese Literature (x1.5) ICT (x1.5)",
     "preferredSubjectsRaw": "Chinese: 5",
     "notes": "Specific subject mean: 23.8;",
-    "sourcePage": 24,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7788,9 +9082,20 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "Chinese Literature",
+          "ICT"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8675",
@@ -7805,8 +9110,8 @@
     "weightingRaw": "English Language (x1.5) ICT (x1.5) Literature in English (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 21.5;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7830,9 +9135,20 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "English Language",
+          "English Literature Language",
+          "ICT"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8685",
@@ -7844,11 +9160,11 @@
     "scoreScale": "SCALE_7",
     "median": 19.3,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Music (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Music (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 20.3;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7872,9 +9188,18 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Music"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8686",
@@ -7886,11 +9211,11 @@
     "scoreScale": "SCALE_7",
     "median": 21.8,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Visual Arts (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Visual Arts (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 22;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7914,9 +9239,18 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8687",
@@ -7931,8 +9265,8 @@
     "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Chinese History (x1.5) DAT (x1.5) History (x1.5) Visual Arts (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25.5;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7956,9 +9290,23 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese History",
+          "Chinese Language",
+          "Design and Applied Technology",
+          "English Language",
+          "History",
+          "Visual Arts"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8688",
@@ -7970,11 +9318,11 @@
     "scoreScale": "SCALE_7",
     "median": 18.8,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "(No subject weighting)",
+    "weightingRaw": "N/A",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 19;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -7998,9 +9346,11 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": []
   },
   {
     "jupasCode": "JS8702",
@@ -8012,11 +9362,11 @@
     "scoreScale": "SCALE_7",
     "median": 23,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Biology, Chemistry (x1.6) Geography (x1.2) Math, M1/M2 (x1.2) Physics (x1.1)",
+    "weightingRaw": "Biology (x1.6) Chemistry (x1.6) Geography (x1.2) Math, M1/M2 (x1.2) Physics (x1.2)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 23.2;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -8040,9 +9390,29 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.6
+      },
+      {
+        "subjects": [
+          "Geography",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.2
+      }
+    ]
   },
   {
     "jupasCode": "JS8714",
@@ -8054,11 +9424,11 @@
     "scoreScale": "SCALE_7",
     "median": 24.5,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Math, M1/M2 (x1.5) Biology, Chemistry, Physics (x1.5) DAT, ICT (x1.5) Combined Science (x1.5) Integrated Science (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Math, M1/M2 (x1.5) Biology, Chemistry, Physics (x1.5) DAT (x1.5) ICT (x1.5) Combined Science (x1.5) Integrated Science (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 25;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -8082,9 +9452,25 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8726",
@@ -8096,11 +9482,11 @@
     "scoreScale": "SCALE_7",
     "median": 27.5,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Biology (x2) Physical Education (x2) English Language (x1.5) Math, M1/M2 (x1.5) DAT, ICT (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Biology (x2) Physical Education (x2) English Language (x1.5) Math, M1/M2 (x1.5) DAT (x1.5) ICT (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 28.5;",
-    "sourcePage": 25,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -8124,9 +9510,30 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Physical Education"
+        ],
+        "multiplier": 2.0
+      },
+      {
+        "subjects": [
+          "Design and Applied Technology",
+          "English Language",
+          "ICT",
+          "M1",
+          "M2",
+          "Mathematics Compulsory Part"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8507",
@@ -8138,11 +9545,11 @@
     "scoreScale": "SCALE_7",
     "median": 16,
     "scoreMetric": "Admission Score (with weightings)",
-    "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Specified ApL subjects (x1.5)",
+    "weightingRaw": "Chinese Language (x1.5) English Language (x1.5) Specified ApL subject(s) (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 17.5;",
-    "sourcePage": 26,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -8166,9 +9573,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS8727",
@@ -8183,8 +9600,8 @@
     "weightingRaw": "Chinese Language (x1.5) English Language (x1.5)",
     "preferredSubjectsRaw": "-",
     "notes": "Specific subject mean: 28;",
-    "sourcePage": 26,
-    "dataQuality": "parsed",
+    "sourcePage": 2,
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -8208,9 +9625,19 @@
     ],
     "extractionMethod": "pdfplumber_table_row",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "EdUHK Entrance Requirements and Admission Score Calculation 2026",
+      "localPath": "/Users/chunyinchoi/Downloads/EdUHK_Entrance Requirements and Admission Score Calculation.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.5
+      }
+    ]
   },
   {
     "jupasCode": "JS3003",
@@ -12528,8 +13955,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12567,8 +13995,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12606,8 +14035,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12645,8 +14075,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12663,7 +14094,7 @@
     "upperQuartile": 37,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 37,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -12684,9 +14115,19 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 1: Chinese Language (x1.5)"
   },
   {
     "jupasCode": "JS6236",
@@ -12721,8 +14162,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12739,7 +14181,7 @@
     "upperQuartile": 33,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 37,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -12760,9 +14202,19 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 9: Chinese Language (x1.5)"
   },
   {
     "jupasCode": "JS6286",
@@ -12778,7 +14230,7 @@
     "upperQuartile": 41,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 37,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -12799,9 +14251,19 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 1: Chinese Language (x1.5)"
   },
   {
     "jupasCode": "JS6298",
@@ -12817,7 +14279,7 @@
     "upperQuartile": 44,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 37,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -12838,9 +14300,25 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 2: Biology, Chemistry, Economics, ICT, M1, M2, Physics (x1.5)"
   },
   {
     "jupasCode": "JS6755",
@@ -12877,8 +14355,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12916,8 +14395,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12955,8 +14435,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -12994,8 +14475,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13033,8 +14515,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13072,8 +14555,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13090,7 +14574,7 @@
     "upperQuartile": 50,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 38,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -13111,9 +14595,20 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry"
+        ],
+        "multiplier": 1.3
+      }
+    ],
+    "weightingRaw": "Weighting 3: Biology, Chemistry (x1.3)"
   },
   {
     "jupasCode": "JS6119",
@@ -13129,7 +14624,7 @@
     "upperQuartile": 46,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 38,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -13150,9 +14645,23 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 4: Biology, Chemistry, M1, M2, Physics (x1.5)"
   },
   {
     "jupasCode": "JS6157",
@@ -13189,8 +14698,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13228,8 +14738,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13267,8 +14778,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13306,8 +14818,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13344,8 +14857,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13382,8 +14896,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13420,8 +14935,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13458,8 +14974,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13496,8 +15013,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13534,8 +15052,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13573,8 +15092,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13612,8 +15132,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13650,8 +15171,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13688,8 +15210,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13727,8 +15250,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13766,8 +15290,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13805,8 +15330,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13844,8 +15370,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13883,8 +15410,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13922,8 +15450,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -13940,7 +15469,7 @@
     "upperQuartile": 36,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 39,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -13961,9 +15490,23 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.3
+      }
+    ],
+    "weightingRaw": "Weighting 5: Biology, Chemistry, M1, M2, Physics (x1.3)"
   },
   {
     "jupasCode": "JS6858",
@@ -14000,8 +15543,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14018,7 +15562,7 @@
     "upperQuartile": 39,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 39,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -14039,9 +15583,23 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 6: Biology, Chemistry, M1, M2, Physics (x1.5)"
   },
   {
     "jupasCode": "JS6937",
@@ -14077,8 +15635,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14116,8 +15675,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14154,8 +15714,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14172,7 +15733,7 @@
     "upperQuartile": 57,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 40,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -14193,9 +15754,22 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "ICT",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 7: Biology, Chemistry, ICT, Physics (x1.5)"
   },
   {
     "jupasCode": "JS6248",
@@ -14232,8 +15806,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14243,14 +15818,14 @@
     "category": "UGC-funded",
     "titleEn": "Bachelor of Science in Innovation and Technology",
     "formulaType": "BEST_4",
-    "formulaRaw": "2 x Eng + 2 x Math + Best 4 Subjects with [ Weighting 9 ]",
+    "formulaRaw": "2 x Eng + 2 x Math + Best 4 Subjects with [ Weighting 10 ]",
     "scoreScale": "SCALE_8_5",
     "median": 55,
     "lowerQuartile": 52,
     "upperQuartile": 58,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 40,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -14271,9 +15846,26 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Design and Applied Technology",
+          "ICT",
+          "M1",
+          "M2",
+          "Physics",
+          "Technology and Living"
+        ],
+        "multiplier": 2.0
+      }
+    ],
+    "weightingRaw": "Weighting 10: Biology, Chemistry, Design and Applied Technology, ICT, M1, M2, Physics, Technology and Living (x2)"
   },
   {
     "jupasCode": "JS6705",
@@ -14310,8 +15902,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14349,8 +15942,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14388,8 +15982,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14427,8 +16022,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14466,8 +16062,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14505,8 +16102,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14544,8 +16142,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14583,8 +16182,9 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
     }
   },
   {
@@ -14601,7 +16201,7 @@
     "upperQuartile": 44,
     "scoreMetric": "Admissions Score Based on 2025 Main Selection Principle",
     "sourcePage": 40,
-    "dataQuality": "parsed",
+    "dataQuality": "complete",
     "requiredSubjects": [
       {
         "subject": "Chinese Language",
@@ -14622,9 +16222,25 @@
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",
     "source": {
-      "name": "af_2025_JUPAS.pdf",
-      "retrievedDate": "2026-07-05"
-    }
+      "name": "HKU JUPAS Admissions Information 2026",
+      "localPath": "/Users/chunyinchoi/Desktop/HKU-JUPAS-Admissions-Information-2026.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Economics",
+          "ICT",
+          "M1",
+          "M2",
+          "Physics"
+        ],
+        "multiplier": 1.5
+      }
+    ],
+    "weightingRaw": "Weighting 8: Biology, Chemistry, Economics, ICT, M1, M2, Physics (x1.5)"
   },
   {
     "jupasCode": "JS9009",

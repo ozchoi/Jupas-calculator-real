@@ -21,8 +21,9 @@ function isCoreScoreSubject(subject: string): boolean {
 }
 
 function multiplierFor(programme: Programme, subject: string): { multiplier: number; note?: string } {
-  let multiplier = 1;
-  let note: string | undefined;
+  const direct = directFormulaMultiplier(programme.formulaRaw, subject);
+  let multiplier = direct.multiplier;
+  let note = direct.note;
 
   programme.weightingRules?.forEach((rule) => {
     if (rule.subjects.includes(subject) && rule.multiplier > multiplier) {
@@ -32,6 +33,47 @@ function multiplierFor(programme: Programme, subject: string): { multiplier: num
   });
 
   return { multiplier, note };
+}
+
+function directFormulaMultiplier(formulaRaw: string, subject: string): { multiplier: number; note?: string } {
+  const formula = formulaRaw.replace(/\s+/g, " ");
+  const directChecks: Array<[string, string[]]> = [
+    ["English Language", ["Eng", "English"]],
+    ["Chinese Language", ["Chin", "Chinese"]],
+    ["Mathematics Compulsory Part", ["Math", "Mathematics"]],
+    ["M1", ["M1"]],
+    ["M2", ["M2"]],
+  ];
+
+  for (const [targetSubject, aliases] of directChecks) {
+    if (subject !== targetSubject) continue;
+    for (const alias of aliases) {
+      const escaped = alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const match = formula.match(new RegExp(`(\\d+(?:\\.\\d+)?)\\s*x\\s*${escaped}\\b`, "i"));
+      if (match) {
+        const multiplier = Number(match[1]);
+        return { multiplier, note: `${alias} x${multiplier}` };
+      }
+    }
+  }
+
+  if (subject === "M2") {
+    const match = formula.match(/(\d+(?:\.\d+)?)\s*x\s*M1\s*\/\s*M2/i);
+    if (match) {
+      const multiplier = Number(match[1]);
+      return { multiplier, note: `M1/M2 x${multiplier}` };
+    }
+  }
+
+  if (["Biology", "Chemistry", "Physics"].includes(subject)) {
+    const match = formula.match(/(\d+(?:\.\d+)?)\s*x\s*Best\s+Sci\s+Subject/i);
+    if (match) {
+      const multiplier = Number(match[1]);
+      return { multiplier, note: `Best Sci Subject x${multiplier}` };
+    }
+  }
+
+  return { multiplier: 1 };
 }
 
 export function calculateProgrammeScore(
@@ -85,10 +127,11 @@ function selectSubjects(programme: Programme, scored: UsedSubject[]): UsedSubjec
   }
 
   const required = requiredSubjectsFromFormula(programme.formulaRaw);
-  const count = formulaCount(programme.formulaType);
+  const count = subjectCount(programme, required.length);
   const selected = required.length ? selectWithRequired(scored, required, count) : bestSubjects(scored, count);
 
-  if (programme.formulaType === "BEST_5_PLUS_BONUS") {
+  const bonus = bonusRule(programme.formulaRaw, programme.formulaType);
+  if (bonus) {
     const sixth = scored
       .filter((item) => !selected.some((used) => used.subject === item.subject))
       .sort((a, b) => b.weightedScore - a.weightedScore)[0];
@@ -96,9 +139,9 @@ function selectSubjects(programme: Programme, scored: UsedSubject[]): UsedSubjec
     if (sixth) {
       selected.push({
         ...sixth,
-        multiplier: Number((sixth.multiplier * 0.5).toFixed(2)),
-        weightedScore: Number((sixth.weightedScore * 0.5).toFixed(2)),
-        note: "6th subject bonus x0.5",
+        multiplier: Number((sixth.multiplier * bonus.multiplier).toFixed(2)),
+        weightedScore: Number((sixth.weightedScore * bonus.multiplier).toFixed(2)),
+        note: `${bonus.ordinal} subject bonus x${bonus.multiplier}`,
       });
     }
   }
@@ -108,6 +151,31 @@ function selectSubjects(programme: Programme, scored: UsedSubject[]): UsedSubjec
 
 function bestSubjects(scored: UsedSubject[], count: number): UsedSubject[] {
   return [...scored].sort((a, b) => b.weightedScore - a.weightedScore).slice(0, count);
+}
+
+function subjectCount(programme: Programme, requiredCount: number): number {
+  const formula = programme.formulaRaw.replace(/\s+/g, " ");
+  const bestMatch = formula.match(/Best\s+(\d+)\s+(?:Subjects?|from)/i);
+  const extraBestSubject = /\+\s*Best\s+(?:Remaining\s+)?Subject\b/i.test(formula) ? 1 : 0;
+  const explicitPrefix = /(?:^|\+)\s*(?:\d+(?:\.\d+)?\s*x\s*)?(?:Eng|Chin|Math|M1|M2|Best\s+Sci\s+Subject)\b/i.test(formula);
+
+  if (bestMatch && explicitPrefix) {
+    return requiredCount + Number(bestMatch[1]) + extraBestSubject;
+  }
+
+  if (bestMatch) return Number(bestMatch[1]) + extraBestSubject;
+  return formulaCount(programme.formulaType);
+}
+
+function bonusRule(
+  formulaRaw: string,
+  formulaType: Programme["formulaType"],
+): { multiplier: number; ordinal: string } | undefined {
+  const formula = formulaRaw.replace(/\s+/g, " ");
+  const match = formula.match(/(\d+(?:\.\d+)?)\s*x\s*(6th|7th)\s+Best\s+Subject/i);
+  if (match) return { multiplier: Number(match[1]), ordinal: match[2] };
+  if (formulaType === "BEST_5_PLUS_BONUS") return { multiplier: 0.5, ordinal: "6th" };
+  return undefined;
 }
 
 function selectWithRequired(
@@ -135,14 +203,14 @@ function selectWithRequired(
 function requiredSubjectsFromFormula(formulaRaw: string): string[] {
   const formula = formulaRaw.toLowerCase();
   const required: string[] = [];
-  if (/include(?:s|\s)?[^.]*english/.test(formula)) required.push("English Language");
-  if (/include(?:s|\s)?[^.]*chinese/.test(formula)) required.push("Chinese Language");
-  if (/include(?:s|\s)?[^.]*math/.test(formula)) required.push("Mathematics Compulsory Part");
+  if (/include(?:s|\s)?[^.]*english/.test(formula) || /\beng\b/.test(formula)) required.push("English Language");
+  if (/include(?:s|\s)?[^.]*chinese/.test(formula) || /\bchin\b/.test(formula)) required.push("Chinese Language");
+  if (/include(?:s|\s)?[^.]*math/.test(formula) || /\bmath\b/.test(formula)) required.push("Mathematics Compulsory Part");
   return required;
 }
 
 function calculationConfidence(programme: Programme): CalculationConfidence {
-  if (programme.weightingRules?.length && programme.source?.url) return "official-structured";
+  if (programme.weightingRules?.length && programme.source?.name) return "official-structured";
   if (isGenericFormula(programme) && (!programme.weightingRaw || programme.weightingRaw.trim() === "1")) {
     return "generic-formula";
   }

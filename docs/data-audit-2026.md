@@ -12,7 +12,11 @@ The uploaded 2025 JUPAS admissions score reference says the 2025 candidate score
 
 - Total programmes in `src/data/programmes.json`: 360
 - HKUST: updated from the official HKUST JUPAS calculator data and mostly has structured weighting rules.
-- Other institutions: programme rows and score references are present, but most programme-specific formulas/weightings remain raw text instead of structured calculation rules.
+- CityUHK: updated from the attached 2026 admission score formula PDF. All 58 programmes now have 2026 formula/source metadata; 38 have subject weighting rules above the default x1.
+- EdUHK: updated from the attached 2026 entrance requirements and admission score calculation PDF. All 26 programmes now have 2026 source metadata; 24 have heavier-subject weighting rules.
+- LingU: updated from the attached 2026 JUPAS admission requirements PDF. All 23 programmes now have structured subject weighting rules.
+- HKU: all 55 programmes now have 2026 source metadata from the attached HKU documents. The 11 programmes with explicit visible HKU weighting boxes have structured weighting rules.
+- PolyU, CUHK, HKBU, and HKMU: programme rows and score references are present, but most programme-specific formulas/weightings remain raw text instead of structured calculation rules.
 
 Because of that, the app should treat non-structured formulas as reference estimates unless their formula is a simple generic Best 4 / Best 5 / Best 6 calculation.
 
@@ -35,14 +39,14 @@ Because of that, the app should treat non-structured formulas as reference estim
 
 - CityUHK uses the 8.5 conversion scale for Category A subjects.
 - Citizenship and Social Development is required for admission but not counted in the admission score.
-- App status: score scale and CSD handling are aligned, but programme-specific weightings still need structured extraction from the official calculator/page.
+- App status: score scale, CSD handling, 2026 formula text, median/LQ reference scores, and available subject weighting rules have been imported from the attached 2026 PDF.
 
 ### HKU
 
 - HKU has a 2026 JUPAS score calculator.
 - HKU uses the 8.5 conversion scale for Category A subjects.
 - Programme scoring formulas may vary by programme, and extra subjects may be considered where applicable.
-- App status: score scale is aligned, but programme-specific weighting rules need structured extraction.
+- App status: score scale is aligned. The attached HKU PDFs were used to add source metadata and structured weighting rules for visible weighting boxes, including JS6054, JS6286, JS6298, JS6107, JS6119, JS6688, JS6901, JS6224, JS6999, JS6274, and JS6602. Remaining HKU formulas still need a dedicated formula-rule model for exact treatment of every arithmetic pattern.
 
 ### CUHK
 
@@ -60,18 +64,18 @@ Because of that, the app should treat non-structured formulas as reference estim
 
 - HKBU uses the 7-point Category A scale.
 - HKBU says scores are calculated from programme weighted admission score formulas and are subject to ongoing review.
-- App status: scale is aligned, but programme weighted formulas need structured extraction.
+- App status: scale is aligned, but the attached prospectus points to a QR/external score-calculation method. The detailed linked weighting table still needs to be resolved and imported.
 
 ### LingU
 
 - LingU has a 2026 score calculator.
-- App status: needs structured extraction from LingU's calculator/PDF.
+- App status: structured subject weighting rules have been imported from the attached 2026 admission requirements PDF.
 
 ### EdUHK
 
 - EdUHK generally uses Best 5 excluding CSD.
 - EdUHK says subject weightings may be adopted for particular programmes and may vary each year.
-- App status: generic Best 5 estimates are reasonable where no weighting applies; weighted programmes need structured extraction.
+- App status: generic Best 5 plus heavier-subject weightings have been imported from the attached 2026 PDF.
 
 ### HKMU
 
@@ -83,7 +87,7 @@ Because of that, the app should treat non-structured formulas as reference estim
 
 For the MVP, score labels should use three confidence levels:
 
-- `Official structured`: official source URL and structured subject weighting rules exist.
+- `Official structured`: official source metadata and structured subject weighting rules exist.
 - `Generic formula`: formula is simple Best 4 / Best 5 / Best 6 or equivalent without programme-specific weighting.
 - `Reference estimate`: raw formula or weighting text exists but has not been converted into structured rules.
 
@@ -93,13 +97,11 @@ Risk colours and threshold comparisons should still work for reference estimates
 
 To make the calculator fully reliable for all nine institutions, build an importer for each official calculator/PDF and convert formulas into structured rules:
 
-1. HKU official calculator/PDF.
+1. Finish HKU formula-rule modelling for every arithmetic pattern.
 2. CUHK 2026 calculator/PDF.
-3. CityUHK official calculator.
-4. PolyU programme/scheme weighting pages.
-5. HKBU official calculator.
-6. LingU 2026 calculator/PDF.
-7. EdUHK subject weighting documents.
-8. HKMU programme calculator data.
+3. PolyU programme/scheme weighting pages.
+4. HKBU official QR-linked calculator/weighting table.
+5. HKMU programme calculator data.
+6. HSUHK 2025 admissions score reference if HSUHK programmes are added to the app dataset.
 
 Until then, the app should avoid claiming exact official calculation for every programme.

@@ -71,6 +71,7 @@ export type Programme = {
   source?: {
     name: string;
     url?: string;
+    localPath?: string;
     retrievedDate?: string;
   };
 };
