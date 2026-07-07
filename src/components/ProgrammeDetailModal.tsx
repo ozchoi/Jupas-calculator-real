@@ -128,6 +128,7 @@ export default function ProgrammeDetailModal({
               <Info label="Median" value={programme.median?.toString() ?? "-"} />
               <Info label="UQ" value={programme.upperQuartile?.toString() ?? "-"} />
               <Info label="Mean" value={programme.mean?.toString() ?? "-"} />
+              <Info label="Average" value={programme.averageScore?.toString() ?? "-"} />
               <Info label="Highest" value={programme.highestAttainable?.toString() ?? "-"} />
               <Info label="Quality" value={programme.dataQuality} />
             </div>

@@ -153,6 +153,7 @@ function statsText(programme: Programme): string {
     `M ${formatStat(programme.median)}`,
     `UQ ${formatStat(programme.upperQuartile)}`,
     typeof programme.mean === "number" ? `Mean ${programme.mean}` : undefined,
+    typeof programme.averageScore === "number" ? `Average ${programme.averageScore}` : undefined,
   ].filter(Boolean);
   const missing = [
     typeof programme.lowerQuartile !== "number" && "LQ",

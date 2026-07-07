@@ -34,8 +34,9 @@ const choiceStorageKey = "jupas-choice-builder-choices";
 
 const defaultFilters: Filters = {
   query: "",
-  institution: "All",
-  faculty: "All",
+  institutions: [],
+  faculties: [],
+  weightedSubjects: [],
   category: "All",
   formulaType: "All",
   meetsRequirements: false,
@@ -81,8 +82,9 @@ export default function ChoiceBuilder() {
         .toLowerCase();
 
       if (query && !searchable.includes(query)) return false;
-      if (filters.institution !== "All" && programme.institution !== filters.institution) return false;
-      if (filters.faculty !== "All" && programme.faculty !== filters.faculty) return false;
+      if (filters.institutions.length && !filters.institutions.includes(programme.institution)) return false;
+      if (filters.faculties.length && (!programme.faculty || !filters.faculties.includes(programme.faculty))) return false;
+      if (filters.weightedSubjects.length && !hasSelectedHighWeighting(programme, filters.weightedSubjects)) return false;
       if (filters.category !== "All" && programme.category !== filters.category) return false;
       if (filters.formulaType !== "All" && programme.formulaType !== filters.formulaType) return false;
       if (filters.meetsRequirements && !requirement.meetsRequirements) return false;
@@ -97,6 +99,10 @@ export default function ChoiceBuilder() {
       if (pinDelta) return pinDelta;
       const hideDelta = Number(hiddenCodes.includes(a.programme.jupasCode)) - Number(hiddenCodes.includes(b.programme.jupasCode));
       if (hideDelta) return hideDelta;
+      if (filters.weightedSubjects.length) {
+        const weightingDelta = maxSelectedWeighting(b.programme, filters.weightedSubjects) - maxSelectedWeighting(a.programme, filters.weightedSubjects);
+        if (weightingDelta) return weightingDelta;
+      }
 
       if (filters.sortBy === "Highest chance") return chanceRank(b.chance) - chanceRank(a.chance);
       if (filters.sortBy === "Highest score difference above LQ") {
@@ -166,9 +172,24 @@ export default function ChoiceBuilder() {
   }
 
   const institutions = unique(programmes.map((programme) => programme.institution));
-  const faculties = unique(programmes.map((programme) => programme.faculty).filter(Boolean) as string[]);
+  const facultyGroups = institutions
+    .map((institution) => ({
+      institution,
+      faculties: unique(
+        programmes
+          .filter((programme) => programme.institution === institution)
+          .map((programme) => programme.faculty)
+          .filter(Boolean) as string[],
+      ),
+    }))
+    .filter((group) => group.faculties.length);
   const categories = unique(programmes.map((programme) => programme.category).filter(Boolean) as string[]);
   const formulaTypes = unique(programmes.map((programme) => programme.formulaType));
+  const weightedSubjectOptions = unique(
+    programmes
+      .flatMap((programme) => programme.weightingRules?.filter((rule) => rule.multiplier > 1).flatMap((rule) => rule.subjects) ?? [])
+      .filter((subject) => subject !== "Other elective subjects"),
+  );
 
   return (
     <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
@@ -183,6 +204,9 @@ export default function ChoiceBuilder() {
             </div>
             <div className="text-sm font-semibold text-teal">{notice}</div>
           </div>
+          <div className="mx-auto mt-4 max-w-[1600px]">
+            <Disclaimer />
+          </div>
         </header>
 
         <main className="mx-auto grid max-w-[1600px] lg:grid-cols-[340px_minmax(0,1fr)_420px]">
@@ -193,16 +217,14 @@ export default function ChoiceBuilder() {
               filters={filters}
               onChange={setFilters}
               institutions={institutions}
-              faculties={faculties}
+              facultyGroups={facultyGroups}
+              weightedSubjectOptions={weightedSubjectOptions}
               categories={categories}
               formulaTypes={formulaTypes}
               onReset={() => setFilters(defaultFilters)}
             />
             <div className="p-4 pb-0">
               <AdmissionLegend />
-            </div>
-            <div className="p-4 pb-0">
-              <Disclaimer />
             </div>
             <ProgrammeList
               programmes={filteredViews}
@@ -356,4 +378,45 @@ function unique<T extends string>(items: T[]): T[] {
 
 function diffFrom(view: ProgrammeView, key: "lowerQuartile" | "median"): number {
   return view.calculation.totalScore - (view.programme[key] ?? Number.POSITIVE_INFINITY);
+}
+
+function hasSelectedHighWeighting(programme: Programme, subjects: string[]): boolean {
+  return maxSelectedWeighting(programme, subjects) > 1;
+}
+
+function maxSelectedWeighting(programme: Programme, subjects: string[]): number {
+  const aliases = subjects.flatMap(subjectAliases);
+  const ruleWeight = Math.max(
+    0,
+    ...(programme.weightingRules ?? [])
+      .filter((rule) => rule.multiplier > 1 && rule.subjects.some((subject) => aliases.includes(normalizeSubject(subject))))
+      .map((rule) => rule.multiplier),
+  );
+  const rawText = `${programme.formulaRaw} ${programme.weightingRaw ?? ""}`;
+  const textWeight = Math.max(0, ...aliases.map((subject) => directTextWeight(rawText, subject)));
+  return Math.max(ruleWeight, textWeight);
+}
+
+function directTextWeight(text: string, subject: string): number {
+  const escaped = subject.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = text.match(new RegExp(`(\\d+(?:\\.\\d+)?)\\s*x\\s*${escaped}\\b|${escaped}[^;,.]*?\\(x\\s*(\\d+(?:\\.\\d+)?)\\)`, "i"));
+  return match ? Number(match[1] ?? match[2]) : 0;
+}
+
+function subjectAliases(subject: string): string[] {
+  const normalized = normalizeSubject(subject);
+  const aliases: Record<string, string[]> = {
+    "English Language": ["English Language", "English", "Eng"],
+    "Chinese Language": ["Chinese Language", "Chinese", "Chin"],
+    "Mathematics Compulsory Part": ["Mathematics Compulsory Part", "Mathematics", "Math"],
+    ICT: ["ICT", "Information and Communication Technology"],
+    BAFS: ["BAFS", "Business, Accounting and Financial Studies"],
+    M1: ["M1", "Mathematics Extended Part Module 1"],
+    M2: ["M2", "Mathematics Extended Part Module 2"],
+  };
+  return (aliases[normalized] ?? [normalized]).map(normalizeSubject);
+}
+
+function normalizeSubject(subject: string): string {
+  return subject.trim();
 }

@@ -78,7 +78,8 @@ function statsText(programme: ProgrammeView["programme"]): string {
     typeof programme.upperQuartile !== "number" && "UQ",
   ].filter(Boolean);
 
-  return `LQ ${programme.lowerQuartile ?? "-"} · M ${programme.median ?? "-"} · UQ ${programme.upperQuartile ?? "-"}${
+  const average = typeof programme.averageScore === "number" ? ` · Average ${programme.averageScore}` : "";
+  return `LQ ${programme.lowerQuartile ?? "-"} · M ${programme.median ?? "-"} · UQ ${programme.upperQuartile ?? "-"}${average}${
     missing.length ? ` (${missing.join(", ")} not available)` : ""
   }`;
 }

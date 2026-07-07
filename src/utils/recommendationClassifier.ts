@@ -13,6 +13,9 @@ export function classifyRecommendation(programme: Programme, score: number): Cha
   if (programme.medianProfile || programme.lowerQuartileProfile || programme.dataQuality === "profile-only") {
     return "Profile reference only";
   }
+  if (typeof programme.averageScore === "number" && typeof programme.median !== "number" && typeof programme.lowerQuartile !== "number") {
+    return score >= programme.averageScore ? "Above median" : "Insufficient data";
+  }
   if (typeof programme.median !== "number" || typeof programme.lowerQuartile !== "number") {
     return "Insufficient data";
   }
@@ -54,6 +57,7 @@ export function admissionStatus(programme: Programme, score: number, meetsRequir
   if (typeof programme.upperQuartile === "number" && score >= programme.upperQuartile) return "uq";
   if (typeof programme.median === "number" && score >= programme.median) return "medianMean";
   if (typeof programme.mean === "number" && score >= programme.mean) return "medianMean";
+  if (typeof programme.averageScore === "number" && score >= programme.averageScore) return "medianMean";
   if (typeof programme.lowerQuartile === "number" && score >= programme.lowerQuartile) return "lq";
   return "minimumOnly";
 }
@@ -61,7 +65,7 @@ export function admissionStatus(programme: Programme, score: number, meetsRequir
 export function admissionStatusLabel(status: AdmissionStatus): string {
   return {
     uq: ">= UQ",
-    medianMean: ">= Median/Mean",
+    medianMean: ">= Median/Mean/Average",
     lq: ">= LQ",
     minimumOnly: "Meets minimum only",
     notQualified: "Does not meet requirement",

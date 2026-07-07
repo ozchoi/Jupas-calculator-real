@@ -95,9 +95,9 @@ export default function FilterBar({
       <Select label="Formula" value={filters.formulaType} options={["All", ...formulaTypes]} onChange={(value) => patch("formulaType", value as Filters["formulaType"])} />
       <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
       <Toggle label="Meet requirements" checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
-      <Toggle label="Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
-      <Toggle label="Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
-      <Toggle label="Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
+      <Toggle label="Your Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
+      <Toggle label="Your Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
+      <Toggle label="Your Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
       <button
         type="button"
         className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-semibold text-ink hover:bg-ink/5"
