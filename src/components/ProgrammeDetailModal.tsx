@@ -29,7 +29,6 @@ export default function ProgrammeDetailModal({
             <div className="mb-2 flex flex-wrap gap-2 text-xs font-semibold">
               <span className="rounded-md bg-ink px-2 py-1 text-white">{programme.jupasCode}</span>
               <span className="rounded-md bg-teal/10 px-2 py-1 text-teal">{programme.institution}</span>
-              <span className="rounded-md bg-moss/10 px-2 py-1 text-moss">{programme.scoreScale.replace("SCALE_", "")} scale</span>
             </div>
             <h2 className="text-xl font-semibold text-ink">{programme.titleEn}</h2>
             {programme.titleZh && <p className="mt-1 text-ink/60">{programme.titleZh}</p>}
@@ -41,7 +40,7 @@ export default function ProgrammeDetailModal({
 
         <div className="grid gap-5 p-5">
           <div className="grid gap-3 md:grid-cols-4">
-            <Info label="Calculated score" value={calculation.totalScore.toString()} />
+            <Info label="Your Score" value={calculation.totalScore.toString()} />
             <Info label="Risk" value={chance} />
             <Info label="Calculation" value={confidenceLabel(calculation.confidence)} />
             <Info label="Formula" value={programme.formulaRaw} />

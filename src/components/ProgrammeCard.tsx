@@ -1,5 +1,6 @@
 import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
+import { useState } from "react";
 import type { CalculationConfidence, CalculationResult, Programme } from "../types/programme";
 import { admissionStatus, admissionStatusLabel, type AdmissionStatus, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
@@ -35,6 +36,7 @@ export default function ProgrammeCard({
   onPin,
   onHide,
 }: Props) {
+  const [showDetails, setShowDetails] = useState(false);
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: `programme-${programme.jupasCode}`,
     data: { type: "programme", jupasCode: programme.jupasCode },
@@ -69,37 +71,30 @@ export default function ProgrammeCard({
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="rounded-md bg-ink px-2 py-1 text-xs font-semibold text-white">{programme.jupasCode}</span>
             <span className="rounded-md bg-teal/10 px-2 py-1 text-xs font-semibold text-teal">{programme.institution}</span>
-            <span className="rounded-md bg-moss/10 px-2 py-1 text-xs font-medium text-moss">{programme.scoreScale.replace("SCALE_", "")} scale</span>
             {pinned && <span className="rounded-md bg-coral/10 px-2 py-1 text-xs font-semibold text-coral">Pinned</span>}
           </div>
           <h3 className="text-base font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-sm text-ink/60">{programme.titleZh}</p>}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
-            <Metric label="Score" value={calculation.totalScore.toString()} />
+            <Metric label="Your Score" value={calculation.totalScore.toString()} />
             <Metric label="Chance" value={statusLabel} />
             <Metric label="Calculation" value={confidenceLabel(calculation.confidence)} />
-            <Metric label="Formula" value={programme.formulaRaw} />
-            <Metric
-              label="Stats"
-              value={[
-                typeof programme.lowerQuartile === "number" && `LQ ${programme.lowerQuartile}`,
-                typeof programme.median === "number" && `M ${programme.median}`,
-                typeof programme.upperQuartile === "number" && `UQ ${programme.upperQuartile}`,
-                typeof programme.mean === "number" && `Mean ${programme.mean}`,
-              ]
-                .filter(Boolean)
-                .join(" / ") || "No data"}
-            />
+            <Metric label="Stats" value={statsText(programme)} />
           </div>
-          {calculation.warning ? (
-            <p className="mt-3 rounded-md bg-white/70 px-3 py-2 text-sm font-medium text-ink/65">{calculation.warning}</p>
-          ) : null}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
             <Metric label="Diff from Median" value={medianGap} />
             <Metric label="Diff from LQ" value={lqGap} />
           </div>
-          {programme.weightingRaw ? <p className="mt-3 text-sm text-ink/65">{programme.weightingRaw}</p> : null}
-          {programme.notes ? <p className="mt-2 text-sm text-ink/55">{programme.notes}</p> : null}
+          {showDetails ? (
+            <div className="mt-3 grid gap-2 text-sm text-ink/65">
+              <Metric label="Formula" value={programme.formulaRaw} />
+              {calculation.warning ? (
+                <p className="rounded-md bg-white/70 px-3 py-2 font-medium">{calculation.warning}</p>
+              ) : null}
+              {programme.weightingRaw ? <p className="rounded-md bg-white/70 px-3 py-2">{programme.weightingRaw}</p> : null}
+              {programme.notes ? <p className="rounded-md bg-white/70 px-3 py-2 text-ink/55">{programme.notes}</p> : null}
+            </div>
+          ) : null}
           {!requirement.meetsRequirements && (
             <p className="mt-3 rounded-md bg-coral/10 px-3 py-2 text-sm font-medium text-coral">
               Requirement warning: {requirement.missing.join(", ")}
@@ -118,6 +113,13 @@ export default function ProgrammeCard({
         </button>
         <button type="button" className="inline-flex items-center gap-2 rounded-md border border-ink/15 px-3 py-2 text-sm font-semibold hover:bg-ink/5" onClick={onOpen}>
           <Eye size={16} /> View Details
+        </button>
+        <button
+          type="button"
+          className="inline-flex items-center gap-2 rounded-md border border-ink/15 px-3 py-2 text-sm font-semibold hover:bg-ink/5"
+          onClick={() => setShowDetails((value) => !value)}
+        >
+          {showDetails ? "Hide details" : "Show details"}
         </button>
         <button type="button" className="inline-flex items-center gap-2 rounded-md border border-ink/15 px-3 py-2 text-sm font-semibold hover:bg-ink/5" onClick={onPin}>
           <Pin size={16} /> {pinned ? "Unpin" : "Pin"}
@@ -143,6 +145,26 @@ function numericGap(score: number, target?: number): string {
   const gap = scoreDifference(score, target);
   if (gap === undefined) return "N/A";
   return gap > 0 ? `+${gap}` : gap.toString();
+}
+
+function statsText(programme: Programme): string {
+  const values = [
+    `LQ ${formatStat(programme.lowerQuartile)}`,
+    `M ${formatStat(programme.median)}`,
+    `UQ ${formatStat(programme.upperQuartile)}`,
+    typeof programme.mean === "number" ? `Mean ${programme.mean}` : undefined,
+  ].filter(Boolean);
+  const missing = [
+    typeof programme.lowerQuartile !== "number" && "LQ",
+    typeof programme.median !== "number" && "median",
+    typeof programme.upperQuartile !== "number" && "UQ",
+  ].filter(Boolean);
+
+  return `${values.join(" / ")}${missing.length ? ` (${missing.join(", ")} not available)` : ""}`;
+}
+
+function formatStat(value?: number): string {
+  return typeof value === "number" ? value.toString() : "-";
 }
 
 function statusBoxClass(status: AdmissionStatus): string {

@@ -17316,5 +17316,167 @@
       "name": "af_2025_JUPAS.pdf",
       "retrievedDate": "2026-07-05"
     }
+  },
+  {
+    "jupasCode": "JSSH01",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration (Honours) in Supply Chain Management",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 16.4,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+  },
+  {
+    "jupasCode": "JSSH02",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Actuarial Studies and Insurance",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 17.2,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "3" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+  },
+  {
+    "jupasCode": "JSSH03",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Applied Computing",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 16.47,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+  },
+  {
+    "jupasCode": "JSSH04",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Data Science and Business Intelligence",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 16.77,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+  },
+  {
+    "jupasCode": "JSSH05",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Business Analytics and Information Management",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 16.34,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+  },
+  {
+    "jupasCode": "JSSH06",
+    "institution": "HSUHK",
+    "faculty": "SSSDP",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Art and Design",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "scoreScale": "SCALE_7",
+    "averageScore": 14.93,
+    "scoreMetric": "Average admission score",
+    "weightingRaw": "No programme-specific weighting stated in local dataset",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      { "subject": "Chinese Language", "minGrade": "3" },
+      { "subject": "English Language", "minGrade": "3" },
+      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
+      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
+      { "subject": "Elective Subject 1", "minGrade": "2" }
+    ],
+    "source": {
+      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
+      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
+      "retrievedDate": "2026-07-07"
+    },
+    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
   }
 ]

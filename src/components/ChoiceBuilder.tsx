@@ -196,6 +196,7 @@ export default function ChoiceBuilder() {
               faculties={faculties}
               categories={categories}
               formulaTypes={formulaTypes}
+              onReset={() => setFilters(defaultFilters)}
             />
             <div className="p-4 pb-0">
               <AdmissionLegend />

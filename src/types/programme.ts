@@ -8,6 +8,7 @@ export type Institution =
   | "EdUHK"
   | "LingU"
   | "HKMU"
+  | "HSUHK"
   | "SSSDP";
 
 export type FundingCategory = "UGC-funded" | "Self-financing" | "SSSDP" | "Higher Diploma";

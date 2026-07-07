@@ -42,9 +42,7 @@ export default function ChoiceItem({ programme, calculation, requirement, rank, 
           <h3 className="mt-2 text-sm font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-xs text-ink/55">{programme.titleZh}</p>}
           <p className="mt-2 text-xs font-semibold text-ink/70">
-            Score {calculation.totalScore} · LQ {programme.lowerQuartile ?? "-"} · M{" "}
-            {programme.median ?? "-"} · UQ {programme.upperQuartile ?? "-"} ·{" "}
-            {statusLabel}
+            Your Score {calculation.totalScore} · {statsText(programme)} · {statusLabel}
           </p>
         </div>
         <button type="button" className="self-start rounded-md p-2 text-coral hover:bg-coral/10" onClick={onRemove} aria-label="Remove choice">
@@ -71,4 +69,16 @@ function bandBadgeClass(rank: number): string {
   if (rank <= 10) return "bg-moss text-white";
   if (rank <= 15) return "bg-ink text-white";
   return "bg-yellow-500 text-ink";
+}
+
+function statsText(programme: ProgrammeView["programme"]): string {
+  const missing = [
+    typeof programme.lowerQuartile !== "number" && "LQ",
+    typeof programme.median !== "number" && "median",
+    typeof programme.upperQuartile !== "number" && "UQ",
+  ].filter(Boolean);
+
+  return `LQ ${programme.lowerQuartile ?? "-"} · M ${programme.median ?? "-"} · UQ ${programme.upperQuartile ?? "-"}${
+    missing.length ? ` (${missing.join(", ")} not available)` : ""
+  }`;
 }
