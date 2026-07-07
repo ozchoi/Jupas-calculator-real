@@ -1,5 +1,5 @@
 import { X } from "lucide-react";
-import type { CalculationResult, Programme } from "../types/programme";
+import type { CalculationConfidence, CalculationResult, Programme } from "../types/programme";
 import type { StudentResult } from "../types/student";
 import type { ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
@@ -43,9 +43,15 @@ export default function ProgrammeDetailModal({
           <div className="grid gap-3 md:grid-cols-4">
             <Info label="Calculated score" value={calculation.totalScore.toString()} />
             <Info label="Risk" value={chance} />
+            <Info label="Calculation" value={confidenceLabel(calculation.confidence)} />
             <Info label="Formula" value={programme.formulaRaw} />
             <Info label="Faculty" value={programme.faculty ?? "Not specified"} />
           </div>
+          {calculation.warning ? (
+            <section className="rounded-md border border-orange-300 bg-orange-50 p-4 text-sm font-medium text-ink/75">
+              {calculation.warning}
+            </section>
+          ) : null}
 
           <section>
             <h3 className="mb-2 font-semibold text-ink">Formula and Weighting</h3>
@@ -158,4 +164,12 @@ function Info({ label, value }: { label: string; value: string }) {
 function formatRequirement(item: { subject: string; minGrade: string }): string {
   if (item.subject === "Citizenship and Social Development") return `${item.subject}: ${item.minGrade}`;
   return `${item.subject}: ${item.minGrade}+`;
+}
+
+function confidenceLabel(confidence: CalculationConfidence): string {
+  return {
+    "official-structured": "Official structured",
+    "generic-formula": "Generic formula",
+    "reference-estimate": "Reference estimate",
+  }[confidence];
 }

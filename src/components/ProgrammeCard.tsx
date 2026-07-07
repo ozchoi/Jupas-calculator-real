@@ -1,6 +1,6 @@
 import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
-import type { CalculationResult, Programme } from "../types/programme";
+import type { CalculationConfidence, CalculationResult, Programme } from "../types/programme";
 import { admissionStatus, admissionStatusLabel, type AdmissionStatus, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
 import { scoreDifference } from "../utils/thresholds";
@@ -77,6 +77,7 @@ export default function ProgrammeCard({
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
             <Metric label="Score" value={calculation.totalScore.toString()} />
             <Metric label="Chance" value={statusLabel} />
+            <Metric label="Calculation" value={confidenceLabel(calculation.confidence)} />
             <Metric label="Formula" value={programme.formulaRaw} />
             <Metric
               label="Stats"
@@ -90,6 +91,9 @@ export default function ProgrammeCard({
                 .join(" / ") || "No data"}
             />
           </div>
+          {calculation.warning ? (
+            <p className="mt-3 rounded-md bg-white/70 px-3 py-2 text-sm font-medium text-ink/65">{calculation.warning}</p>
+          ) : null}
           <div className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
             <Metric label="Diff from Median" value={medianGap} />
             <Metric label="Diff from LQ" value={lqGap} />
@@ -149,4 +153,12 @@ function statusBoxClass(status: AdmissionStatus): string {
     minimumOnly: "border-orange-300 bg-orange-50",
     notQualified: "border-coral/40 bg-coral/10",
   }[status];
+}
+
+function confidenceLabel(confidence: CalculationConfidence): string {
+  return {
+    "official-structured": "Official structured",
+    "generic-formula": "Generic formula",
+    "reference-estimate": "Reference estimate",
+  }[confidence];
 }

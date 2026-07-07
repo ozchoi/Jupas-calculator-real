@@ -84,8 +84,12 @@ export type UsedSubject = {
   note?: string;
 };
 
+export type CalculationConfidence = "official-structured" | "generic-formula" | "reference-estimate";
+
 export type CalculationResult = {
   totalScore: number;
   usedSubjects: UsedSubject[];
   breakdown: string[];
+  confidence: CalculationConfidence;
+  warning?: string;
 };
