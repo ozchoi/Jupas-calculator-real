@@ -187,8 +187,8 @@ export default function ChoiceBuilder() {
   const formulaTypes = unique(programmes.map((programme) => programme.formulaType));
   const weightedSubjectOptions = unique(
     programmes
-      .flatMap((programme) => programme.weightingRules?.filter((rule) => rule.multiplier > 1).flatMap((rule) => rule.subjects) ?? [])
-      .filter((subject) => subject !== "Other elective subjects"),
+      .flatMap((programme) => programme.weightingRules?.filter((rule) => rule.multiplier > 1).flatMap((rule) => rule.subjects.map(weightingFilterSubject)) ?? [])
+      .filter((subject) => subject && subject !== "Other elective subjects"),
   );
 
   return (
@@ -389,7 +389,7 @@ function maxSelectedWeighting(programme: Programme, subjects: string[]): number 
   const ruleWeight = Math.max(
     0,
     ...(programme.weightingRules ?? [])
-      .filter((rule) => rule.multiplier > 1 && rule.subjects.some((subject) => aliases.includes(normalizeSubject(subject))))
+      .filter((rule) => rule.multiplier > 1 && rule.subjects.some((subject) => aliases.includes(normalizeSubject(weightingFilterSubject(subject)))))
       .map((rule) => rule.multiplier),
   );
   const rawText = `${programme.formulaRaw} ${programme.weightingRaw ?? ""}`;
@@ -419,4 +419,35 @@ function subjectAliases(subject: string): string[] {
 
 function normalizeSubject(subject: string): string {
   return subject.trim();
+}
+
+function weightingFilterSubject(subject: string): string {
+  const cleaned = subject
+    .replace(/\s+in\s+(?:1st|2nd|first|second)\s+elective\b/gi, "")
+    .replace(/^The best one subject of\s+/i, "")
+    .replace(/^Best one subject of\s+/i, "")
+    .replace(/^Best\s+/i, "")
+    .replace(/\s*\([^)]*$/, "")
+    .replace(/\)+$/g, "")
+    .trim();
+
+  const aliases: Record<string, string> = {
+    "BAFS": "BAFS",
+    "BAFS Accounting": "BAFS",
+    "Business Management": "BAFS",
+    "Business, Accounting": "BAFS",
+    "Business, Accounting and Financial Studies": "BAFS",
+    "Design  Applied Technology": "Design and Applied Technology",
+    "Information and Communication Technology": "ICT",
+    "English Literature Language": "English Literature",
+    "Health Management": "Health Management and Social Care",
+    "Mathematics Extended Part Module 1": "M1",
+    "Mathematics Extended Part Module 2": "M2",
+    "Technology": "Technology and Living",
+    "Living": "Technology and Living",
+    "Tourism": "Tourism and Hospitality Studies",
+    "Hospitality Studies": "Tourism and Hospitality Studies",
+  };
+
+  return aliases[cleaned] ?? cleaned;
 }

@@ -60,13 +60,15 @@ export default function FilterBar({
   };
 
   return (
-    <section className="grid gap-3 border-b border-ink/10 bg-paper px-4 py-4 sm:grid-cols-2 2xl:grid-cols-3">
-      <input
-        className="h-10 min-w-0 rounded-md border border-ink/15 bg-white px-3 outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 sm:col-span-2 2xl:col-span-1"
-        placeholder="Search code, title, university"
-        value={filters.query}
-        onChange={(event) => patch("query", event.target.value)}
-      />
+    <section className="grid gap-x-4 gap-y-3 border-b border-ink/10 bg-paper px-4 py-4 md:grid-cols-2 xl:grid-cols-3">
+      <FilterCell label="Search">
+        <input
+          className="h-10 w-full min-w-0 rounded-md border border-ink/15 bg-white px-3 outline-none focus:border-teal focus:ring-2 focus:ring-teal/20"
+          placeholder="Search code, title, university"
+          value={filters.query}
+          onChange={(event) => patch("query", event.target.value)}
+        />
+      </FilterCell>
       <MultiSelect
         label="University"
         placeholder="All universities"
@@ -98,14 +100,25 @@ export default function FilterBar({
       <Toggle label="Your Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
       <Toggle label="Your Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
       <Toggle label="Your Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
-      <button
-        type="button"
-        className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-semibold text-ink hover:bg-ink/5"
-        onClick={onReset}
-      >
-        <RotateCcw size={16} /> Reset filters
-      </button>
+      <FilterCell label="Reset" hiddenLabel>
+        <button
+          type="button"
+          className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-semibold text-ink hover:bg-ink/5"
+          onClick={onReset}
+        >
+          <RotateCcw size={16} /> Reset filters
+        </button>
+      </FilterCell>
     </section>
+  );
+}
+
+function FilterCell({ label, children, hiddenLabel = false }: { label: string; children: React.ReactNode; hiddenLabel?: boolean }) {
+  return (
+    <label className="grid min-w-0 gap-1 text-xs font-semibold uppercase tracking-wide text-ink/55">
+      <span className={hiddenLabel ? "invisible" : ""}>{label}</span>
+      {children}
+    </label>
   );
 }
 
@@ -238,14 +251,16 @@ function Toggle({
   onChange: (value: boolean) => void;
 }) {
   return (
-    <label className="flex h-10 items-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-medium text-ink">
-      <input
-        type="checkbox"
-        className="h-4 w-4 accent-teal"
-        checked={checked}
-        onChange={(event) => onChange(event.target.checked)}
-      />
-      {label}
-    </label>
+    <FilterCell label="Option" hiddenLabel>
+      <label className="flex h-10 items-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-medium normal-case tracking-normal text-ink">
+        <input
+          type="checkbox"
+          className="h-4 w-4 accent-teal"
+          checked={checked}
+          onChange={(event) => onChange(event.target.checked)}
+        />
+        {label}
+      </label>
+    </FilterCell>
   );
 }
