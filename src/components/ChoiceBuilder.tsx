@@ -258,7 +258,7 @@ export default function ChoiceBuilder() {
         <footer className="border-t border-ink/10 bg-white px-4 py-5">
           <div className="mx-auto grid max-w-[1600px] gap-4">
             <Disclaimer />
-            <p className="text-sm text-ink/60">© 2026 Chun Yin Oz Choi @Bliss Education Consultancy</p>
+            <p className="text-sm text-ink/60">© 2026 Chun Yin Oz Choi</p>
           </div>
         </footer>
 

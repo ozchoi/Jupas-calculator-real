@@ -1,9 +1,9 @@
 const items = [
-  { label: ">= UQ", className: "border-blue-300 bg-blue-50" },
-  { label: ">= Median/Mean", className: "border-emerald-300 bg-emerald-50" },
-  { label: ">= LQ", className: "border-yellow-300 bg-yellow-50" },
-  { label: "Meets minimum only", className: "border-orange-300 bg-orange-50" },
-  { label: "Does not meet requirement", className: "border-coral/40 bg-coral/10" },
+  { label: "Your score >= UQ", className: "border-blue-300 bg-blue-50" },
+  { label: "Your score >= Median/Mean", className: "border-emerald-300 bg-emerald-50" },
+  { label: "Your score >= LQ", className: "border-yellow-300 bg-yellow-50" },
+  { label: "Your score meets minimum only", className: "border-orange-300 bg-orange-50" },
+  { label: "Your score does not meet requirement", className: "border-coral/40 bg-coral/10" },
 ];
 
 export default function AdmissionLegend() {

@@ -49,8 +49,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (If both Mathematics and M1/M2 are taken, only one subject will be included)",
     "scoreScale": "SCALE_8_5",
-    "median": 39.0,
-    "lowerQuartile": 38.0,
+    "median": 39,
+    "lowerQuartile": 38,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Biology / Chemistry / M1/M2 / Physics 1: other elective subjects",
     "sourcePage": 1,
@@ -90,7 +90,7 @@
           "Mathematics Compulsory Part",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -139,7 +139,7 @@
           "Chemistry",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -203,7 +203,7 @@
           "Chemistry",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -229,7 +229,7 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 35.5,
-    "lowerQuartile": 35.0,
+    "lowerQuartile": 35,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
     "sourcePage": 1,
@@ -265,7 +265,7 @@
           "Chemistry",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -291,7 +291,7 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 45.5,
-    "lowerQuartile": 43.0,
+    "lowerQuartile": 43,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Biology / Chemistry 1.5: Mathematics / Business, Accounting and Financial Studies / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
     "sourcePage": 1,
@@ -327,7 +327,7 @@
           "Chemistry",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -352,7 +352,7 @@
     "formulaRaw": "Best 5 subjects",
     "scoreScale": "SCALE_8_5",
     "median": 29.5,
-    "lowerQuartile": 28.0,
+    "lowerQuartile": 28,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
     "sourcePage": 2,
@@ -398,7 +398,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22.0,
+    "median": 22,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -438,7 +438,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22.0,
+    "median": 22,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -525,7 +525,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 23.0,
+    "median": 23,
     "lowerQuartile": 22.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -565,7 +565,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 22.0,
+    "median": 22,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -645,7 +645,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 21.0,
+    "median": 21,
     "lowerQuartile": 20.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -685,7 +685,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 24.0,
+    "median": 24,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -725,8 +725,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 21.0,
-    "lowerQuartile": 21.0,
+    "median": 21,
+    "lowerQuartile": 21,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 2,
@@ -766,7 +766,7 @@
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 21.5,
-    "lowerQuartile": 21.0,
+    "lowerQuartile": 21,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 2,
@@ -806,7 +806,7 @@
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 21.5,
-    "lowerQuartile": 21.0,
+    "lowerQuartile": 21,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 2,
@@ -1004,7 +1004,7 @@
         "subjects": [
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1110,7 +1110,7 @@
         "subjects": [
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1123,8 +1123,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 39.0,
-    "lowerQuartile": 37.0,
+    "median": 39,
+    "lowerQuartile": 37,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Information and Communication Technology / M1/M2 / Physics 1.5: Biology / Chemistry 1: other elective subjects",
     "sourcePage": 3,
@@ -1163,7 +1163,7 @@
           "Mathematics Compulsory Part",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -1184,7 +1184,7 @@
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
     "median": 34.5,
-    "lowerQuartile": 34.0,
+    "lowerQuartile": 34,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Physics 1.5: Chemistry / Design and Applied Technology / M1/M2 1: other elective subjects",
     "sourcePage": 3,
@@ -1220,7 +1220,7 @@
           "Mathematics Compulsory Part",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -1277,7 +1277,7 @@
         "subjects": [
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1290,7 +1290,7 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 24.0,
+    "median": 24,
     "lowerQuartile": 23.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
@@ -1338,7 +1338,7 @@
     "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 36.0,
+    "median": 36,
     "lowerQuartile": 35.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Chinese 1.5: Chinese History / Chinese Literature / History / Visual Arts 1: other elective subjects",
@@ -1374,7 +1374,7 @@
           "Chinese Language",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -1396,7 +1396,7 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 32.0,
+    "median": 32,
     "lowerQuartile": 29.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: English 1.5: Literature in English 1: other elective subjects",
@@ -1451,7 +1451,7 @@
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 20.5,
-    "lowerQuartile": 20.0,
+    "lowerQuartile": 20,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.25: English / Chinese 1: other elective subjects",
     "sourcePage": 4,
@@ -1500,7 +1500,7 @@
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
     "median": 23.5,
-    "lowerQuartile": 23.0,
+    "lowerQuartile": 23,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
     "sourcePage": 4,
@@ -1546,7 +1546,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 34.0,
+    "median": 34,
     "lowerQuartile": 32.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: Mathematics / Physics 1.5: English / Biology / Chemistry / M1/M2 1: other elective subjects",
@@ -1582,7 +1582,7 @@
           "Mathematics Compulsory Part",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -1604,8 +1604,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English and Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 20.0,
-    "lowerQuartile": 18.0,
+    "median": 20,
+    "lowerQuartile": 18,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 4,
@@ -1645,7 +1645,7 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 38.5,
-    "lowerQuartile": 38.0,
+    "lowerQuartile": 38,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Mathematics / Biology / Chemistry / Design and Applied Technology / Information and Communication Technology / M1/M2 / Physics 1: other elective subjects",
     "sourcePage": 4,
@@ -1687,7 +1687,7 @@
           "Mathematics Compulsory Part",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1739,7 +1739,7 @@
     "formulaType": "THREE_CORE_PLUS_TWO_ELECTIVE",
     "formulaRaw": "3 core + 2 elective subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 30.0,
+    "median": 30,
     "lowerQuartile": 29.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1.5: Chinese / Mathematics 1: other elective subjects",
@@ -1774,7 +1774,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -1793,8 +1793,8 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23.0,
-    "lowerQuartile": 23.0,
+    "median": 23,
+    "lowerQuartile": 23,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 5,
@@ -1828,7 +1828,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1841,7 +1841,7 @@
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
-    "lowerQuartile": 24.0,
+    "lowerQuartile": 24,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 5,
@@ -1875,7 +1875,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1887,8 +1887,8 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23.0,
-    "lowerQuartile": 23.0,
+    "median": 23,
+    "lowerQuartile": 23,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 5,
@@ -1922,7 +1922,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -1935,7 +1935,7 @@
     "formulaType": "BEST_4",
     "formulaRaw": "Best 4 subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 37.0,
+    "median": 37,
     "lowerQuartile": 36.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Chemistry / M2 / Physics 2: English / Mathematics / M1 1.5: Biology / Economics 1: other elective subjects",
@@ -1980,7 +1980,7 @@
           "M1",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2001,7 +2001,7 @@
     "formulaRaw": "Best 4 subjects",
     "scoreScale": "SCALE_8_5",
     "median": 27.5,
-    "lowerQuartile": 27.0,
+    "lowerQuartile": 27,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Chemistry 1.5: Mathematics 1: other elective subjects",
     "sourcePage": 5,
@@ -2036,7 +2036,7 @@
           "Chemistry",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2055,8 +2055,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 4 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 37.0,
-    "lowerQuartile": 36.0,
+    "median": 37,
+    "lowerQuartile": 36,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2: English / M1/M2 1.5: Biology / Chemistry / Physics 1: other elective subjects",
     "sourcePage": 5,
@@ -2098,7 +2098,7 @@
           "M1",
           "M2"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2119,8 +2119,8 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 4 subjects (include Mathematics)",
     "scoreScale": "SCALE_8_5",
-    "median": 28.0,
-    "lowerQuartile": 27.0,
+    "median": 28,
+    "lowerQuartile": 27,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English / Physics 1.5: M1/M2 1.25: Mathematics 1: other elective subjects",
     "sourcePage": 5,
@@ -2155,7 +2155,7 @@
           "English Language",
           "Physics"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2182,7 +2182,7 @@
     "formulaRaw": "Best 5 subjects (include English, Mathematics, Biology and Chemistry)",
     "scoreScale": "SCALE_8_5",
     "median": 33.5,
-    "lowerQuartile": 32.0,
+    "lowerQuartile": 32,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 5,
@@ -2222,7 +2222,7 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 28.0,
+    "median": 28,
     "lowerQuartile": 24.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
@@ -2257,7 +2257,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -2271,7 +2271,7 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 25.5,
-    "lowerQuartile": 25.0,
+    "lowerQuartile": 25,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 6,
@@ -2305,7 +2305,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -2319,7 +2319,7 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 27.5,
-    "lowerQuartile": 27.0,
+    "lowerQuartile": 27,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 6,
@@ -2353,7 +2353,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -2401,7 +2401,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2420,8 +2420,8 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 24.0,
-    "lowerQuartile": 24.0,
+    "median": 24,
+    "lowerQuartile": 24,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2: English 1: other elective subjects",
     "sourcePage": 6,
@@ -2455,7 +2455,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ]
   },
@@ -2468,7 +2468,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 38.0,
+    "median": 38,
     "lowerQuartile": 36.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
@@ -2517,7 +2517,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2542,7 +2542,7 @@
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
     "median": 40.5,
-    "lowerQuartile": 40.0,
+    "lowerQuartile": 40,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
     "sourcePage": 6,
@@ -2590,7 +2590,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2614,7 +2614,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 40.0,
+    "median": 40,
     "lowerQuartile": 39.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2.5: Economics / Business, Accounting and Financial Studies in 2nd Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
@@ -2670,7 +2670,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2694,7 +2694,7 @@
     "formulaType": "CUSTOM_WEIGHTED",
     "formulaRaw": "Best 5 subjects (include English, Mathematics and one subject from Biology, Chemistry or Physics)",
     "scoreScale": "SCALE_8_5",
-    "median": 40.0,
+    "median": 40,
     "lowerQuartile": 39.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "2.5: Mathematics 2.5: Biology / Chemistry / Physics in 1st Elective 2: English 1.5: Biology / Chemistry / Geography / M1/M2 / Physics in 2nd Elective 1: other elective subjects",
@@ -2743,7 +2743,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -2767,7 +2767,7 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 23.0,
+    "median": 23,
     "lowerQuartile": 21.5,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
@@ -2808,8 +2808,8 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
-    "median": 29.0,
-    "lowerQuartile": 25.0,
+    "median": 29,
+    "lowerQuartile": 25,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1.5: English 1: other elective subjects",
     "sourcePage": 7,
@@ -2857,7 +2857,7 @@
     "formulaRaw": "Best 5 subjects (include English)",
     "scoreScale": "SCALE_8_5",
     "median": 24.5,
-    "lowerQuartile": 23.0,
+    "lowerQuartile": 23,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 7,
@@ -2897,8 +2897,8 @@
     "formulaType": "BEST_5",
     "formulaRaw": "Best 5 subjects",
     "scoreScale": "SCALE_8_5",
-    "median": 23.0,
-    "lowerQuartile": 22.0,
+    "median": 23,
+    "lowerQuartile": 22,
     "scoreMetric": "Admissions Scores (with weightings)",
     "weightingRaw": "1",
     "sourcePage": 7,
@@ -3942,7 +3942,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4059,7 +4059,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4116,7 +4116,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4180,7 +4180,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4239,7 +4239,7 @@
           "Chinese Language",
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4298,7 +4298,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4358,7 +4358,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4420,7 +4420,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4482,7 +4482,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4544,7 +4544,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4606,7 +4606,7 @@
           "English Language",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4667,7 +4667,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4727,7 +4727,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4789,7 +4789,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4846,7 +4846,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -4956,7 +4956,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -5015,7 +5015,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -5098,7 +5098,7 @@
           "M2",
           "Mathematics Compulsory Part"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -5154,7 +5154,7 @@
         "subjects": [
           "English Language"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -9520,7 +9520,7 @@
           "Biology",
           "Physical Education"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       },
       {
         "subjects": [
@@ -15862,7 +15862,7 @@
           "Physics",
           "Technology and Living"
         ],
-        "multiplier": 2.0
+        "multiplier": 2
       }
     ],
     "weightingRaw": "Weighting 10: Biology, Chemistry, Design and Applied Technology, ICT, M1, M2, Physics, Technology and Living (x2)"
@@ -17318,165 +17318,2645 @@
     }
   },
   {
+    "jupasCode": "JSSA01",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Nursing (Honours)",
+    "titleZh": "由聖方濟各大學開辦：護理學（榮譽）學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes. SFU marks this score with an asterisk in the official 2025 SSSDP score PDF.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSA02",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Digital Entertainment Technology",
+    "titleZh": "由聖方濟各大學開辦：數碼娛樂科技（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSA03",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Physiotherapy",
+    "titleZh": "由聖方濟各大學開辦：物理治療學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes. SFU marks this score with an asterisk in the official 2025 SSSDP score PDF.",
+    "averageScore": 21,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSA04",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Artificial Intelligence",
+    "titleZh": "由聖方濟各大學開辦：人工智能（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 17,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSA05",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Translation Technology",
+    "titleZh": "由聖方濟各大學開辦：翻譯科技（榮譽）文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSA06",
+    "institution": "SFU",
+    "faculty": "SSSDP - SFU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration (Honours) in Applied Hotel and Tourism Management",
+    "titleZh": "由聖方濟各大學開辦：工商管理（榮譽）酒店及旅遊管理應用學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSC02",
+    "institution": "HKCHC",
+    "faculty": "SSSDP - HKCHC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Architecture",
+    "titleZh": "由香港珠海學院開辦：建築學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 total score lower/upper quartile",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "lowerQuartile": 12,
+    "upperQuartile": 16,
+    "weightingRules": []
+  },
+  {
     "jupasCode": "JSSH01",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Business Administration (Honours) in Supply Chain Management",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 16.4,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：供應鏈管理工商管理（榮譽）學士",
+    "weightingRules": []
   },
   {
     "jupasCode": "JSSH02",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Science (Honours) in Actuarial Studies and Insurance",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 17.2,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "3" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：精算及保險 （榮譽）理學士",
+    "weightingRules": []
   },
   {
     "jupasCode": "JSSH03",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Science (Honours) in Applied Computing",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 16.47,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：計算機應用（榮譽）理學士",
+    "weightingRules": []
   },
   {
     "jupasCode": "JSSH04",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Science (Honours) in Data Science and Business Intelligence",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 16.77,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：數據科學及商業智能學（榮譽）理學士",
+    "weightingRules": []
   },
   {
     "jupasCode": "JSSH05",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Science (Honours) in Business Analytics and Information Management",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 16.34,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：商業分析與資訊管理（榮譽）理學士",
+    "weightingRules": []
   },
   {
     "jupasCode": "JSSH06",
     "institution": "HSUHK",
-    "faculty": "SSSDP",
+    "faculty": "SSSDP - HSUHK",
     "category": "SSSDP",
     "titleEn": "Bachelor of Arts (Honours) in Art and Design",
     "formulaType": "BEST_5",
-    "formulaRaw": "Best 5 subjects, including Mathematics Extended Part M1/M2 where applicable",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
     "scoreScale": "SCALE_7",
     "averageScore": 14.93,
-    "scoreMetric": "Average admission score",
+    "scoreMetric": "2025 average admission score",
     "weightingRaw": "No programme-specific weighting stated in local dataset",
     "dataQuality": "partial",
     "requiredSubjects": [
-      { "subject": "Chinese Language", "minGrade": "3" },
-      { "subject": "English Language", "minGrade": "3" },
-      { "subject": "Mathematics Compulsory Part", "minGrade": "2" },
-      { "subject": "Citizenship and Social Development", "minGrade": "Attained" },
-      { "subject": "Elective Subject 1", "minGrade": "2" }
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
     ],
     "source": {
-      "name": "HSUHK 2025 JUPAS Admission Scores and SSSDP Entrance Requirements",
-      "url": "https://admission.hsu.edu.hk/wp-content/uploads/2025/10/2025-JUPAS-Admission-Scores.pdf",
-      "retrievedDate": "2026-07-07"
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
     },
-    "notes": "Average admission score is for 2025 entry reference only. HSUHK states admissions scores vary by year and should not be used to predict future admission chance."
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "titleZh": "由香港恒生大學開辦：藝術設計（榮譽）文學士",
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST01",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Health Science (Honours) in Nursing",
+    "titleZh": "由東華學院開辦：護理學（榮譽）健康科學學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16.5,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST02",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Medical Laboratory Science",
+    "titleZh": "由東華學院開辦：醫療化驗科學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 20,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST03",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Radiation Therapy",
+    "titleZh": "由東華學院開辦：放射治療學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 23.8,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST04",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Occupational Therapy",
+    "titleZh": "由東華學院開辦：職業治療學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 21,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST05",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Physiotherapy",
+    "titleZh": "由東華學院開辦：物理治療學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 22.2,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST06",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Applied Gerontology",
+    "titleZh": "由東華學院開辦：應用老年學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15.5,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST07",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Health Information and Services Management (Honours)",
+    "titleZh": "由東華學院開辦：醫療資訊及服務管理（榮譽）學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 14.9,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSST08",
+    "institution": "TWC",
+    "faculty": "SSSDP - TWC",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Medical Imaging",
+    "titleZh": "由東華學院開辦：醫療影像學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 23.7,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU12",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts with Honours in Creative Writing and Film Arts",
+    "titleZh": "由香港都會大學開辦：創意寫作與電影藝術榮譽文學士",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "Chinese Language x1.5; English Language x1.5",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 20,
+    "lowerQuartile": 19,
+    "weightingRules": [
+      {
+        "subjects": [
+          "Chinese Language",
+          "English Language"
+        ],
+        "multiplier": 1.5,
+        "note": "HKMU 2025 score weighting"
+      }
+    ]
+  },
+  {
+    "jupasCode": "JSSU14",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Fine Arts with Honours in Animation and Visual Effects",
+    "titleZh": "由香港都會大學開辦：動畫及視覺特效榮譽藝術學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU15",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Fine Arts with Honours in Imaging Design and Digital Art",
+    "titleZh": "由香港都會大學開辦：影像設計及數碼藝術榮譽藝術學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU18",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts with Honours in New Music and Interactive Entertainment",
+    "titleZh": "由香港都會大學開辦：新音樂及互動娛樂榮譽文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 14,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU40",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Nursing with Honours in General Health Care",
+    "titleZh": "由香港都會大學開辦：護理學榮譽學士（普通科）",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "Biology / Chemistry / Physics / Health Management and Social Care x1.2",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 21,
+    "lowerQuartile": 20,
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics",
+          "Health Management and Social Care"
+        ],
+        "multiplier": 1.2,
+        "note": "HKMU 2025 score weighting"
+      }
+    ]
+  },
+  {
+    "jupasCode": "JSSU50",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Nursing with Honours in Mental Health Care",
+    "titleZh": "由香港都會大學開辦：護理學榮譽學士（精神科）",
+    "formulaType": "CUSTOM_WEIGHTED",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "Biology / Chemistry / Physics / Health Management and Social Care x1.2",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 19,
+    "lowerQuartile": 18,
+    "weightingRules": [
+      {
+        "subjects": [
+          "Biology",
+          "Chemistry",
+          "Physics",
+          "Health Management and Social Care"
+        ],
+        "multiplier": 1.2,
+        "note": "HKMU 2025 score weighting"
+      }
+    ]
+  },
+  {
+    "jupasCode": "JSSU55",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Physiotherapy",
+    "titleZh": "由香港都會大學開辦：物理治療學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 22,
+    "lowerQuartile": 20,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU61",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Applied Science with Honours in Integrated Testing, Inspection and Certification",
+    "titleZh": "由香港都會大學開辦：綜合檢測和認證榮譽應用理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU66",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Diagnostic Radiography",
+    "titleZh": "由香港都會大學開辦：放射診斷學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "No admission data",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "insufficient",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2026 SSSDP Programme List",
+      "url": "https://www.jupas.edu.hk/en/programme/sssdp/JSSU66",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "No 2025 admission score data was found in the official JUPAS SSSDP admissions-score PDF. Show as no admission data.",
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU67",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Medical Laboratory Science",
+    "titleZh": "由香港都會大學開辦：醫療化驗科學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 19,
+    "lowerQuartile": 18,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU69",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Food Testing Science",
+    "titleZh": "由香港都會大學開辦：食品測試科學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU70",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Data Science and Artificial Intelligence",
+    "titleZh": "由香港都會大學開辦：數據科學及人工智能榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU72",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Computer Science",
+    "titleZh": "由香港都會大學開辦：電腦科學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU77",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Construction Management and Quantity Surveying",
+    "titleZh": "由香港都會大學開辦：建築管理及工料測量學榮譽理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU78",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Engineering with Honours in Building Services Engineering and Sustainable Development",
+    "titleZh": "由香港都會大學開辦：屋宇設備工程及可持續發展榮譽工學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU79",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Engineering with Honours in Civil Engineering",
+    "titleZh": "由香港都會大學開辦：土木工程榮譽工學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU90",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration with Honours in International Hospitality and Attractions Management",
+    "titleZh": "由香港都會大學開辦：國際款待及景區管理榮譽工商管理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU93",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration with Honours in Aviation Services Management",
+    "titleZh": "由香港都會大學開辦：航空服務管理榮譽工商管理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU95",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration with Honours in Sports and Recreation Management",
+    "titleZh": "由香港都會大學開辦：運動及康樂管理榮譽工商管理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 16,
+    "lowerQuartile": 14,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU96",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration with Honours in Finance and Financial Technology",
+    "titleZh": "由香港都會大學開辦：財務及金融科技榮譽工商管理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSU97",
+    "institution": "HKMU",
+    "faculty": "SSSDP - HKMU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Business Administration with Honours in Global Marketing and Supply Chain Management",
+    "titleZh": "由香港都會大學開辦：環球市場及供應鏈管理榮譽工商管理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects in Category A / B / C, with programme-specific weighting where stated",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 JUPAS admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Elective Subject 2",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "median": 17,
+    "lowerQuartile": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV01",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Fashion Design",
+    "titleZh": "由高科院開辦：時裝設計（榮譽）文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 14,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV02",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Product Design",
+    "titleZh": "由高科院開辦：產品設計（榮譽）文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV03",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Landscape Architecture",
+    "titleZh": "由高科院開辦：園境建築（榮譽）文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV04",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Arts (Honours) in Culinary Arts and Management",
+    "titleZh": "由高科院開辦：廚藝及管理（榮譽）文學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV05",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Engineering (Honours) in Civil Engineering",
+    "titleZh": "由高科院開辦：土木工程（榮譽）工學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV07",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Horticulture, Arboriculture and Landscape Management",
+    "titleZh": "由高科院開辦：園藝樹藝及園境管理（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 14,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV08",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science (Honours) in Surveying",
+    "titleZh": "由高科院開辦：測量學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV09",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Social Sciences (Honours) in Sports and Recreation Management",
+    "titleZh": "由高科院開辦：運動及康樂管理（榮譽）社會科學學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 14,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV10",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Engineering (Honours) in Building Services Engineering",
+    "titleZh": "由高科院開辦：屋宇設備工程（榮譽）工學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV13",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Social Sciences (Honours) in Sports Coaching",
+    "titleZh": "由高科院開辦：運動教練(榮譽)社會科學學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSV14",
+    "institution": "VTC-THEi",
+    "faculty": "SSSDP - VTC-THEi",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Social Sciences (Honours) in Sports Therapy",
+    "titleZh": "由高科院開辦：運動治療(榮譽)社會科學學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 HKDSE subjects including Chinese Language, English Language, Mathematics, Citizenship and Social Development counted as Level 2, and one elective subject",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "No admission data",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "insufficient",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2026 SSSDP Programme List",
+      "url": "https://www.jupas.edu.hk/en/programme/sssdp/JSSV14",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "No 2025 admission score data was found in the official JUPAS SSSDP admissions-score PDF. Show as no admission data.",
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSW01",
+    "institution": "UOWCHK",
+    "faculty": "SSSDP - UOWCHK",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Aviation (Honours) in Operations and Management",
+    "titleZh": "由香港伍倫貢學院開辦：營運及管理（榮譽）航空學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15.3,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSW02",
+    "institution": "UOWCHK",
+    "faculty": "SSSDP - UOWCHK",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Maritime Services and Operations Management (Honours)",
+    "titleZh": "由香港伍倫貢學院開辦：航運服務及營運管理學士（榮譽）",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects; Citizenship and Social Development Attained counted as Level 2",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16.7,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSY01",
+    "institution": "HKSYU",
+    "faculty": "SSSDP - HKSYU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Commerce (Honours) in Financial Technology",
+    "titleZh": "由香港樹仁大學開辦： 金融科技（榮譽）商學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 16.95,
+    "weightingRules": []
+  },
+  {
+    "jupasCode": "JSSY02",
+    "institution": "HKSYU",
+    "faculty": "SSSDP - HKSYU",
+    "category": "SSSDP",
+    "titleEn": "Bachelor of Science with Honours in Applied Data Science",
+    "titleZh": "由香港樹仁大學開辦：應用數據科學（榮譽）理學士",
+    "formulaType": "BEST_5",
+    "formulaRaw": "Best 5 subjects, with programme-specific selection criteria where applicable",
+    "scoreScale": "SCALE_7",
+    "scoreMetric": "2025 average admission score",
+    "weightingRaw": "No programme-specific weighting found in the current local dataset; use institution/JUPAS page for final 2026 selection rules.",
+    "dataQuality": "partial",
+    "requiredSubjects": [
+      {
+        "subject": "Chinese Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "English Language",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Mathematics Compulsory Part",
+        "minGrade": "2"
+      },
+      {
+        "subject": "Citizenship and Social Development",
+        "minGrade": "Attained"
+      },
+      {
+        "subject": "Elective Subject 1",
+        "minGrade": "2"
+      }
+    ],
+    "source": {
+      "name": "JUPAS 2025 Admissions Scores of SSSDP Institutions",
+      "url": "https://www.jupas.edu.hk/f/page/3669/af_2025_SSSDP.pdf",
+      "retrievedDate": "2026-07-08"
+    },
+    "notes": "2025 SSSDP score is for reference only and should not be used to predict future admission outcomes.",
+    "averageScore": 15.8,
+    "weightingRules": []
   }
 ]

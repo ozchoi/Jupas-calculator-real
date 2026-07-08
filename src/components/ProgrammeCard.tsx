@@ -45,7 +45,7 @@ export default function ProgrammeCard({
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
   const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
-  const statusLabel = admissionStatusLabel(status);
+  const statusLabel = hasNoAdmissionData(programme) ? "No admission data" : admissionStatusLabel(status);
   const medianGap = numericGap(calculation.totalScore, programme.median);
   const lqGap = numericGap(calculation.totalScore, programme.lowerQuartile);
 
@@ -148,6 +148,8 @@ function numericGap(score: number, target?: number): string {
 }
 
 function statsText(programme: Programme): string {
+  if (hasNoAdmissionData(programme)) return "No admission data";
+
   const values = [
     `LQ ${formatStat(programme.lowerQuartile)}`,
     `M ${formatStat(programme.median)}`,
@@ -162,6 +164,17 @@ function statsText(programme: Programme): string {
   ].filter(Boolean);
 
   return `${values.join(" / ")}${missing.length ? ` (${missing.join(", ")} not available)` : ""}`;
+}
+
+function hasNoAdmissionData(programme: Programme): boolean {
+  return (
+    programme.dataQuality === "insufficient" &&
+    typeof programme.lowerQuartile !== "number" &&
+    typeof programme.median !== "number" &&
+    typeof programme.upperQuartile !== "number" &&
+    typeof programme.mean !== "number" &&
+    typeof programme.averageScore !== "number"
+  );
 }
 
 function formatStat(value?: number): string {

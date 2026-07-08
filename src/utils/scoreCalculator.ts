@@ -81,9 +81,9 @@ export function calculateProgrammeScore(
   results: StudentResult[],
 ): CalculationResult {
   const scored: UsedSubject[] = results
-    .filter((result) => result.grade !== "Not taken" && result.subject !== coreCsdSubject)
+    .filter((result) => result.grade !== "Not taken" && (result.subject !== coreCsdSubject || countsCsdAsScore(programme)))
     .map((result) => {
-      const baseScore = gradeToScore(result.grade, programme.scoreScale);
+      const baseScore = result.subject === coreCsdSubject && countsCsdAsScore(programme) ? csdScore(result.grade) : gradeToScore(result.grade, programme.scoreScale);
       const { multiplier, note } = multiplierFor(programme, result.subject);
       return {
         subject: result.subject,
@@ -111,6 +111,14 @@ export function calculateProgrammeScore(
     confidence: calculationConfidence(programme),
     warning: calculationWarning(programme),
   };
+}
+
+function countsCsdAsScore(programme: Programme): boolean {
+  return /Citizenship and Social Development[^.;]*(?:counted|recognised).*Level 2|CSD[^.;]*(?:counted|recognised).*Level 2/i.test(programme.formulaRaw);
+}
+
+function csdScore(grade: string): number {
+  return grade === "Attained" ? 2 : 0;
 }
 
 function selectSubjects(programme: Programme, scored: UsedSubject[]): UsedSubject[] {
