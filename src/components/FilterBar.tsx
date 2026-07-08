@@ -95,10 +95,10 @@ export default function FilterBar({
         <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
       </div>
       <div className="mt-4 grid gap-3 lg:grid-cols-[repeat(4,minmax(0,1fr))_minmax(180px,0.85fr)]">
-        <Toggle label="Meet requirements" checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
-        <Toggle label="Your Score >= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
-        <Toggle label="Your Score >= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
-        <Toggle label="Your Score >= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
+        <Toggle label="Meet req." checked={filters.meetsRequirements} onChange={(value) => patch("meetsRequirements", value)} />
+        <Toggle label=">= LQ" checked={filters.scoreAtLeastLq} onChange={(value) => patch("scoreAtLeastLq", value)} />
+        <Toggle label=">= Median" checked={filters.scoreAtLeastMedian} onChange={(value) => patch("scoreAtLeastMedian", value)} />
+        <Toggle label=">= UQ" checked={filters.scoreAtLeastUq} onChange={(value) => patch("scoreAtLeastUq", value)} />
         <button
           type="button"
           className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md border border-ink/15 bg-white px-3 text-sm font-semibold text-ink hover:bg-ink/5"
@@ -256,7 +256,7 @@ function Toggle({
         checked={checked}
         onChange={(event) => onChange(event.target.checked)}
       />
-      <span className="truncate">{label}</span>
+      <span>{label}</span>
     </label>
   );
 }
