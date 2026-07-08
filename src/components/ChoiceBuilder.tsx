@@ -211,10 +211,14 @@ export default function ChoiceBuilder() {
           </div>
         </header>
 
-        <main className="mx-auto grid max-w-[1600px] lg:grid-cols-[340px_minmax(0,1fr)_420px]">
-          <ResultInputPanel results={results} onChange={setResults} />
+        <JumpNav />
 
-          <div className="min-h-0">
+        <main className="mx-auto grid max-w-[1600px] lg:grid-cols-[340px_minmax(0,1fr)_420px]">
+          <div id="hkdse-results" className="scroll-mt-24">
+            <ResultInputPanel results={results} onChange={setResults} />
+          </div>
+
+          <div id="programmes-overview" className="min-h-0 scroll-mt-24">
             <FilterBar
               filters={filters}
               onChange={setFilters}
@@ -273,6 +277,34 @@ export default function ChoiceBuilder() {
   );
 }
 
+function JumpNav() {
+  return (
+    <nav className="sticky top-0 z-40 border-b border-ink/10 bg-white/95 px-4 py-2 backdrop-blur">
+      <div className="mx-auto flex max-w-[1600px] gap-2 overflow-x-auto">
+        <JumpButton targetId="hkdse-results">Input HKDSE Results</JumpButton>
+        <JumpButton targetId="programmes-overview">Programmes Overview</JumpButton>
+        <JumpButton targetId="jupas-choices">My 20 JUPAS Choices</JumpButton>
+      </div>
+    </nav>
+  );
+}
+
+function JumpButton({ targetId, children }: { targetId: string; children: React.ReactNode }) {
+  function jumpToSection() {
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  return (
+    <button
+      type="button"
+      className="h-9 shrink-0 rounded-md border border-ink/15 bg-paper px-3 text-sm font-semibold text-ink hover:bg-teal/10 hover:text-teal"
+      onClick={jumpToSection}
+    >
+      {children}
+    </button>
+  );
+}
+
 function ChoicePanel({
   choices,
   choiceCodes,
@@ -292,8 +324,9 @@ function ChoicePanel({
 
   return (
     <aside
+      id="jupas-choices"
       ref={setNodeRef}
-      className={`border-t border-ink/10 bg-white px-4 py-4 lg:min-h-[calc(100vh-85px)] lg:border-l lg:border-t-0 ${
+      className={`scroll-mt-24 border-t border-ink/10 bg-white px-4 py-4 lg:min-h-[calc(100vh-85px)] lg:border-l lg:border-t-0 ${
         isOver ? "bg-teal/5" : ""
       }`}
     >
