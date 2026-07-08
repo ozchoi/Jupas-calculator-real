@@ -1,5 +1,4 @@
 import type { CalculationResult, Programme } from "../types/programme";
-import { admissionStatus, admissionStatusLabel } from "./recommendationClassifier";
 import type { RequirementCheck } from "./requirementChecker";
 
 type ChoiceExportView = {
@@ -26,10 +25,10 @@ export function getChoiceRankLabel(rank: number): string {
 
 export function choicesToCsv(choices: Array<ChoiceExportView | undefined>): string {
   const rows = [
-    ["Rank", "Band", "JUPAS Code", "University", "Programme", "Score and Comparison"].join(","),
+    ["Rank", "Band", "JUPAS Code", "University", "Programme", "Your Score", "LQ score", "M score", "UQ score"].join(","),
     ...choices.flatMap((choice, index) => {
       if (!choice) return [];
-      const { programme, calculation, requirement } = choice;
+      const { programme, calculation } = choice;
       return [
         [
           index + 1,
@@ -37,7 +36,10 @@ export function choicesToCsv(choices: Array<ChoiceExportView | undefined>): stri
           programme.jupasCode,
           programme.institution,
           csvCell(programme.titleEn),
-          csvCell(comparisonText(programme, calculation, requirement)),
+          calculation.totalScore,
+          scoreCell(programme.lowerQuartile),
+          scoreCell(programme.median),
+          scoreCell(programme.upperQuartile),
         ].join(","),
       ];
     }),
@@ -53,24 +55,10 @@ export function choicesToText(programmes: Array<Programme | undefined>): string 
     .join("\n");
 }
 
-function comparisonText(programme: Programme, calculation: CalculationResult, requirement: RequirementCheck): string {
-  const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
-  return `Your Score ${calculation.totalScore} · ${statsText(programme)} · ${admissionStatusLabel(status)}`;
-}
-
-function statsText(programme: Programme): string {
-  const missing = [
-    typeof programme.lowerQuartile !== "number" && "LQ",
-    typeof programme.median !== "number" && "median",
-    typeof programme.upperQuartile !== "number" && "UQ",
-  ].filter(Boolean);
-
-  const average = typeof programme.averageScore === "number" ? ` · Average ${programme.averageScore}` : "";
-  return `LQ ${programme.lowerQuartile ?? "-"} · M ${programme.median ?? "-"} · UQ ${programme.upperQuartile ?? "-"}${average}${
-    missing.length ? ` (${missing.join(", ")} not available)` : ""
-  }`;
-}
-
 function csvCell(value: string): string {
   return `"${value.replaceAll('"', '""')}"`;
+}
+
+function scoreCell(value: number | undefined): string {
+  return typeof value === "number" ? String(value) : "-";
 }
