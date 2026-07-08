@@ -24,28 +24,31 @@ export function getChoiceRankLabel(rank: number): string {
   return `E${rank - 15}`;
 }
 
-export function choicesToCsv(choices: ChoiceExportView[]): string {
+export function choicesToCsv(choices: Array<ChoiceExportView | undefined>): string {
   const rows = [
     ["Rank", "Band", "JUPAS Code", "University", "Programme", "Score and Comparison"].join(","),
-    ...choices.map(({ programme, calculation, requirement }, index) =>
-      [
-        index + 1,
-        getBand(index + 1),
-        programme.jupasCode,
-        programme.institution,
-        csvCell(programme.titleEn),
-        csvCell(comparisonText(programme, calculation, requirement)),
-      ].join(","),
-    ),
+    ...choices.flatMap((choice, index) => {
+      if (!choice) return [];
+      const { programme, calculation, requirement } = choice;
+      return [
+        [
+          index + 1,
+          getBand(index + 1),
+          programme.jupasCode,
+          programme.institution,
+          csvCell(programme.titleEn),
+          csvCell(comparisonText(programme, calculation, requirement)),
+        ].join(","),
+      ];
+    }),
   ];
   return rows.join("\n");
 }
 
-export function choicesToText(programmes: Programme[]): string {
+export function choicesToText(programmes: Array<Programme | undefined>): string {
   return programmes
-    .map(
-      (programme, index) =>
-        `${index + 1}. ${getBand(index + 1)} - ${programme.jupasCode} ${programme.institution} ${programme.titleEn}`,
+    .flatMap((programme, index) =>
+      programme ? [`${index + 1}. ${getBand(index + 1)} - ${programme.jupasCode} ${programme.institution} ${programme.titleEn}`] : [],
     )
     .join("\n");
 }

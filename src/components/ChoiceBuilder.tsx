@@ -7,7 +7,6 @@ import {
   useSensors,
   type DragEndEvent,
 } from "@dnd-kit/core";
-import { SortableContext, arrayMove, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { Clipboard, Download, Trash2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import programmesData from "../data/programmes.json";
@@ -32,6 +31,9 @@ import { programmeMeetsInclusiveThreshold } from "../utils/thresholds";
 const programmes = programmesData as unknown as Programme[];
 const resultStorageKey = "jupas-choice-builder-results-v2";
 const choiceStorageKey = "jupas-choice-builder-choices";
+const choiceSlotCount = 20;
+
+type ChoiceSlotCode = string | null;
 
 const defaultFilters: Filters = {
   query: "",
@@ -49,7 +51,7 @@ const defaultFilters: Filters = {
 
 export default function ChoiceBuilder() {
   const [results, setResults] = useState<StudentResult[]>(() => readStored(resultStorageKey, defaultResults()));
-  const [choiceCodes, setChoiceCodes] = useState<string[]>(() => readStored(choiceStorageKey, []));
+  const [choiceCodes, setChoiceCodes] = useState<ChoiceSlotCode[]>(() => normalizeChoiceSlots(readStored(choiceStorageKey, [])));
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [pinnedCodes, setPinnedCodes] = useState<string[]>([]);
   const [hiddenCodes, setHiddenCodes] = useState<string[]>([]);
@@ -117,22 +119,31 @@ export default function ChoiceBuilder() {
     });
   }, [filters, hiddenCodes, pinnedCodes, programmeViews]);
 
-  const choices = choiceCodes
-    .map((code) => programmeViews.find((view) => view.programme.jupasCode === code))
-    .filter((view): view is NonNullable<typeof view> => Boolean(view));
+  const choices = choiceCodes.map((code) => (code ? programmeViews.find((view) => view.programme.jupasCode === code) : undefined));
+  const selectedChoiceCount = choiceCodes.filter(Boolean).length;
+  const selectedChoiceCodes = choiceCodes.filter((code): code is string => Boolean(code));
 
   useEffect(() => {
     const validCodes = new Set(programmes.map((programme) => programme.jupasCode));
-    setChoiceCodes((current) => current.filter((code, index) => validCodes.has(code) && current.indexOf(code) === index).slice(0, 20));
+    setChoiceCodes((current) => {
+      const seen = new Set<string>();
+      return normalizeChoiceSlots(current).map((code) => {
+        if (!code || !validCodes.has(code) || seen.has(code)) return null;
+        seen.add(code);
+        return code;
+      });
+    });
   }, []);
 
   const selectedView = selectedCode ? programmeViews.find((view) => view.programme.jupasCode === selectedCode) : undefined;
 
-  function addChoice(code: string) {
+  function addChoice(code: string, targetIndex?: number) {
     if (choiceCodes.includes(code)) return setNotice("That programme is already in your choices.");
-    if (choices.length >= 20) return setNotice("The JUPAS choice list is full.");
-    setChoiceCodes([...choiceCodes, code]);
-    setNotice(`${code} added to choices.`);
+    const slotIndex = typeof targetIndex === "number" ? targetIndex : choiceCodes.findIndex((item) => !item);
+    if (slotIndex < 0) return setNotice("The JUPAS choice list is full.");
+    if (choiceCodes[slotIndex]) return setNotice(`${getChoiceRankLabel(slotIndex + 1)} already has a programme.`);
+    setChoiceCodes((current) => current.map((item, index) => (index === slotIndex ? code : item)));
+    setNotice(`${code} added to ${getChoiceRankLabel(slotIndex + 1)}.`);
   }
 
   function handleDragEnd(event: DragEndEvent) {
@@ -140,18 +151,23 @@ export default function ChoiceBuilder() {
     const activeCode = event.active.data.current?.jupasCode as string | undefined;
     const overId = event.over?.id?.toString();
     const overType = event.over?.data.current?.type;
+    const activeIndex = event.active.data.current?.index as number | undefined;
+    const overIndex = event.over?.data.current?.index as number | undefined;
 
     if (!activeCode || !overId) return;
 
-    if (activeType === "programme" && (overId === "choices-drop" || overType === "choice")) {
-      addChoice(activeCode);
+    if (activeType === "programme" && (overId === "choices-drop" || overType === "choice-slot")) {
+      addChoice(activeCode, typeof overIndex === "number" ? overIndex : undefined);
       return;
     }
 
-    if (activeType === "choice" && overType === "choice" && activeCode !== overId) {
-      const oldIndex = choiceCodes.indexOf(activeCode);
-      const newIndex = choiceCodes.indexOf(overId);
-      if (oldIndex >= 0 && newIndex >= 0) setChoiceCodes(arrayMove(choiceCodes, oldIndex, newIndex));
+    if (activeType === "choice" && overType === "choice-slot" && typeof activeIndex === "number" && typeof overIndex === "number" && activeIndex !== overIndex) {
+      setChoiceCodes((current) => {
+        const next = normalizeChoiceSlots(current);
+        [next[activeIndex], next[overIndex]] = [next[overIndex], next[activeIndex]];
+        return next;
+      });
+      setNotice(`${activeCode} moved to ${getChoiceRankLabel(overIndex + 1)}.`);
     }
   }
 
@@ -166,7 +182,7 @@ export default function ChoiceBuilder() {
   }
 
   async function copyChoices() {
-    await navigator.clipboard.writeText(choicesToText(choices.map((view) => view.programme)));
+    await navigator.clipboard.writeText(choicesToText(choices.map((view) => view?.programme)));
     setNotice("Choices copied as plain text.");
   }
 
@@ -236,7 +252,7 @@ export default function ChoiceBuilder() {
               programmes={filteredViews}
               pinnedCodes={pinnedCodes}
               hiddenCodes={hiddenCodes}
-              choiceCodes={choiceCodes}
+              choiceCodes={selectedChoiceCodes}
               onAdd={addChoice}
               onOpen={setSelectedCode}
               onPin={(code) =>
@@ -250,9 +266,9 @@ export default function ChoiceBuilder() {
 
           <ChoicePanel
             choices={choices}
-            choiceCodes={choices.map((view) => view.programme.jupasCode)}
-            onRemove={(code) => setChoiceCodes(choiceCodes.filter((item) => item !== code))}
-            onClear={() => setChoiceCodes([])}
+            selectedCount={selectedChoiceCount}
+            onRemove={(index) => setChoiceCodes((current) => current.map((item, itemIndex) => (itemIndex === index ? null : item)))}
+            onClear={() => setChoiceCodes(emptyChoiceSlots())}
             onExport={exportCsv}
             onCopy={copyChoices}
           />
@@ -307,15 +323,15 @@ function JumpButton({ targetId, children }: { targetId: string; children: React.
 
 function ChoicePanel({
   choices,
-  choiceCodes,
+  selectedCount,
   onRemove,
   onClear,
   onExport,
   onCopy,
 }: {
-  choices: ProgrammeView[];
-  choiceCodes: string[];
-  onRemove: (code: string) => void;
+  choices: Array<ProgrammeView | undefined>;
+  selectedCount: number;
+  onRemove: (index: number) => void;
   onClear: () => void;
   onExport: () => void;
   onCopy: () => void;
@@ -333,7 +349,7 @@ function ChoicePanel({
       <div className="mb-3 flex items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">My 20 JUPAS Choices</h2>
-          <p className="text-sm text-ink/60">{choiceCodes.length}/20 selected</p>
+          <p className="text-sm text-ink/60">{selectedCount}/20 selected</p>
         </div>
         <button type="button" className="rounded-md p-2 text-coral hover:bg-coral/10" onClick={onClear} aria-label="Clear all choices">
           <Trash2 size={18} />
@@ -347,25 +363,34 @@ function ChoicePanel({
           <Clipboard size={16} /> Copy
         </button>
       </div>
-      <SortableContext items={choiceCodes} strategy={verticalListSortingStrategy}>
-        <div className="grid gap-3">
-          {Array.from({ length: 20 }, (_, index) => {
-            const view = choices[index];
-            const rank = index + 1;
-            return view ? (
-              <ChoiceItem
-                key={view.programme.jupasCode}
-                {...view}
-                rank={rank}
-                onRemove={() => onRemove(view.programme.jupasCode)}
-              />
-            ) : (
-              <EmptyChoiceSlot key={`empty-${rank}`} rank={rank} />
-            );
-          })}
-        </div>
-      </SortableContext>
+      <div className="grid gap-3">
+        {Array.from({ length: choiceSlotCount }, (_, index) => (
+          <ChoiceSlot key={`choice-slot-${index}`} index={index} view={choices[index]} onRemove={() => onRemove(index)} />
+        ))}
+      </div>
     </aside>
+  );
+}
+
+function ChoiceSlot({
+  index,
+  view,
+  onRemove,
+}: {
+  index: number;
+  view: ProgrammeView | undefined;
+  onRemove: () => void;
+}) {
+  const { setNodeRef, isOver } = useDroppable({
+    id: `choice-slot-${index}`,
+    data: { type: "choice-slot", index },
+  });
+  const rank = index + 1;
+
+  return (
+    <div ref={setNodeRef} className={`rounded-md ${isOver ? "ring-2 ring-teal ring-offset-2" : ""}`}>
+      {view ? <ChoiceItem {...view} rank={rank} onRemove={onRemove} /> : <EmptyChoiceSlot rank={rank} />}
+    </div>
   );
 }
 
@@ -412,6 +437,20 @@ function readStored<T>(key: string, fallback: T): T {
   } catch {
     return fallback;
   }
+}
+
+function emptyChoiceSlots(): ChoiceSlotCode[] {
+  return Array.from({ length: choiceSlotCount }, () => null);
+}
+
+function normalizeChoiceSlots(value: unknown): ChoiceSlotCode[] {
+  const slots = emptyChoiceSlots();
+  if (!Array.isArray(value)) return slots;
+
+  value.slice(0, choiceSlotCount).forEach((item, index) => {
+    slots[index] = typeof item === "string" && item ? item : null;
+  });
+  return slots;
 }
 
 function unique<T extends string>(items: T[]): T[] {

@@ -1,5 +1,4 @@
-import { useSortable } from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
+import { useDraggable } from "@dnd-kit/core";
 import { GripVertical, Trash2 } from "lucide-react";
 import type { ProgrammeView } from "./ProgrammeCard";
 import { getChoiceRankLabel } from "../utils/exportChoices";
@@ -12,17 +11,18 @@ type Props = ProgrammeView & {
 };
 
 export default function ChoiceItem({ programme, calculation, requirement, rank, onRemove }: Props) {
-  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
-    id: programme.jupasCode,
-    data: { type: "choice", jupasCode: programme.jupasCode },
+  const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
+    id: `choice-${rank}`,
+    data: { type: "choice", jupasCode: programme.jupasCode, index: rank - 1 },
   });
   const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
   const statusLabel = admissionStatusLabel(status);
+  const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
 
   return (
     <div
       ref={setNodeRef}
-      style={{ transform: CSS.Transform.toString(transform), transition }}
+      style={style}
       className={`rounded-md border p-3 shadow-sm ${statusBoxClass(status)} ${isDragging ? "opacity-70 shadow-xl" : ""}`}
     >
       <div className="flex gap-3">
