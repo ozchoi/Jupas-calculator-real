@@ -17,9 +17,7 @@ export type Filters = {
     | "Highest chance"
     | "Highest score difference above LQ"
     | "Highest score difference above Median"
-    | "University"
-    | "JUPAS code"
-    | "Programme title";
+    | "JUPAS code";
 };
 
 type Props = {
@@ -38,9 +36,7 @@ const sorts: Filters["sortBy"][] = [
   "Highest chance",
   "Highest score difference above LQ",
   "Highest score difference above Median",
-  "University",
   "JUPAS code",
-  "Programme title",
 ];
 
 export default function FilterBar({

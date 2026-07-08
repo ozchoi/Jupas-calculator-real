@@ -3,6 +3,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { GripVertical, Trash2 } from "lucide-react";
 import type { ProgrammeView } from "./ProgrammeCard";
 import { getChoiceRankLabel } from "../utils/exportChoices";
+import { jupasProgrammeUrl } from "../utils/jupasLinks";
 import { admissionStatus, admissionStatusLabel, type AdmissionStatus } from "../utils/recommendationClassifier";
 
 type Props = ProgrammeView & {
@@ -37,7 +38,12 @@ export default function ChoiceItem({ programme, calculation, requirement, rank, 
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <span className={`rounded-md px-3 py-1.5 text-sm font-bold ${bandBadgeClass(rank)}`}>{getChoiceRankLabel(rank)}</span>
-            <span className="text-xs font-semibold text-ink/60">{programme.jupasCode} · {programme.institution}</span>
+            <span className="text-xs font-semibold text-ink/60">
+              <a className="hover:text-teal hover:underline" href={jupasProgrammeUrl(programme)} target="_blank" rel="noreferrer">
+                {programme.jupasCode}
+              </a>{" "}
+              · {programme.institution}
+            </span>
           </div>
           <h3 className="mt-2 text-sm font-semibold leading-snug text-ink">{programme.titleEn}</h3>
           {programme.titleZh && <p className="mt-1 text-xs text-ink/55">{programme.titleZh}</p>}

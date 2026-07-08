@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import type { CalculationConfidence, CalculationResult, Programme } from "../types/programme";
 import type { StudentResult } from "../types/student";
+import { jupasProgrammeUrl } from "../utils/jupasLinks";
 import type { ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
 
@@ -27,7 +28,14 @@ export default function ProgrammeDetailModal({
         <div className="sticky top-0 flex items-start justify-between gap-4 border-b border-ink/10 bg-white px-5 py-4">
           <div>
             <div className="mb-2 flex flex-wrap gap-2 text-xs font-semibold">
-              <span className="rounded-md bg-ink px-2 py-1 text-white">{programme.jupasCode}</span>
+              <a
+                className="rounded-md bg-ink px-2 py-1 text-white hover:bg-ink/85 focus:outline-none focus:ring-2 focus:ring-teal/40"
+                href={jupasProgrammeUrl(programme)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {programme.jupasCode}
+              </a>
               <span className="rounded-md bg-teal/10 px-2 py-1 text-teal">{programme.institution}</span>
             </div>
             <h2 className="text-xl font-semibold text-ink">{programme.titleEn}</h2>

@@ -112,9 +112,7 @@ export default function ChoiceBuilder() {
       if (filters.sortBy === "Highest score difference above Median") {
         return diffFrom(b, "median") - diffFrom(a, "median");
       }
-      if (filters.sortBy === "University") return a.programme.institution.localeCompare(b.programme.institution);
       if (filters.sortBy === "JUPAS code") return a.programme.jupasCode.localeCompare(b.programme.jupasCode);
-      if (filters.sortBy === "Programme title") return a.programme.titleEn.localeCompare(b.programme.titleEn);
       return chanceRank(b.chance) - chanceRank(a.chance) || b.calculation.totalScore - a.calculation.totalScore;
     });
   }, [filters, hiddenCodes, pinnedCodes, programmeViews]);
@@ -203,6 +201,7 @@ export default function ChoiceBuilder() {
               </h1>
               <p className="mt-1 max-w-3xl text-sm text-ink/65">
                 Calculate programme-specific HKDSE scores, compare options, and build a ranked list of up to 20 choices.
+                This calculator references 2026 admission weightings and 2025 admission scores published by JUPAS and universities.
               </p>
             </div>
             <div className="flex flex-col items-start gap-2 lg:items-end">

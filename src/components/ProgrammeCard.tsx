@@ -2,6 +2,7 @@ import { useDraggable } from "@dnd-kit/core";
 import { Eye, EyeOff, GripVertical, Pin, Plus } from "lucide-react";
 import { useState } from "react";
 import type { CalculationConfidence, CalculationResult, Programme } from "../types/programme";
+import { jupasProgrammeUrl } from "../utils/jupasLinks";
 import { admissionStatus, admissionStatusLabel, type AdmissionStatus, type ChanceCategory } from "../utils/recommendationClassifier";
 import type { RequirementCheck } from "../utils/requirementChecker";
 import { scoreDifference } from "../utils/thresholds";
@@ -69,7 +70,15 @@ export default function ProgrammeCard({
         </button>
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex flex-wrap items-center gap-2">
-            <span className="rounded-md bg-ink px-2 py-1 text-xs font-semibold text-white">{programme.jupasCode}</span>
+            <a
+              className="rounded-md bg-ink px-2 py-1 text-xs font-semibold text-white hover:bg-ink/85 focus:outline-none focus:ring-2 focus:ring-teal/40"
+              href={jupasProgrammeUrl(programme)}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(event) => event.stopPropagation()}
+            >
+              {programme.jupasCode}
+            </a>
             <span className="rounded-md bg-teal/10 px-2 py-1 text-xs font-semibold text-teal">{programme.institution}</span>
             {pinned && <span className="rounded-md bg-coral/10 px-2 py-1 text-xs font-semibold text-coral">Pinned</span>}
           </div>
