@@ -27,7 +27,7 @@ import { choicesToCsv, choicesToText, getChoiceRankLabel } from "../utils/export
 import { chanceRank, classifyRecommendation } from "../utils/recommendationClassifier";
 import { checkRequirements } from "../utils/requirementChecker";
 import { calculateProgrammeScore } from "../utils/scoreCalculator";
-import { programmeMeetsThreshold } from "../utils/thresholds";
+import { programmeMeetsInclusiveThreshold } from "../utils/thresholds";
 
 const programmes = programmesData as unknown as Programme[];
 const resultStorageKey = "jupas-choice-builder-results-v2";
@@ -89,9 +89,9 @@ export default function ChoiceBuilder() {
       if (filters.category !== "All" && programme.category !== filters.category) return false;
       if (filters.formulaType !== "All" && programme.formulaType !== filters.formulaType) return false;
       if (filters.meetsRequirements && !requirement.meetsRequirements) return false;
-      if (filters.scoreAtLeastLq && !programmeMeetsThreshold(programme, calculation.totalScore, "lowerQuartile")) return false;
-      if (filters.scoreAtLeastMedian && !programmeMeetsThreshold(programme, calculation.totalScore, "median")) return false;
-      if (filters.scoreAtLeastUq && !programmeMeetsThreshold(programme, calculation.totalScore, "upperQuartile")) return false;
+      if (filters.scoreAtLeastLq && !programmeMeetsInclusiveThreshold(programme, calculation.totalScore, "lowerQuartile")) return false;
+      if (filters.scoreAtLeastMedian && !programmeMeetsInclusiveThreshold(programme, calculation.totalScore, "median")) return false;
+      if (filters.scoreAtLeastUq && !programmeMeetsInclusiveThreshold(programme, calculation.totalScore, "upperQuartile")) return false;
       return true;
     });
 

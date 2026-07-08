@@ -18,3 +18,16 @@ export function scoreDifference(score: number, threshold: unknown): number | und
 export function programmeMeetsThreshold(programme: Programme, score: number, key: ThresholdKey): boolean {
   return meetsNumericThreshold(score, programme[key]);
 }
+
+export function programmeMeetsInclusiveThreshold(programme: Programme, score: number, key: ThresholdKey): boolean {
+  const meetsUq = meetsNumericThreshold(score, programme.upperQuartile);
+  const meetsMedianMean =
+    meetsNumericThreshold(score, programme.median) ||
+    meetsNumericThreshold(score, programme.mean) ||
+    meetsNumericThreshold(score, programme.averageScore);
+  const meetsLq = meetsNumericThreshold(score, programme.lowerQuartile);
+
+  if (key === "upperQuartile") return meetsUq;
+  if (key === "median") return meetsUq || meetsMedianMean;
+  return meetsUq || meetsMedianMean || meetsLq;
+}
