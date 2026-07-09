@@ -7,7 +7,7 @@ import {
   useSensors,
   type DragEndEvent,
 } from "@dnd-kit/core";
-import { Clipboard, Download, Trash2 } from "lucide-react";
+import { Clipboard, Download, ExternalLink, Trash2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import programmesData from "../data/programmes.json";
 import subjects from "../data/subjects.json";
@@ -221,7 +221,17 @@ export default function ChoiceBuilder() {
               </p>
             </div>
             <div className="flex flex-col items-start gap-2 lg:items-end">
-              <FeedbackButton />
+              <div className="flex flex-wrap items-center gap-2 lg:justify-end">
+                <a
+                  className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-teal/25 bg-white px-3 text-sm font-semibold text-teal shadow-sm hover:bg-teal/10"
+                  href="https://www.blisseducationhk.com/en/services-9"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink size={16} /> Learn More About Admissions Consultation
+                </a>
+                <FeedbackButton />
+              </div>
               <div className="min-h-5 text-sm font-semibold text-teal">{notice}</div>
             </div>
           </div>
