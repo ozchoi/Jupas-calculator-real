@@ -2203,6 +2203,14 @@
       {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
+      },
+      {
+        "subject": "Biology",
+        "minGrade": "3"
+      },
+      {
+        "subject": "Chemistry",
+        "minGrade": "3"
       }
     ],
     "extractionMethod": "pdfplumber_table_grouped_by_code",

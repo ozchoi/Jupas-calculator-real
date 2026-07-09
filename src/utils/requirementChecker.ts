@@ -120,6 +120,21 @@ function parseInferredRequirements(programme: Programme): InferredRequirement[] 
       if (noSpecificElectives) continue;
     }
 
+    for (const explicitRequirement of parseExplicitIncludeRequirements(clause)) {
+      if (explicitRequirement.type === "must") {
+        const subject = explicitRequirement.subject;
+        if (seenSubjects.has(subject)) continue;
+        seenSubjects.add(subject);
+        requirements.push({ type: "must", subject, minGrade: inferMinGrade(clause) });
+      } else {
+        const key = `oneOf:${explicitRequirement.subjects.sort().join("|")}`;
+        if (!seenGroups.has(key)) {
+          seenGroups.add(key);
+          requirements.push({ type: "oneOf", subjects: explicitRequirement.subjects, minGrade: inferMinGrade(clause) });
+        }
+      }
+    }
+
     const bestOfGroups = extractInferredGroups(clause, /\bbest of\s+([^.;]+)/gi, 2);
     for (const subjects of bestOfGroups) {
       const key = `oneOf:${subjects.sort().join("|")}`;
@@ -207,6 +222,45 @@ function parseInferredRequirements(programme: Programme): InferredRequirement[] 
   return requirements;
 }
 
+function parseExplicitIncludeRequirements(clause: string): Array<{ type: "must"; subject: string } | { type: "oneOf"; subjects: string[] }> {
+  const matches = [...clause.matchAll(/\binclude(?:s|d|ing)?\s+([^;.)]+?)(?:$|[;.)])/gi)];
+  const requirements: Array<{ type: "must"; subject: string } | { type: "oneOf"; subjects: string[] }> = [];
+  const seenLocal = new Set<string>();
+
+  for (const match of matches) {
+    const text = match[1].trim();
+    if (!text) continue;
+
+    const oneOfGroups = extractInferredGroups(
+      text,
+      /\b(?:at least one (?:of|from)|at least one subject from|one of|one subject from)\b\s*[:\-]?\s*([^.;]+)/gi,
+      1,
+    );
+
+    for (const group of oneOfGroups) {
+      if (group.length === 0) continue;
+      const key = `oneOf:${group.sort().join("|")}`;
+      if (seenLocal.has(key)) continue;
+      seenLocal.add(key);
+      requirements.push({ type: "oneOf", subjects: group });
+    }
+
+    const withoutOneOf = text.replace(
+      /\b(?:at least one (?:of|from)|at least one subject from|one of|one subject from)\b\s*[^;.)]+(?:,|\s+and)?/gi,
+      " ",
+    );
+    const subjects = parseSubjectList(withoutOneOf);
+    for (const subject of subjects) {
+      const key = `must:${subject}`;
+      if (seenLocal.has(key)) continue;
+      seenLocal.add(key);
+      requirements.push({ type: "must", subject });
+    }
+  }
+
+  return requirements;
+}
+
 function getInferredRequirementOverride(programme: Programme): string | null {
   const key = `${programme.institution}|${programme.jupasCode}`;
   const overrides: Record<string, string> = {
@@ -245,7 +299,6 @@ function parseSubjectList(text: string): string[] {
   if (hasM1M2) {
     subjectSet.add("M1");
     subjectSet.add("M2");
-    return Array.from(subjectSet);
   }
 
   for (const entry of directTokens) {

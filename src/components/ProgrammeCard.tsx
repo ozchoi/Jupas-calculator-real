@@ -46,7 +46,7 @@ export default function ProgrammeCard({
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
   const status = admissionStatus(programme, calculation.totalScore, requirement.meetsRequirements);
-  const statusLabel = hasNoAdmissionData(programme) ? "No admission data" : admissionStatusLabel(status);
+  const statusLabel = status === "notQualified" ? admissionStatusLabel(status) : hasNoAdmissionData(programme) ? "No admission data" : admissionStatusLabel(status);
   const medianGap = numericGap(calculation.totalScore, programme.median);
   const lqGap = numericGap(calculation.totalScore, programme.lowerQuartile);
 
