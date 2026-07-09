@@ -41,7 +41,6 @@ const defaultFilters: Filters = {
   faculties: [],
   weightedSubjects: [],
   category: "All",
-  formulaType: "All",
   meetsRequirements: false,
   scoreAtLeastLq: false,
   scoreAtLeastMedian: false,
@@ -89,7 +88,6 @@ export default function ChoiceBuilder() {
       if (filters.faculties.length && (!programme.faculty || !filters.faculties.includes(programme.faculty))) return false;
       if (filters.weightedSubjects.length && !hasSelectedHighWeighting(programme, filters.weightedSubjects)) return false;
       if (filters.category !== "All" && programme.category !== filters.category) return false;
-      if (filters.formulaType !== "All" && programme.formulaType !== filters.formulaType) return false;
       if (filters.meetsRequirements && !requirement.meetsRequirements) return false;
       if (filters.scoreAtLeastLq && !programmeMeetsInclusiveThreshold(programme, calculation.totalScore, "lowerQuartile")) return false;
       if (filters.scoreAtLeastMedian && !programmeMeetsInclusiveThreshold(programme, calculation.totalScore, "median")) return false;
@@ -199,7 +197,6 @@ export default function ChoiceBuilder() {
     }))
     .filter((group) => group.faculties.length);
   const categories = unique(programmes.map((programme) => programme.category).filter(Boolean) as string[]);
-  const formulaTypes = unique(programmes.map((programme) => programme.formulaType));
   const weightedSubjectOptions = unique(
     programmes
       .flatMap((programme) => programme.weightingRules?.filter((rule) => rule.multiplier > 1).flatMap((rule) => rule.subjects.map(weightingFilterSubject)) ?? [])
@@ -256,7 +253,6 @@ export default function ChoiceBuilder() {
               facultyGroups={facultyGroups}
               weightedSubjectOptions={weightedSubjectOptions}
               categories={categories}
-              formulaTypes={formulaTypes}
               onReset={() => setFilters(defaultFilters)}
             />
             <div className="p-4 pb-0">

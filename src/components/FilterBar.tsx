@@ -1,5 +1,5 @@
 import { RotateCcw } from "lucide-react";
-import type { FundingCategory, FormulaType, Institution } from "../types/programme";
+import type { FundingCategory, Institution } from "../types/programme";
 
 export type Filters = {
   query: string;
@@ -7,7 +7,6 @@ export type Filters = {
   faculties: string[];
   weightedSubjects: string[];
   category: "All" | FundingCategory;
-  formulaType: "All" | FormulaType;
   meetsRequirements: boolean;
   scoreAtLeastLq: boolean;
   scoreAtLeastMedian: boolean;
@@ -27,7 +26,6 @@ type Props = {
   facultyGroups: Array<{ institution: string; faculties: string[] }>;
   weightedSubjectOptions: string[];
   categories: string[];
-  formulaTypes: string[];
   onReset: () => void;
 };
 
@@ -46,7 +44,6 @@ export default function FilterBar({
   facultyGroups,
   weightedSubjectOptions,
   categories,
-  formulaTypes,
   onReset,
 }: Props) {
   const patch = <K extends keyof Filters>(key: K, value: Filters[K]) => onChange({ ...filters, [key]: value });
@@ -91,7 +88,6 @@ export default function FilterBar({
           onClear={() => patch("weightedSubjects", [])}
         />
         <Select label="Funding" value={filters.category} options={["All", ...categories]} onChange={(value) => patch("category", value as Filters["category"])} />
-        <Select label="Formula" value={filters.formulaType} options={["All", ...formulaTypes]} onChange={(value) => patch("formulaType", value as Filters["formulaType"])} />
         <Select label="Sort" value={filters.sortBy} options={sorts} onChange={(value) => patch("sortBy", value as Filters["sortBy"])} />
       </div>
       <div className="mt-4 grid gap-3 lg:grid-cols-[repeat(4,minmax(0,1fr))_minmax(180px,0.85fr)]">
