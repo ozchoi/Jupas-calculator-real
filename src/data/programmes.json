@@ -28,6 +28,10 @@
         "minGrade": "2"
       },
       {
+        "subject": "Chemistry",
+        "minGrade": "3"
+      },
+      {
         "subject": "Citizenship and Social Development",
         "minGrade": "Attained"
       }

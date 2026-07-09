@@ -64,10 +64,10 @@ export function admissionStatus(programme: Programme, score: number, meetsRequir
 
 export function admissionStatusLabel(status: AdmissionStatus): string {
   return {
-    uq: ">= UQ",
-    medianMean: ">= Median/Mean/Average",
-    lq: ">= LQ",
-    minimumOnly: "Meets minimum only",
-    notQualified: "Does not meet requirement",
+    uq: "Your score >= UQ",
+    medianMean: "Your score >= Median/Mean/Average",
+    lq: "Your score >= LQ",
+    minimumOnly: "Your score meets minimum only",
+    notQualified: "Your score does not meet requirement",
   }[status];
 }
