@@ -223,12 +223,16 @@ export default function ChoiceBuilder() {
             <div className="flex flex-col items-start gap-2 lg:items-end">
               <div className="flex flex-wrap items-center gap-2 lg:justify-end">
                 <a
-                  className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-teal/25 bg-white px-3 text-sm font-semibold text-teal shadow-sm hover:bg-teal/10"
+                  className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-teal/25 bg-white px-3 py-1.5 text-left shadow-sm hover:bg-teal/10"
                   href="https://www.blisseducationhk.com/en/services-9"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ExternalLink size={16} /> Learn More About Admissions Consultation
+                  <ExternalLink size={16} className="shrink-0 text-teal" />
+                  <span className="grid leading-tight">
+                    <span className="text-sm font-semibold text-teal">Admissions Consultation</span>
+                    <span className="text-xs font-medium text-ink/55">by Bliss Education Consultancy</span>
+                  </span>
                 </a>
                 <FeedbackButton />
               </div>
